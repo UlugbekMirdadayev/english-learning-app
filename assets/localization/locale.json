@@ -1,0 +1,4883 @@
+[
+  {
+    "title": "A",
+    "terms": [
+      {
+        "term": "abrasion",
+        "definition": "истирание, износ, шлифовка",
+        "translation": "ishqalanish, silliqlash, saykal"
+      },
+      {
+        "term": "absorber",
+        "definition": "поглотитель",
+        "translation": "absorber, yutuvchi yoki yutadigan (boshqa moddani yutadigan, shimadigan, o’ziga singdirib oladigan)"
+      },
+      {
+        "term": "shock absorber",
+        "definition": "амортизатор",
+        "translation": "amortizator"
+      },
+      {
+        "term": "acceleration",
+        "definition": "ускорение; разгон",
+        "translation": "tezlashtirish, tezlikni oshirish"
+      },
+      {
+        "term": "accelerator",
+        "definition": "ускоритель",
+        "translation": "tezlatgich (biror jarayonni tezlashtiruvchi mexanizm)"
+      },
+      {
+        "term": "cyclic accelerator",
+        "definition": "циклический ускоритель",
+        "translation": "siklik tezlatgich"
+      },
+      {
+        "term": "linear accelerator",
+        "definition": "линейный ускоритель",
+        "translation": "tasmali tezlatgich"
+      },
+      {
+        "term": "accommodation",
+        "definition": "размещение, приспособление",
+        "translation": "joylashuv, moslashish"
+      },
+      {
+        "term": "accumulator",
+        "definition": "аккумулятор",
+        "translation": "akkumulyator"
+      },
+      {
+        "term": "advance",
+        "definition": "поступательное движение",
+        "translation": "jismning hamma nuqtalari bir-biriga parallel ravishda qo’zg’aladigan (ko’chadigan) harakat"
+      },
+      {
+        "term": "ignition system",
+        "definition": "o’t oldirish sistemasi, qurilmasi",
+        "translation": "o’tish tizimi"
+      },
+      {
+        "term": "aeration",
+        "definition": "аэрация, насыщение воздухом",
+        "translation": "aerasiya, havo bilan tuyinganlik"
+      },
+      {
+        "term": "aging",
+        "definition": "старение металлов, выдержка",
+        "translation": "metallarning eskirishi; chidamlilik, bardosh"
+      },
+      {
+        "term": "agitation",
+        "definition": "перемещение во флотационной машине",
+        "translation": "flotasion mashinada harakatlanish"
+      },
+      {
+        "term": "air",
+        "definition": "воздух",
+        "translation": "havo"
+      },
+      {
+        "term": "air cleaner",
+        "definition": "воздухоочиститель, воздушный фильтр",
+        "translation": "havo tozalagich, havoli filtr"
+      },
+      {
+        "term": "waste air",
+        "definition": "отработанный воздух",
+        "translation": "sarflangan havo"
+      },
+      {
+        "term": "air-gap",
+        "definition": "воздушный зазор, искровый промежуток",
+        "translation": "havoli zazor (mashina qismlari o’rtasidagi juda tor tirqish), uchqun oralig’i"
+      },
+      {
+        "term": "air filter",
+        "definition": "воздушный фильтр",
+        "translation": "havoli filtr"
+      },
+      {
+        "term": "airflow",
+        "definition": "поток воздуха",
+        "translation": "havo oqimi"
+      },
+      {
+        "term": "airtight",
+        "definition": "воздухонепроницаемый, герметично закрытый",
+        "translation": "havo o’tkazmaydigan, germetik yopiq"
+      },
+      {
+        "term": "align",
+        "definition": "выравнивать, регулировать",
+        "translation": "tekislamoq, tartibga solmoq"
+      },
+      {
+        "term": "self-aligning",
+        "definition": "автоматическая регулировка, самоцентрование",
+        "translation": "avtomatik moslashish, o’z-o’zini markazlashtirish"
+      },
+      {
+        "term": "alternator",
+        "definition": "генератор переменного тока",
+        "translation": "o’zgaruvchan tokning generatori"
+      },
+      {
+        "term": "amplifier",
+        "definition": "усилитель",
+        "translation": "kuchaytirgich"
+      },
+      {
+        "term": "anchor",
+        "definition": "анкер, анкерная скоба, крепление, закреплять болтами, заанкеровывать",
+        "translation": "anker, ankerli skoba (bir-biriga biriktiradigan uskuna), mahkamlash, boltlar bilan mahkamlash, ankerlash"
+      },
+      {
+        "term": "anti-freeze",
+        "definition": "антифриз",
+        "translation": "antifriz"
+      },
+      {
+        "term": "area",
+        "definition": "площадь, область",
+        "translation": "maydon, hudud"
+      },
+      {
+        "term": "cross-sectional area",
+        "definition": "площадь поперечного сечения",
+        "translation": "ko’ndalang kesim maydoni"
+      },
+      {
+        "term": "flow area",
+        "definition": "проходное сечение",
+        "translation": "o’tish kesimi"
+      },
+      {
+        "term": "tube area",
+        "definition": "сечение трубки",
+        "translation": "naychaning kesimi"
+      },
+      {
+        "term": "arm",
+        "definition": "пишанг, дастак, ричаг",
+
+        "translation": "pishang, dastak, richag"
+      },
+      {
+        "term": "lever arm",
+        "definition": "пишангнинг елкаси",
+        "translation": "pishangning elkasi"
+      },
+      {
+        "term": "rocker arm",
+        "definition": "шатун",
+        "translation": "shatun (porshen va dvigatelni birlashtiruvchi detal)"
+      },
+      {
+        "term": "steering arm",
+        "definition": "рулевая сошка",
+        "translation": "rul tirgagi"
+      },
+      {
+        "term": "stepped arm",
+        "definition": "ступенчатый рычаг",
+        "translation": "pog’onali pishang, dastak"
+      },
+      {
+        "term": "suspension arm",
+        "definition": "рычаг подвески",
+        "translation": "ilgak richagi"
+      },
+      {
+        "term": "assembly",
+        "definition": "агрегат; узел; сборка",
+        "translation": "agregat, tugun, yig'ilish"
+      },
+      {
+        "term": "atmosphere",
+        "definition": "атмосфера",
+        "translation": "atmosfera"
+      },
+      {
+        "term": "reducing atmosphere",
+        "definition": "восстановительная газовая среда или атмосфера",
+        "translation": "atmosfera yoki qayta tiklovchi gazli muxit"
+      },
+      {
+        "term": "attachment",
+        "definition": "приспособление, (с)крепление",
+        "translation": "uskuna, mahkamlash"
+      },
+      {
+        "term": "autogenous",
+        "definition": "автогенный",
+        "translation": "avtogen"
+      },
+      {
+        "term": "atomizer",
+        "definition": "распылитель",
+        "translation": "purkagich, changlagich"
+      },
+      {
+        "term": "auxiliary",
+        "definition": "вспомогательное оборудование",
+        "translation": "yordamchi jihoz"
+      },
+      {
+        "term": "avoirdupois",
+        "definition": "английская система мер веса",
+        "translation": "ingliz og’irlik o’lchovi tizimi"
+      },
+      {
+        "term": "axle",
+        "definition": "ось; полуось; мост (автомобиля)",
+        "translation": "o’q, yarim o’q, avtomobil ko’prigi"
+      },
+      {
+        "term": "double-reduction axle",
+        "definition": "двухступенчатый редуктор",
+        "translation": "ikki bosqichli reduktor"
+      },
+      {
+        "term": "front axle",
+        "definition": "передняя ось; передний мост",
+        "translation": "oldingi o’q, old ko’prik"
+      },
+      {
+        "term": "live axle",
+        "definition": "ведущая ось, ведущий вал",
+        "translation": "yetaklovchi o'q, yetaklovchi dolg'a"
+      },
+      {
+        "term": "rear axle",
+        "definition": "задний мост",
+        "translation": "orqa ko'prik"
+      }
+    ]
+  },
+  {
+    "title": "B",
+    "terms": [
+      {
+        "term": "baffle",
+        "definition": "перегородка",
+        "translation": "to’siq"
+      },
+      {
+        "term": "baffling",
+        "definition": "регулирование направления газов при помощи заслонок",
+        "translation": "to’siqlar yordamida gazlar yo’nalishini sozlash"
+      },
+      {
+        "term": "bar",
+        "definition": "стержень, брус",
+        "translation": "sterjen (tayoqcha), brus (chorqirra yoki boshqa shakldagi yog’och, temir va h.k.)"
+      },
+      {
+        "term": "guide bar",
+        "definition": "направляющая тяга",
+        "translation": "yetakchi tyaga"
+      },
+      {
+        "term": "torsion bar",
+        "definition": "торсион",
+        "translation": "burish"
+      },
+      {
+        "term": "batch",
+        "definition": "группа, партия, серия",
+        "translation": "partiya"
+      },
+      {
+        "term": "battery",
+        "definition": "батарея",
+        "translation": "batareya"
+      },
+      {
+        "term": "accumulator battery",
+        "definition": "аккумуляторная батарея",
+        "translation": "akkumluyator batareyasi"
+      },
+      {
+        "term": "lead-acid battery",
+        "definition": "свинцовая аккумуляторная батарея",
+        "translation": "qo’rg’oshinli akkumulyator batareyasi"
+      },
+      {
+        "term": "primary battery",
+        "definition": "первичный элемент",
+        "translation": "birlamchi element"
+      },
+      {
+        "term": "storage battery",
+        "definition": "аккумуляторная батарея",
+        "translation": "akkumulyator batareyasi"
+      },
+      {
+        "term": "B.D.C. (bottom dead centre)",
+        "definition": "нижняя мёртвая точка",
+        "translation": "quyyi o’lik qatlam"
+      },
+      {
+        "term": "bearing",
+        "definition": "подшипник",
+        "translation": "podshipnik"
+      },
+      {
+        "term": "ball bearing",
+        "definition": "шариковый подшипник",
+        "translation": "sharikli podshipnik"
+      },
+      {
+        "term": "bracket bearing",
+        "definition": "консольный подшипник на кронштейне",
+        "translation": "kronshteyndagi konsol podshipnik"
+      },
+      {
+        "term": "clutch throw-out bearing",
+        "definition": "подшипник муфты выключения сцепления",
+        "translation": "ulanishni o’chiruvchi muftaning podshipniki"
+      },
+      {
+        "term": "guide bearing",
+        "definition": "направляющий подшипник",
+        "translation": "yo’naltiruvchi podshipnik"
+      },
+      {
+        "term": "jeweled bearing",
+        "definition": "подшипник на камнях",
+        "translation": "toshli podshipnik"
+      },
+      {
+        "term": "journal bearing",
+        "definition": "коренной подшипник, радиальный (опорный) подшипник",
+        "translation": "tirgakli podshipnik"
+      },
+      {
+        "term": "main bearing",
+        "definition": "коренной подшипник, подшипник коленчатого вала",
+        "translation": "asosiy podshipnik, tirsakli val podshipniki"
+      },
+      {
+        "term": "on-bearing",
+        "definition": "направление пеленга, радио",
+        "translation": "peleng ( kompas mili qaragan tomon bilan biror narsa ko’radigan yoki ovoz eshitilgan tomon o’rtasidagi burchak) yo’nalishi, radio"
+      },
+      {
+        "term": "roller bearing",
+        "definition": "роликовый подшипник",
+        "translation": "rolikli podshipnik"
+      },
+      {
+        "term": "self-aligning double-row bearing",
+        "definition": "самоустанавливающийся двухрядный радиальный подшипник",
+        "translation": "o’zi sozlanadigan ikki qatorli tirgakli podshipnik"
+      },
+      {
+        "term": "sleeve bearing",
+        "definition": "подшипник скольжения, цельный неразъемный подшипник",
+        "translation": "sirpanish podshipniki, yahlit ajramaydigan podshipnik"
+      },
+      {
+        "term": "thrust bearing",
+        "definition": "упорный подшипник, подпятник",
+        "translation": "tirgovuch podshipnik, turum"
+      },
+      {
+        "term": "bearing hanger",
+        "definition": "подвеска подшипника",
+        "translation": "podshipnik ilgagi"
+      },
+      {
+        "term": "belt",
+        "definition": "ремень",
+        "translation": "kamar"
+      },
+      {
+        "term": "engine fan belt",
+        "definition": "ременный привод вентилятора двигателя",
+        "translation": "ventilyator, havo (dam) beradigan mashina"
+      },
+      {
+        "term": "bench",
+        "definition": "верстак",
+        "translation": "o’rindiq"
+      },
+      {
+        "term": "bend",
+        "definition": "изгиб",
+        "translation": "egilish, bukish"
+      },
+      {
+        "term": "easy bend",
+        "definition": "пологое колено, пологий поворот",
+        "translation": "qiyalama burilish, qiyalama tizza"
+      },
+      {
+        "term": "brake horsepower (B.H.P.)",
+        "definition": "эффективная (тормозная) мощность",
+        "translation": "samarali tormoz quvvati"
+      },
+      {
+        "term": "blade",
+        "definition": "рычажок",
+        "translation": "pishangcha, richagcha"
+      },
+      {
+        "term": "fixed guide blade",
+        "definition": "неподвижная направляющая лопатка",
+        "translation": "harakatsiz yetaklovchi kurak"
+      },
+      {
+        "term": "blading",
+        "definition": "лопатки турбины",
+        "translation": "turbina kuragi"
+      },
+      {
+        "term": "low-pressure blading",
+        "definition": "лопатки низкого давления",
+        "translation": "past bosim kuragi"
+      },
+      {
+        "term": "bleed",
+        "definition": "отбирать пар",
+        "translation": "bug’ oqimi"
+      },
+      {
+        "term": "gas bleeder",
+        "definition": "спускной газовый кран, клапан",
+        "translation": "klapan, gaz jumragi"
+      },
+      {
+        "term": "block",
+        "definition": "блок",
+        "translation": "blok"
+      },
+      {
+        "term": "cylinder block",
+        "definition": "блок цилиндров",
+        "translation": "silindrlar bloki"
+      },
+      {
+        "term": "hook block",
+        "definition": "блок с крюком",
+        "translation": "ilgakli, ilmoqli blok"
+      },
+      {
+        "term": "blower",
+        "definition": "вентилятор, воздуходувка",
+        "translation": "ventilyator, havo (dam) beradigan mashina"
+      },
+      {
+        "term": "rotary blower",
+        "definition": "ротационная воздуходувка или ротационный вентилятор (компрессор)",
+        "translation": "aylanadigan havo puflagich, kompressor"
+      },
+      {
+        "term": "blow out",
+        "definition": "продувать; спускать (воду)",
+        "translation": "puflabo’chirish, suvcni oqizish"
+      },
+      {
+        "term": "blow-out",
+        "definition": "пpoкол (шины)",
+        "translation": "shinaning teshilishi"
+      },
+      {
+        "term": "blowpipe",
+        "definition": "паяльная трубка",
+        "translation": "kavsharlash (qalaylash) naychasi"
+      },
+      {
+        "term": "body",
+        "definition": "кузов автомобиля, корпус",
+        "translation": "avtomobil korpusi, kuzov"
+      },
+      {
+        "term": "convertible body",
+        "definition": "кузов с открывающимся верхом",
+        "translation": "tepasi ochiladigan kuzov"
+      },
+      {
+        "term": "body shell",
+        "definition": "обшивка кузова",
+        "translation": "mashina qobig’i qoplamasi"
+      },
+      {
+        "term": "boiler",
+        "definition": "котел; бойлер",
+        "translation": "qozon"
+      },
+      {
+        "term": "bolt",
+        "definition": "болт",
+        "translation": "bolt"
+      },
+      {
+        "term": "key bolt",
+        "definition": "болт с чекой",
+        "translation": "bolt chuvi"
+      },
+      {
+        "term": "stay bolt",
+        "definition": "анкерный болт",
+        "translation": "anker bolti"
+      },
+      {
+        "term": "bonnet",
+        "definition": "капот (двигателя)",
+        "translation": "kapot"
+      },
+      {
+        "term": "boot",
+        "definition": "багажник",
+        "translation": "yukhona"
+      },
+      {
+        "term": "bore",
+        "definition": "отверстие; диаметр отверстия цилиндра",
+        "translation": "tirqish, silindr tirqishining diametri"
+      },
+      {
+        "term": "box",
+        "definition": "коробка мульда, опока (мет.)",
+        "translation": "muld qutisi"
+      },
+      {
+        "term": "reduction box",
+        "definition": "коробка передач (маш.)",
+        "translation": "uzatmalar korobkasi"
+      },
+      {
+        "term": "steering box",
+        "definition": "картер рулевого управления",
+        "translation": "rul boshqarish karteri"
+      },
+      {
+        "term": "stuffing box",
+        "definition": "сальник, корпус сальника (маш.)",
+        "translation": "salnik (tirqishlarni berkitib turuvchi detal, qoplama), salnik qobog’i"
+      },
+      {
+        "term": "terminal box",
+        "definition": "коробка с зажимами, присоединительная коробка",
+        "translation": "qisqichli quti, bog’lovchi quti"
+      },
+      {
+        "term": "windbox",
+        "definition": "воздуходувная коробка",
+        "translation": "havo purkovchi quti"
+      },
+      {
+        "term": "boxcar",
+        "definition": "крытый товарный вагон",
+        "translation": "yopiq tovar vagoni"
+      },
+      {
+        "term": "bracket",
+        "definition": "кронштейн, крестовина, консоль",
+        "translation": "kronshteyn (devorga mahkamlangan tokcha, tayanch); krestovina (bir-biriga ko’ndalang qilib chalishtirilgan ikki yo’g’och yoki taxta, shu shakldagi detal); konsol (to’sinning devordan chiqib turgan va balkon, karniz kabilarni ko’tarib turadigan qismi)"
+      },
+      {
+        "term": "brake",
+        "definition": "тормоз",
+        "translation": "tormoz"
+      },
+      {
+        "term": "disk brake",
+        "definition": "дисковый тормоз",
+        "translation": "diskli tormoz"
+      },
+      {
+        "term": "drum brake",
+        "definition": "барабанный тормоз",
+        "translation": "barabanli tormoz"
+      },
+      {
+        "term": "friction disk brake",
+        "definition": "тормоз с фрикционным диском",
+        "translation": "friksion diskli tormoz"
+      },
+      {
+        "term": "strap brake",
+        "definition": "ленточный тормоз",
+        "translation": "tasmali tormoz"
+      },
+      {
+        "term": "two-shoe internal expanding brake",
+        "definition": "тормоз с двумя внутренними колодками",
+        "translation": "ikki ichki kolodkali tormoz"
+      },
+      {
+        "term": "breaker",
+        "definition": "прерыватель",
+        "translation": "uzgich, to’xtatgich"
+      },
+      {
+        "term": "broughams",
+        "definition": "брогам (комбинированный пассажирский кузов легкого автомобиля с открывающейся частью крыши над передним рядом сидений)",
+        "translation": "“brogam” (oldingi qator o’rindiqlar ustidagi kuzov tom qismi ochiladigan yolovchi tashuvchi yengil avtomobili)"
+      },
+      {
+        "term": "bucket",
+        "definition": "лопатка турбины",
+        "translation": "turbina kuragi"
+      },
+      {
+        "term": "dragline bucket",
+        "definition": "ковш драглайна",
+        "translation": "draglayn cho’michi"
+      },
+      {
+        "term": "grab bucket",
+        "definition": "грейферный ковш",
+        "translation": "greyfer cho’michi"
+      },
+      {
+        "term": "skimmer bucket",
+        "definition": "ковш механической лопаты",
+        "translation": "mexanik kurak cho’michi"
+      },
+      {
+        "term": "burn (the fuel and air)",
+        "definition": "сжигать (топливо и воздух)",
+        "translation": "yoqish (yonilg’i va havo)"
+      },
+      {
+        "term": "burner",
+        "definition": "горелка, форсунка",
+        "translation": "gorelka, forsunka"
+      },
+      {
+        "term": "bush",
+        "definition": "вкладыш, втулка",
+        "translation": "vkladysh, vtyulka"
+      },
+      {
+        "term": "bushel",
+        "definition": "бушель (мера объема, английский =ок.36,4 л., американский=ок. 35,2 л.)",
+        "translation": "bushel (mеra ob’ema, ingliz=ok.36,4 l., amerikan=ok. 35,2 l.)"
+      },
+      {
+        "term": "button",
+        "definition": "кнопка",
+        "translation": "knopka, tugma"
+      },
+      {
+        "term": "push button control",
+        "definition": "кнопочное переключение",
+        "translation": "tugmali"
+      },
+      {
+        "term": "push-to-talk button",
+        "definition": "переговорная кнопка, кнопка для включения телефона",
+        "translation": "gaplashish uchun bosish"
+      }
+    ]
+  },
+  {
+    "title": "C",
+    "terms": [
+      {
+        "term": "cam",
+        "definition": "кулачок, комбинатор (маш.)",
+        "translation": "kulok, kambinator"
+      },
+      {
+        "term": "cam and roller",
+        "definition": "червяк и ролик (схема рулевого механизма)",
+        "translation": "shesternya va g’ildirakcha (ro’lli mexanislardagi sxemasi)"
+      },
+      {
+        "term": "camshaft",
+        "definition": "кулачковый или распределительный вал",
+        "translation": "kulachokli yoki taqsimotli to’lqin"
+      },
+      {
+        "term": "candle",
+        "definition": "свеча",
+        "translation": "svecha"
+      },
+      {
+        "term": "foot-candle",
+        "definition": "фут-свеча (30,48 см тенг узунлик о’лчови)",
+        "translation": "fut svechasi"
+      },
+      {
+        "term": "cantilever",
+        "definition": "консоль, кронштейн",
+        "translation": "kronstayn (девор ёки бирор нарсага маҳкамланган нарса, таянч)"
+      },
+      {
+        "term": "cap filler c.",
+        "definition": "накладка, крышка - крышка заливного отверстия",
+        "translation": "nakladka (бирор нарсани устини ёпиб турадиган устки қисми детайл), qopqoq"
+      },
+      {
+        "term": "capacitor",
+        "definition": "конденсатор",
+        "translation": "kondensator (бугунги совутиб суюқликка айлантирадигон , конденсат тўплайдиган асбоб)"
+      },
+      {
+        "term": "capacity",
+        "definition": "способность; вместимость; выработка",
+        "translation": "sig’im, ishlab chiqish"
+      },
+      {
+        "term": "carrying c.",
+        "definition": "мощность, емкость, объем, производительность, паропроизводительность (котл.)",
+        "translation": "hajm, ishlab chiqarish quvvati"
+      },
+      {
+        "term": "engine c.",
+        "definition": "рабочий объем двигателя",
+        "translation": "ishchi mator hajmi"
+      },
+      {
+        "term": "heat c.",
+        "definition": "теплоемкость",
+        "translation": "issiqlik sig’imi"
+      },
+      {
+        "term": "horsepower c.",
+        "definition": "мощность (в лошадиных силах)",
+        "translation": "kuch, quvvat (ot kuchi)"
+      },
+      {
+        "term": "car",
+        "definition": "машина",
+        "translation": "mashina"
+      },
+      {
+        "term": "carbon",
+        "definition": "углерод",
+        "translation": "uglerod (химиявий элемент)"
+      },
+      {
+        "term": "carburetor, carburetter",
+        "definition": "карбюратор",
+        "translation": "karbyurator (внутреннего двигателларида иш аралашмаси ҳосил қиладиган қурилма)"
+      },
+      {
+        "term": "carriage",
+        "definition": "повозка, вагон, шасси",
+        "translation": "arava, vagon, rama"
+      }
+    ]
+  },
+  {
+    "title": "D",
+    "terms": [
+      {
+        "term": "damper",
+        "definition": "амортизатор; демпфер",
+        "translation": "amartizator"
+      },
+      {
+        "term": "dash",
+        "definition": "передний щиток автомобиля",
+        "translation": "avtoulovning oldingi qo'riqchisi"
+      },
+      {
+        "term": "dashpot",
+        "definition": "успокоитель, амортизатор",
+        "translation": "so'rg'ich"
+      },
+      {
+        "term": "dashboard",
+        "definition": "щиток управления, передний щиток",
+        "translation": "asboblar paneli"
+      },
+      {
+        "term": "decelerate",
+        "definition": "замедлять, уменьшать скорость",
+        "translation": "sekinlatmoq"
+      },
+      {
+        "term": "decrease",
+        "definition": "уменьшать",
+        "translation": "kamaytirish"
+      },
+      {
+        "term": "degree",
+        "definition": "градус, степень",
+        "translation": "gradus"
+      },
+      {
+        "term": "derrick",
+        "definition": "деррик, поворотный, грузоподъемный кран",
+        "translation": "ko'tarish krani"
+      },
+      {
+        "term": "guy d.",
+        "definition": "деррик-кран (с раскачиваемой мачтой)",
+        "translation": "derrick-kran (s raskachivayemoy machtoy)"
+      },
+      {
+        "term": "stiff-leg d.",
+        "definition": "кран с рамой",
+        "translation": "kran s ramoy"
+      },
+      {
+        "term": "detachable",
+        "definition": "съемный",
+        "translation": "yechiladigan"
+      },
+      {
+        "term": "device",
+        "definition": "прибор, приспособление",
+        "translation": "asbob"
+      },
+      {
+        "term": "dial",
+        "definition": "циферблат, круговая шкала, лимб",
+        "translation": "tsiferblat"
+      },
+      {
+        "term": "diesel",
+        "definition": "дизель, двигатель внутреннего сгорания тяжелого топлива с оспламенением от сжатия",
+        "translation": "dizel"
+      },
+      {
+        "term": "difference",
+        "definition": "различие, разница",
+        "translation": "farq"
+      },
+      {
+        "term": "differential",
+        "definition": "дифференциал",
+        "translation": "differentsial"
+      },
+      {
+        "term": "dipstick",
+        "definition": "стержневой указатель уровня",
+        "translation": "tayoq sathining ko'rsatkichi"
+      },
+      {
+        "term": "discharge",
+        "definition": "выходить, выпускать",
+        "translation": "chiqarmoq"
+      },
+      {
+        "term": "disengage",
+        "definition": "выключать; разъединять, выводить из зацепления",
+        "translation": "ajratish"
+      },
+      {
+        "term": "distributor",
+        "definition": "распределитель",
+        "translation": "distribyutor"
+      },
+      {
+        "term": "ignition d.",
+        "definition": "распределитель зажигания",
+        "translation": "rасреdелиtель зажигания"
+      },
+      {
+        "term": "ditch",
+        "definition": "кювет, канава",
+        "translation": "handaq"
+      },
+      {
+        "term": "divide by",
+        "definition": "делить на",
+        "translation": "bo’lish"
+      },
+      {
+        "term": "dowel",
+        "definition": "штырь, шпонка, стыковой стержень",
+        "translation": "kalit, tayoq tayoqchasi"
+      },
+      {
+        "term": "drain",
+        "definition": "спуск, слив",
+        "translation": "tushish, to'kish в"
+      },
+      {
+        "term": "cylinder d.",
+        "definition": "осушка, продувка цилиндра, осушительное",
+        "translation": "quritish"
+      },
+      {
+        "term": "draught",
+        "definition": "тяга",
+        "translation": "surish"
+      },
+      {
+        "term": "forced d.",
+        "definition": "нагнетание воздуха",
+        "translation": "havo in'ektsiyasi"
+      },
+      {
+        "term": "induced air d.",
+        "definition": "отсос воздуха",
+        "translation": "havo assimilyatsiya qilish"
+      },
+      {
+        "term": "draw fuel",
+        "definition": "всасывать топливо",
+        "translation": "yoqilg'ini so'rib oling"
+      },
+      {
+        "term": "draw up",
+        "definition": "затягивать (болт); составлять (план, смету)",
+        "translation": "tortish"
+      },
+      {
+        "term": "drive",
+        "definition": "привод, передача",
+        "translation": "haydovchi, uzatish"
+      },
+      {
+        "term": "belt d.",
+        "definition": "ременный привод",
+        "translation": "kamar haydovchi"
+      },
+      {
+        "term": "final d.",
+        "definition": "главная передача",
+        "translation": "asosiy vites"
+      },
+      {
+        "term": "front wheel d.",
+        "definition": "передний привод",
+        "translation": "oldingi g'ildirak"
+      },
+      {
+        "term": "rope d.",
+        "definition": "канатный привод",
+        "translation": "arqon haydash"
+      },
+      {
+        "term": "rack-and-pinion d.",
+        "definition": "реечная передача",
+        "translation": "reechnaya peredacha"
+      },
+      {
+        "term": "rear-wheel d.",
+        "definition": "привод на задние колеса",
+        "translation": "orqa g'ildirak haydovchisi"
+      },
+      {
+        "term": "driver",
+        "definition": "передача, ведущее колесо",
+        "translation": "g'ildirak"
+      },
+      {
+        "term": "drum",
+        "definition": "барабан",
+        "translation": "baraban"
+      },
+      {
+        "term": "brake d.",
+        "definition": "тормозной цилиндр",
+        "translation": "tormozli baraban"
+      },
+      {
+        "term": "ducting downstream",
+        "definition": "выхлопной патрубок",
+        "translation": "egzoz trubkasi"
+      },
+      {
+        "term": "durable",
+        "definition": "долговечный, износостойкий",
+        "translation": "bardoshli"
+      },
+      {
+        "term": "dwell",
+        "definition": "цилиндрическая часть кулачка, не перемещающая сопряженную деталь; отсутствие движения",
+        "translation": "kamarning silindrsimon qismi"
+      },
+      {
+        "term": "dynamo",
+        "definition": "генератор; динамо",
+        "translation": "generator"
+      }
+    ]
+  },
+  {
+    "title": "E",
+    "terms": [
+      {
+        "term": "electrolyte",
+        "definition": "электролит, аккумуляторный электролит",
+        "translation": "akkumlyator elektroliti"
+      },
+      {
+        "term": "eliminate",
+        "definition": "устранять; уничтожать",
+        "translation": "favqulod holatda ketkizmoq"
+      },
+      {
+        "term": "emergency",
+        "definition": "критическое положение; аварийный; вспомогательный",
+        "translation": "kriticheskoye polozheniye; avariynyy; vspomogatel'nyy"
+      },
+      {
+        "term": "engage",
+        "definition": "защеплять, включать или вводить в зацепление",
+        "translation": "urgizmoq"
+      },
+      {
+        "term": "engine",
+        "definition": "двигатель, машина",
+        "translation": "dvigitel"
+      },
+      {
+        "term": "air cooled e.",
+        "definition": "двигатель с воздушным охлаждением",
+        "translation": "sovutgich"
+      },
+      {
+        "term": "compression ignition e.",
+        "definition": "двигатель сжатия (топлива) с зажиганием от смеси",
+        "translation": "bug’ni siqish"
+      },
+      {
+        "term": "diesel e.",
+        "definition": "дизель",
+        "translation": "dizel"
+      },
+      {
+        "term": "gas turbine propeller e.",
+        "definition": "газотурбинный двигатель",
+        "translation": "gaz trubali dvigitel"
+      },
+      {
+        "term": "gasoline e.",
+        "definition": "бензиновый двигатель",
+        "translation": "benzinli dvigatel"
+      },
+      {
+        "term": "four-cycle e.",
+        "definition": "четырехтактный двигатель",
+        "translation": "to’rt skill dvigitel"
+      },
+      {
+        "term": "heat e.",
+        "definition": "тепловой двигатель",
+        "translation": "isitadigan dvigitel"
+      },
+      {
+        "term": "hot-air e.",
+        "definition": "машина, работающая нагретым воздухом",
+        "translation": "issiq havoda ishlovchi dvigatel"
+      },
+      {
+        "term": "internal combustion e.",
+        "definition": "двигатель внутреннего сгорания",
+        "translation": "ichki yonish dvigateli"
+      },
+      {
+        "term": "jet e.",
+        "definition": "реактивный двигатель",
+        "translation": "reaktiv dvigatel"
+      },
+      {
+        "term": "outboard e.",
+        "definition": "подвесной (забортный) двигатель",
+        "translation": "osib qo’yiladigan dvigatel"
+      },
+      {
+        "term": "petrol e.",
+        "definition": "бензиновый двигатель",
+        "translation": "benzin dvigateli"
+      },
+      {
+        "term": "petroleum e.",
+        "definition": "газолиновый двигатель",
+        "translation": "gazolin dvigateli"
+      },
+      {
+        "term": "reciprocating e.",
+        "definition": "поршневой двигатель (машина)",
+        "translation": "porshinli motor"
+      },
+      {
+        "term": "spark ignition e.",
+        "definition": "двигатель с зажиганием, искрой",
+        "translation": "yonuvchi dvigatel"
+      },
+      {
+        "term": "steam e.",
+        "definition": "паровой двигатель",
+        "translation": "bug’li dvigatel"
+      },
+      {
+        "term": "thermal jet e.",
+        "definition": "реактивный двигатель",
+        "translation": "reaktiv dvigatel"
+      },
+      {
+        "term": "traction e.",
+        "definition": "тяговый двигатель",
+        "translation": "tortuvchi dvigatel"
+      },
+      {
+        "term": "turbo-jet e.",
+        "definition": "турбореактивный двигатель",
+        "translation": "turboreaktiv dvigatel"
+      },
+      {
+        "term": "turboprop e.",
+        "definition": "турбомашина",
+        "translation": "turbomashina"
+      },
+      {
+        "term": "two-cycle e.",
+        "definition": "двухтактный двигатель",
+        "translation": "ikki silindirli dvigatel"
+      },
+      {
+        "term": "two-stroke e.",
+        "definition": "двухтактный двигатель",
+        "translation": "ikki silindirli dvigatel"
+      },
+      {
+        "term": "enter the cylinder",
+        "definition": "поступать в цилиндр",
+        "translation": "silindirga kirish"
+      },
+      {
+        "term": "equipment",
+        "definition": "оборудование",
+        "translation": "uskuna"
+      },
+      {
+        "term": "auxiliary e.",
+        "definition": "вспомогательное (подсобное) оборудование",
+        "translation": "yordamchi uskuna"
+      },
+      {
+        "term": "power e.",
+        "definition": "силовое оборудование",
+        "translation": "kuch bilan ishlatiladigan uskuna"
+      },
+      {
+        "term": "escape",
+        "definition": "выходить",
+        "translation": "chiqmoq"
+      },
+      {
+        "term": "estate car",
+        "definition": "легковой автомобиль с кузовом типа фургон",
+        "translation": "kuzovli mashina"
+      },
+      {
+        "term": "evacuation",
+        "definition": "выхлоп (выпуск) продуктов горения",
+        "translation": "evakuatsiya"
+      },
+      {
+        "term": "evolution",
+        "definition": "эволюция, постепенное развитие",
+        "translation": "rivojlanish"
+      },
+      {
+        "term": "exceed",
+        "definition": "превышать",
+        "translation": "oshirmoq"
+      },
+      {
+        "term": "exhaust",
+        "definition": "выпускать",
+        "translation": "chiqarish trubkasi"
+      },
+      {
+        "term": "expand",
+        "definition": "расширяться",
+        "translation": "kengaytirmoq"
+      },
+      {
+        "term": "expansion",
+        "definition": "расширение",
+        "translation": "hajmini oshirish"
+      },
+      {
+        "term": "expel (the fuel and air)",
+        "definition": "удалять, вытеснять",
+        "translation": "chiqarib yubormoq"
+      },
+      {
+        "term": "explode",
+        "definition": "взрывать",
+        "translation": "portlamoq"
+      }
+    ]
+  },
+  {
+    "title": "F",
+    "terms": [
+      {
+        "term": "face",
+        "definition": "фасад",
+        "translation": "fasad"
+      },
+      {
+        "term": "cylinder f.",
+        "definition": "цилиндр",
+        "translation": "silindr"
+      },
+      {
+        "term": "fan",
+        "definition": "вентилятор",
+        "translation": "ventilyator"
+      },
+      {
+        "term": "fastening",
+        "definition": "крепление",
+        "translation": "mahkamlash"
+      },
+      {
+        "term": "feeler",
+        "definition": "щуп – механизм, который используется для измерения зазора или расстояния между деталями",
+        "translation": "asbob, mehanizmlarda detallar oralig’ini o’lchaydigan asbob"
+      },
+      {
+        "term": "fill in",
+        "definition": "заливать",
+        "translation": "to’ldirmoq, yog’dirmoq"
+      },
+      {
+        "term": "filler",
+        "definition": "горловина бака, заливное отверстие, наполнитель",
+        "translation": "bakning og’zi, suv quyadigan teshik, to’ldirgich"
+      },
+      {
+        "term": "filter",
+        "definition": "фильтр; фильтровать",
+        "translation": "filtr, filtrlash"
+      },
+      {
+        "term": "fuel f.",
+        "definition": "топливный фильтр",
+        "translation": "yoqilg’i  filtri"
+      },
+      {
+        "term": "petrol f.",
+        "definition": "топливный фильтр",
+        "translation": "yoqilg’i  filtri"
+      },
+      {
+        "term": "firing",
+        "definition": "зажигание; сжигание; воспламенение",
+        "translation": "yoqish, o’t oldirish, alanga olish"
+      },
+      {
+        "term": "fit",
+        "definition": "пригонка, посадка; пригодный, пригнанный",
+        "translation": "moslab o’rnatish, yaroqli"
+      },
+      {
+        "term": "fix",
+        "definition": "устанавливать неподвижно, закреплять, фиксировать",
+        "translation": "harakatsiz o’rnatmoq, mahkamlamoq, mustahkamlamoq"
+      },
+      {
+        "term": "flat",
+        "definition": "равнина; плоский, ровный",
+        "translation": "tekislik, yapaloq, tekis"
+      },
+      {
+        "term": "flexibility",
+        "definition": "гибкость; приспособленность; маневренность",
+        "translation": "egiluvchanlik, moslashganlik"
+      },
+      {
+        "term": "flight",
+        "definition": "скребок",
+        "translation": "kurak, kovsh"
+      },
+      {
+        "term": "scraper f.",
+        "definition": "скребок скрепера",
+        "translation": "skeper kuragi"
+      },
+      {
+        "term": "float",
+        "definition": "поплавок",
+        "translation": "suzgich"
+      },
+      {
+        "term": "flywheel",
+        "definition": "маховик",
+        "translation": "maxovik, salmoqli g’ildirak"
+      },
+      {
+        "term": "footbrake",
+        "definition": "ножной тормоз",
+        "translation": "oyoq tormozi"
+      },
+      {
+        "term": "force",
+        "definition": "сила, усиление; толкать",
+        "translation": "kuch, kuchaytirish, itarish"
+      },
+      {
+        "term": "fork",
+        "definition": "вилка; разветвляться",
+        "translation": "sanchqi, tarmoqlamoq"
+      },
+      {
+        "term": "four-cylinder",
+        "definition": "четырехцилиндровый",
+        "translation": "to’rt silindrli"
+      },
+      {
+        "term": "four-stroke",
+        "definition": "четырехтактный",
+        "translation": "to’rt taktli"
+      },
+      {
+        "term": "four-wheeler",
+        "definition": "четырехколесное средство транспорта",
+        "translation": "to’rt qildirakli transport vositasi"
+      },
+      {
+        "term": "frame",
+        "definition": "рама, корпус, станина",
+        "translation": "rom, korpus, stanina"
+      },
+      {
+        "term": "framework",
+        "definition": "рама, каркас, обрамление",
+        "translation": "rom, karkas, hoshiya"
+      },
+      {
+        "term": "fretting",
+        "definition": "износ, истирание, изнашивание",
+        "translation": "eskirish, yeyilib ketish, ishdan chiqish"
+      },
+      {
+        "term": "friction",
+        "definition": "трение",
+        "translation": "ishqalanish"
+      },
+      {
+        "term": "breakaway f.",
+        "definition": "максимальное трение покоя, т. е. трение, имеющее место в момент начала движения трущихся между собой тел",
+        "translation": "harakatsizlikning maksimal ishqalanishi, ya’ni ikki bir-biri bilan ishqalanuvchi jismlarning harakatining boshlanish lahzasi"
+      },
+      {
+        "term": "front",
+        "definition": "передняя сторона; передний",
+        "translation": "old taraf, oldingi"
+      },
+      {
+        "term": "fuel",
+        "definition": "горючее, топливо; заливать топливо",
+        "translation": "yoqilg’I, yoqilg’I quyish"
+      },
+      {
+        "term": "diesel f.",
+        "definition": "дизельное топливо",
+        "translation": "dizel yoqilg’isi"
+      }
+    ]
+  },
+  {
+    "title": "G",
+    "terms": [
+      {
+        "term": "gallery",
+        "definition": "продольный канал",
+        "translation": "bo’ylama kanal"
+      },
+      {
+        "term": "water g.",
+        "definition": "водяной канал",
+        "translation": "suv kanali"
+      },
+      {
+        "term": "gallon",
+        "definition": "галлон, мера жидкостей и сыпучих тел (=3,78 л.ам. и 4,54 л. англ.)",
+        "translation": "gallon, suyuqlik va sepiluvchan jismlarning o’lchov birligi (=3,78 l. амer. va 4,54 l. ingliz.)"
+      },
+      {
+        "term": "gap",
+        "definition": "зазор; искровой промежуток",
+        "translation": "tirqish, uchqunli oraliq"
+      },
+      {
+        "term": "gas",
+        "definition": "газ",
+        "translation": "gaz"
+      },
+      {
+        "term": "dead g.",
+        "definition": "отработанный газ",
+        "translation": "ishlatilgan gaz"
+      },
+      {
+        "term": "spent g.",
+        "definition": "отработанный газ (двиг.)",
+        "translation": "ishlatilgan gaz (dvig.)"
+      },
+      {
+        "term": "burnt g.",
+        "definition": "отработавший газ",
+        "translation": "ishlatib bo’lingan gaz"
+      },
+      {
+        "term": "bevel g.",
+        "definition": "коническая зубчатая или фрикционная передача",
+        "translation": "konik tishli yoki friksion yetkazish"
+      },
+      {
+        "term": "brush g.",
+        "definition": "щеточное устройство, механизм для установки и регулирования положения щеток",
+        "translation": "chyotkali moslama, o’rnatish va tartibga solish mexanizmi"
+      },
+      {
+        "term": "change g.",
+        "definition": "коробка перемены передач",
+        "translation": "uzatmalar o’zgarishi korobkasi"
+      },
+      {
+        "term": "driving g.",
+        "definition": "ведущая шестерня",
+        "translation": "yetakchi tishli g’ildirak"
+      },
+      {
+        "term": "first g.",
+        "definition": "первая передача",
+        "translation": "birinchi uzatma"
+      },
+      {
+        "term": "friction g.",
+        "definition": "фрикционная передача или шестерня",
+        "translation": "friksion uzatma yoki tishli g’ildirak"
+      },
+      {
+        "term": "herringbone g.",
+        "definition": "шевронная зубчатая передача, зубчатая передача с косыми зубьями",
+        "translation": "shevron tishli uzatma, qiya tishli uzatma"
+      },
+      {
+        "term": "low g.",
+        "definition": "первая скорость",
+        "translation": "birinchi tezlik"
+      },
+      {
+        "term": "reduction g.",
+        "definition": "редукционная передача",
+        "translation": "reduksion uzatma"
+      },
+      {
+        "term": "reverse g.",
+        "definition": "шестерня заднего хода",
+        "translation": "orqa yurish tishli g’ildiragi"
+      },
+      {
+        "term": "reverse idler g.",
+        "definition": "промежуточная шестерня заднего хода, холостое зубчатое колесо для реверсирования",
+        "translation": "orqa yurishning oraliq tishli g’ildiragi"
+      },
+      {
+        "term": "second g.",
+        "definition": "вторая скорость",
+        "translation": "ikkinchi tezlik"
+      },
+      {
+        "term": "self-changing g.",
+        "definition": "автоматическое переключение передач",
+        "translation": "uzatmalarning avtomatik o’zgarishi"
+      },
+      {
+        "term": "spur g.",
+        "definition": "цилиндрическая прямо-зубая шестерня",
+        "translation": "silindirsimon to’g’ri tishli g’ildirak"
+      },
+      {
+        "term": "top g.",
+        "definition": "высшая передача",
+        "translation": "oliy uzatma"
+      },
+      {
+        "term": "worm gearing",
+        "definition": "червячная передача",
+        "translation": "qo’shqaroq"
+      },
+      {
+        "term": "gearbox",
+        "definition": "коробка передач",
+        "translation": "uzatmalar korobkasi"
+      },
+      {
+        "term": "automatic g.",
+        "definition": "автоматическая коробка передач",
+        "translation": "avtomatik uzatmalar korobkasi"
+      },
+      {
+        "term": "synchromesh g.",
+        "definition": "коробка передач с синхронизатором",
+        "translation": "sinxronizatorli uzatmalar korobkasi"
+      },
+      {
+        "term": "three-speed g.",
+        "definition": "трехступенчатая кoробка передач",
+        "translation": "uch pog’onali uzatmalar korobkasi"
+      },
+      {
+        "term": "generator",
+        "definition": "генератор",
+        "translation": "generator"
+      },
+      {
+        "term": "engine-driven g.",
+        "definition": "генератор с приводом от двигателя",
+        "translation": "dvigatelli uzatma generatori"
+      },
+      {
+        "term": "girder",
+        "definition": "балка",
+        "translation": "to’sin"
+      },
+      {
+        "term": "crane g.",
+        "definition": "подкрановая балка, балка мостового крана",
+        "translation": "kran balkasi, ko’priksimon kran balkasi"
+      },
+      {
+        "term": "governor",
+        "definition": "регулятор",
+        "translation": "regulyator"
+      },
+      {
+        "term": "grab.",
+        "definition": "ковш",
+        "translation": "kovsh"
+      },
+      {
+        "term": "dumping g",
+        "definition": "опрокидывающийся ковш",
+        "translation": "ag’darma kovsh"
+      },
+      {
+        "term": "gravity",
+        "definition": "тяжесть, сила тяжести",
+        "translation": "og’irlik, og’irlik kuchi"
+      },
+      {
+        "term": "grip",
+        "definition": "захват; зажим",
+        "translation": "qisqich"
+      },
+      {
+        "term": "twist g.",
+        "definition": "поворачивающийся наконечник руля",
+        "translation": "aylanadigan rul poynaki"
+      },
+      {
+        "term": "guide",
+        "definition": "направляющее устройство",
+        "translation": "yetakchi moslama"
+      },
+      {
+        "term": "valve g.",
+        "definition": "направляющая клапана",
+        "translation": "klapan yetakchisi"
+      }
+    ]
+  },
+  {
+    "title": "H",
+    "terms": [
+      {
+        "term": "half-shaft",
+        "definition": "полуось",
+        "translation": "yarim o’q"
+      },
+      {
+        "term": "hand brake",
+        "definition": "ручной тормоз",
+        "translation": "qo’l tormozi"
+      },
+      {
+        "term": "handicap",
+        "definition": "препятствие",
+        "translation": "to’siq"
+      },
+      {
+        "term": "handle",
+        "definition": "рукоятка, управлять, манипулировать",
+        "translation": "dastak, boshqarmoq"
+      },
+      {
+        "term": "handling",
+        "definition": "уход, управление, способ эксплуатации",
+        "translation": "parvarish, boshqarish, ekspluatasiya usuli"
+      },
+      {
+        "term": "Head",
+        "definition": "головка, напор, насадка",
+        "translation": "nasadka, uchlik"
+      },
+      {
+        "term": "cylinder h.",
+        "definition": "головка цилиндра",
+        "translation": "silindrning boshi"
+      },
+      {
+        "term": "valve h.",
+        "definition": "головка клапана",
+        "translation": "klapanning boshi"
+      },
+      {
+        "term": "heat",
+        "definition": "тепло, нагревать",
+        "translation": "issiqlik, isitmoq"
+      },
+      {
+        "term": "heater",
+        "definition": "радиатор",
+        "translation": "radiator"
+      },
+      {
+        "term": "heavy",
+        "definition": "мощный (о двигателе)",
+        "translation": "kuchli (dvigatel)"
+      },
+      {
+        "term": "helical",
+        "definition": "винтовой, спиральный",
+        "translation": "vintli, spiralli"
+      },
+      {
+        "term": "hoist",
+        "definition": "подъемник, лебедка",
+        "translation": "ko’targich, g’ildirak"
+      },
+      {
+        "term": "hole",
+        "definition": "отверстие",
+        "translation": "tirqish"
+      },
+      {
+        "term": "access h.",
+        "definition": "входное отверстие",
+        "translation": "kirish tirqishi"
+      },
+      {
+        "term": "hollow",
+        "definition": "полый, пустотелый",
+        "translation": "kovak, bo’sh"
+      },
+      {
+        "term": "hood",
+        "definition": "капот",
+        "translation": "kapot"
+      },
+      {
+        "term": "hose",
+        "definition": "рукав, шланг",
+        "translation": "yeng, shlang"
+      },
+      {
+        "term": "bottom h.",
+        "definition": "нижний патрубок",
+        "translation": "quyi, patrubok (truboprovod,rezervuar va shu kabilardan chiqarilgan, tarmoqlangan qisqa truba)"
+      },
+      {
+        "term": "top h.",
+        "definition": "верхний патрубок",
+        "translation": "yuqori patrubok"
+      },
+      {
+        "term": "h. p. = horsepower",
+        "definition": "лошадиная сила",
+        "translation": "ot kuchi"
+      },
+      {
+        "term": "Н. Т. = high tension",
+        "definition": "высокое напряжение",
+        "translation": "yuqori kuchlanish"
+      },
+      {
+        "term": "housing",
+        "definition": "корпус, кожух, станина",
+        "translation": "korpus, kojuh ( turli mexanizmlarning ustini o’rab turuvchi qoplamasi)"
+      },
+      {
+        "term": "hub",
+        "definition": "ступица, втулка",
+        "translation": "gupchak,vtulka, tiqin"
+      }
+    ]
+  },
+  {
+    "title": "I",
+    "terms": [
+      {
+        "term": "ignite (the fuel and air)",
+        "definition": "воспламенять (топливо и воздух)",
+        "translation": "(havo va yoqilg’i)ni o’t oldirmoq"
+      },
+      {
+        "term": "ignition",
+        "definition": "зажигание, воспламенение",
+        "translation": "o’t oldirmoq"
+      },
+      {
+        "term": "coil i.",
+        "definition": "батарейное зажигание",
+        "translation": "batareyali o’t oldirish"
+      },
+      {
+        "term": "compression i.",
+        "definition": "воспламенение от сжатия",
+        "translation": "siqilish oqibatidagi o’t olish"
+      },
+      {
+        "term": "electric i.",
+        "definition": "электрическое зажигание",
+        "translation": "elektrli o’t oldirish"
+      },
+      {
+        "term": "electronic i.",
+        "definition": "электронное зажигание",
+        "translation": "elektron o’t oldirish"
+      },
+      {
+        "term": "´hot-tube´ i.",
+        "definition": "воспламенение смеси в двигателе при соприкосновении с калильной трубкой",
+        "translation": "kanil trubkasi bilan tutashish oqibatida dvigatel ichidagi qorishmaning o’t olishi"
+      },
+      {
+        "term": "inch",
+        "definition": "дюйм (2,54 см.)",
+        "translation": "dyuym (2.54 sm)"
+      },
+      {
+        "term": "injector",
+        "definition": "инжектор, форсунка",
+        "translation": "injektor (bug’ oqimi ta’sirida ishlaydigan nasos turi), forsunka (suyuq yoki kukunsimon moddalarni purkab beruvchi asbob)"
+      },
+      {
+        "term": "fuel i.",
+        "definition": "топливный инжектор",
+        "translation": "yoqilg’ili injektor"
+      },
+      {
+        "term": "in line",
+        "definition": "лежащий на одной прямой, на одной линии; рядный",
+        "translation": "bir qatorda joylashkan, bir qator, bir saf"
+      },
+      {
+        "term": "inlet",
+        "definition": "впуск, вход",
+        "translation": "kiritish, kirish"
+      },
+      {
+        "term": "installation",
+        "definition": "установка",
+        "translation": "o’rnatish"
+      },
+      {
+        "term": "instrument",
+        "definition": "измерительный прибор, инструмент",
+        "translation": "o’lchash asbobi"
+      },
+      {
+        "term": "insulation",
+        "definition": "изоляция",
+        "translation": "izolyasiya"
+      },
+      {
+        "term": "heat i.",
+        "definition": "теплоизоляция",
+        "translation": "teploizolyasiya (issiqlikning yo’qolishiga yo’l qo’ymaslik uchun pech, truba, va shu kabilarni issiqlik o’tkazmaydigan material bilan qoplash)"
+      },
+      {
+        "term": "intake",
+        "definition": "впуск, впускное устройство",
+        "translation": "kiritish moslamasi"
+      },
+      {
+        "term": "air i.",
+        "definition": "впуск воздуха, отверстие для впуска воздуха, всасывающее отверстие",
+        "translation": "havo kiritish, havo kiritish uchun turqish, so’ruvchi tirqish"
+      },
+      {
+        "term": "integral",
+        "definition": "цельный, выполненный в одно целое",
+        "translation": "yaxlit, yaxlitlangan"
+      }
+    ]
+  },
+  {
+    "title": "J",
+    "terms": [
+      {
+        "term": "jack [ʤæk]",
+        "definition": "ручной домкрат с маховиком",
+        "translation": "maxovikli (salmoqli g’ildirakli) qo’l domkrati"
+      },
+      {
+        "term": "hydraulic j. [hai´drɔ:lik]",
+        "definition": "гидравлический и масляный домкрат",
+        "translation": "gidravlik va yog’li domkrat"
+      },
+      {
+        "term": "screw j. [skru:]",
+        "definition": "винтовой домкрат",
+        "translation": "vintli domkrat"
+      },
+      {
+        "term": "jacket [´ ʤækit]",
+        "definition": "кожух, обшивка, покрывать снаружи",
+        "translation": "kojux, qoplama, qoplamoq, sirtini qoplamoq"
+      },
+      {
+        "term": "jam [ʤæm]",
+        "definition": "задержка, затор, заедание, заклинивание",
+        "translation": "kechikish, tiqilish, tiqilib qolish"
+      },
+      {
+        "term": "jeep [ʤi:p]",
+        "definition": "джип",
+        "translation": "djip"
+      },
+      {
+        "term": "jet [ʤet]",
+        "definition": "струя; форсунка",
+        "translation": "ingichqa suyuqlik yoki gaz oqimi, forsunka"
+      },
+      {
+        "term": "main j. [mein]",
+        "definition": "главный жиклер",
+        "translation": "asosiy jikler"
+      },
+      {
+        "term": "jib [ʤib]",
+        "definition": "стрела крана",
+        "translation": "kran o’qi"
+      },
+      {
+        "term": "joint [ʤɔint]",
+        "definition": "соединение, стык, шов",
+        "translation": "birikish, tutashish, chok"
+      },
+      {
+        "term": "ball j. [bɔ:l]",
+        "definition": "шаровой шарнир",
+        "translation": "sharli sharnir (oshiq-moshiq)"
+      },
+      {
+        "term": "universal j. [ˏju:ni´və:sl]",
+        "definition": "универсальный шарнир",
+        "translation": "universal sharnir"
+      },
+      {
+        "term": "journal [´ ʤə:nəl]",
+        "definition": "цапфа, шейка вала, шип, пята",
+        "translation": "sapfa (o’q yoki valning podshipnikda aylanuvchi qismi, bo’yni), valning bo’yni, ship (valning podshipnikka tutashgan uchi)"
+      },
+      {
+        "term": "roll j. [rəul]",
+        "definition": "шейка валка",
+        "translation": "bo’yin"
+      }
+    ]
+  },
+  {
+    "title": "K",
+    "terms": [
+      {
+        "term": "key [ki:]",
+        "definition": "шпонка, чека",
+        "translation": "shponka (mashina, mexanizm va shu kabi qurilmalarning qismlarini bir-biriga mustahkamlaydigan detal), cheka (chuv)"
+      },
+      {
+        "term": "kg. = kilogram [´kiləgræm]",
+        "definition": "килограмм",
+        "translation": "kilogramm"
+      },
+      {
+        "term": "km. = kilometer [´ kiləmi:tə]",
+        "definition": "километр",
+        "translation": "kilometr"
+      },
+      {
+        "term": "km/h = kilometers per hour [´kiləmi:təz pə ´auə]",
+        "definition": "километров в час",
+        "translation": "kilometr soatiga"
+      },
+      {
+        "term": "kw = kilowatt [´ kiləwɔt]",
+        "definition": "киловатт",
+        "translation": "kilovatt"
+      }
+    ]
+  },
+  {
+    "title": "L",
+    "terms": [
+      {
+        "term": "l = liter [´li:tə]",
+        "definition": "литр",
+        "translation": "litr"
+      },
+      {
+        "term": "layout [´leiaut]",
+        "definition": "расположение, планировка",
+        "translation": "o’rnashish tartibi, narsa qismlarining bir-biriga nisbatan tutgan o’rni (joylashuvi)"
+      },
+      {
+        "term": "l.b = pound [´paund]",
+        "definition": "фунт (0,453 кг)",
+        "translation": "funt (0.453kg)"
+      },
+      {
+        "term": "leaf [li:f]",
+        "definition": "лист, пластинка",
+        "translation": "list, plastinka"
+      },
+      {
+        "term": "leather [´leðə]",
+        "definition": "кожа",
+        "translation": "teri"
+      },
+      {
+        "term": "length [leŋθ]",
+        "definition": "длина",
+        "translation": "uzunlik"
+      },
+      {
+        "term": "level [´levl]",
+        "definition": "рычаг",
+        "translation": "dastak"
+      },
+      {
+        "term": "floating l. [´fləutiŋ]",
+        "definition": "свободный (плавающий) рычаг",
+        "translation": "erkin (suzag’on) dastak"
+      },
+      {
+        "term": "gearshift l. [´giəʃift]",
+        "definition": "рычаг перемены скоростей",
+        "translation": "tezlikni o’zgartiruvchi dastak"
+      },
+      {
+        "term": "perpetual l. [pə´petjuəl]",
+        "definition": "постоянный рычаг",
+        "translation": "muqim dastak"
+      },
+      {
+        "term": "release l.[ri´li:s]",
+        "definition": "рычаг выключения",
+        "translation": "o’chirish dastagi"
+      },
+      {
+        "term": "wishbone l. [´wiʃbəun]",
+        "definition": "вильчатый рычаг",
+        "translation": "yoysimon dastak"
+      },
+      {
+        "term": "life [laif]",
+        "definition": "долговечность, срок службы",
+        "translation": "chidamlilik, xizmat muddati"
+      },
+      {
+        "term": "light [lait]",
+        "definition": "свет, освещение; фара; легкий (по весу)",
+        "translation": "yorug’lik, yoritish; fara; yengil (vaznga nisbatan)"
+      },
+      {
+        "term": "lighting [´laitiŋ]",
+        "definition": "освещение",
+        "translation": "yoritish"
+      },
+      {
+        "term": "direct l. [di´rekt]",
+        "definition": "прямое (непосредств.) освещение",
+        "translation": "bevosita yoritish"
+      },
+      {
+        "term": "indirect l. [ˏindi´rekt]",
+        "definition": "освещение отраженным светом",
+        "translation": "yorug’likning qaytishi bilan yoritish"
+      },
+      {
+        "term": "electric l. [i´lektrik]",
+        "definition": "электрическое освещение",
+        "translation": "elektrli yoritish"
+      },
+      {
+        "term": "line [lain]",
+        "definition": "облицовывать, футеровать, заливать изнутри вкладыш подшипника",
+        "translation": "sirtini qoplamoq, futerlamoq (metal eritadigan pechlarningichini o’tga bardoshli material bilan ishlab chiqmoq)"
+      },
+      {
+        "term": "fuel l.[fju:əl]",
+        "definition": "топливопровод",
+        "translation": "yo’qilg’I quvuri"
+      },
+      {
+        "term": "assembly l. [ə´ sembli]",
+        "definition": "линия сборки в поточном производстве, сборочный конвейер",
+        "translation": "yig’ish konveyyeri, uzluksiz ishlab chiqarishda yig’ish liniyasi"
+      },
+      {
+        "term": "liner [´ lainə]",
+        "definition": "вкладыш, втулка, гильза",
+        "translation": "vkladish (podshipnik va boshqamashina detallariningalmashinuvchi qismi), vtulka, gilza"
+      },
+      {
+        "term": "cylinder l. [´silində]",
+        "definition": "гильза цилиндра",
+        "translation": "silindr gilzasi"
+      },
+      {
+        "term": "lining [´lainiŋ]",
+        "definition": "прокладка; вкладыш",
+        "translation": "qistirma (ikki narsa orasiga qistirib qo’yilgan narsa), vkladish (podshipnik va boshqamashina detallariningalmashinuvchi qismi)"
+      },
+      {
+        "term": "brake l.[breik]",
+        "definition": "фрикционная обшивка тормоза",
+        "translation": "tormozning friksion qoplamasi"
+      },
+      {
+        "term": "link [liŋk]",
+        "definition": "связь; звено; шатун",
+        "translation": "bog’lanish; zveno (bir turdagi uzviy qism detal); shatun (porshen va dvigatelni birlashtiruvchi detal)"
+      },
+      {
+        "term": "linkage [´ liŋkiʤ]",
+        "definition": "рычажный механизм",
+        "translation": "dastak mexanizmi"
+      },
+      {
+        "term": "liquid [´ likwid]",
+        "definition": "жидкость; жидкий",
+        "translation": "suyuqlik, suyuq"
+      },
+      {
+        "term": "load [ləud]",
+        "definition": "нагрузка",
+        "translation": "yuk, og’ir yukli"
+      },
+      {
+        "term": "no load [´nəu´ləud]",
+        "definition": "холостой (ход)",
+        "translation": "salt yurish"
+      },
+      {
+        "term": "locomotion [ˏ ləukə´ məuʃn]",
+        "definition": "передвижение",
+        "translation": "siljitish, joyidan qo’zg’atish"
+      },
+      {
+        "term": "loom [lu:m]",
+        "definition": "оплетка проводов",
+        "translation": "sim atrofini to’qib chiqmoq"
+      },
+      {
+        "term": "lorry [´ lɔri]",
+        "definition": "грузовой автомобиль",
+        "translation": "yuk avtomobili"
+      },
+      {
+        "term": "lubricant [´lu:brikənt]",
+        "definition": "смазка; смазочный материал",
+        "translation": "surtiladigam moy, moylash materiali"
+      },
+      {
+        "term": "lubrication [ˏlu:bri´keiʃn]",
+        "definition": "смазка, смазывание",
+        "translation": "surtiladigan moy, moylash, yo’g’lash"
+      }
+    ]
+  },
+  {
+    "title": "M",
+    "terms": [
+      {
+        "term": "machine [mə´ʃi:n]",
+        "definition": "принимать механическую обработку, подвергаться механической обработке",
+        "translation": "mexanik ishlov berish"
+      },
+      {
+        "term": "magnet [´mægnit]",
+        "definition": "магнит",
+        "translation": "magnit"
+      },
+      {
+        "term": "magneto [mæg´ni:təu]",
+        "definition": "магнето",
+        "translation": "magneto (dvigatellarda elektr uchquni hosil qiladigan asbob)"
+      },
+      {
+        "term": "flywheel m. [´ flaiwi:l]",
+        "definition": "магнето, выполненное в маховике",
+        "translation": "maxovik (salmoqli g’ildirak)da yuzaga kelgan magneto"
+      },
+      {
+        "term": "maintenance [´ meintinəns]",
+        "definition": "уход, содержание, эксплуатация",
+        "translation": "parvarish, ekspluatasiya, ta’minot"
+      },
+      {
+        "term": "manifold [´ mænifəuld]",
+        "definition": "трубопровод, коллектор",
+        "translation": "truboprovod (uzoq masofaga truba orqaligaz, bug’, suyuqlik o’tkazadigan inshoot), kollektor"
+      },
+      {
+        "term": "inlet m. [´inlət]",
+        "definition": "впускной патрубок, система впускных труб",
+        "translation": "kiritish uchun xizmat qiladigan patrubok (truboprovod, rezervuar va shu kabilardan chiqarilgan tarmoqlangan qisqa truba), kiritish uchun xizmat qiladigan trubakar tizimi"
+      },
+      {
+        "term": "mantle [´ mæntl]",
+        "definition": "кожух, покрышка",
+        "translation": "kojux (turli mexanizmlarning ustini o’rab turuvchi qoplamasi), pokrishka (qopqoq)"
+      },
+      {
+        "term": "mechanism [´mekənizm]",
+        "definition": "механизм",
+        "translation": "mexanizm"
+      },
+      {
+        "term": "crank m.[kræŋk]",
+        "definition": "кривошипный механизм",
+        "translation": "krivoshipli mexanizm"
+      },
+      {
+        "term": "member[´ membə]",
+        "definition": "элемент конструкции; деталь",
+        "translation": "konstruksiya elementi, detal"
+      },
+      {
+        "term": "side m.[said]",
+        "definition": "боковина; лонжерон",
+        "translation": "yon tomon, lonjeron (avtomobil ramasining yondori, samolyot qanotining bo’ylama brusi va shu kabilar)"
+      },
+      {
+        "term": "meter [´ mi:tə]",
+        "definition": "измерительный прибор; дозировать",
+        "translation": "o’lchash asbobi, dozalamoq"
+      },
+      {
+        "term": "mile[mail]",
+        "definition": "миля (=ок. 1,609 км.)",
+        "translation": "milya (1.609 km)"
+      },
+      {
+        "term": "statue m. [´stætju:]",
+        "definition": "установленная (по закону) официальная миля",
+        "translation": "qonun bo’yicha belgilangan rasmiy milya"
+      },
+      {
+        "term": "mileage [´mailiʤ]",
+        "definition": "пробег в милях",
+        "translation": "milyalarda yo’l bosish poygasi"
+      },
+      {
+        "term": "mini-bus [´minibʌs]",
+        "definition": "миниавтобус",
+        "translation": "miniavtobus"
+      },
+      {
+        "term": "mixture [´miksʧə]",
+        "definition": "смесь",
+        "translation": "qorishma"
+      },
+      {
+        "term": "explosive m. [ik´ spləusiv]",
+        "definition": "горючая смесь",
+        "translation": "yoqilg’i qorishmasi"
+      },
+      {
+        "term": "two-stroke m. [ˏ tu:´ strəuk]",
+        "definition": "горючая смесь для 2-тактного двигателя",
+        "translation": "2-taktli dvigatel uchun yoqilg’i qorishmasi"
+      },
+      {
+        "term": "moment [´moument]",
+        "definition": "момент",
+        "translation": "lahza, moment"
+      },
+      {
+        "term": "momentum [mə´mentəm]",
+        "definition": "количество движения, импульс сил, механический момент, кинетическая энергия, инерция движущего тела",
+        "translation": "harakatlar soni, kuchlar impulse, mexanik moment, kinetic energiya, harakatlanayotgan jismning enersiyasi"
+      },
+      {
+        "term": "monoblock [´mɔnəblɔk]",
+        "definition": "моноблок",
+        "translation": "monoblok"
+      },
+      {
+        "term": "m. p. g. = miles per gallon[´mailz pə´gælən]",
+        "definition": "число миль пробега автомобиля на галлон израсходованного топлива",
+        "translation": "sarflangan yoqilg’ining 1 galloniga avtomobilning necha milya yo’l bosishi"
+      },
+      {
+        "term": "m. p. h. = miles per hour[´mailz pə´auə]",
+        "definition": "миль в час",
+        "translation": "soatiga milya"
+      },
+      {
+        "term": "mortar [´mɔ:tə]",
+        "definition": "известковый раствор",
+        "translation": "ohak qorishma (bo’za)"
+      },
+      {
+        "term": "mortise [´ mɔ:tis]",
+        "definition": "гнездо, паз",
+        "translation": "uya, in, ariqchasimon o’yiq"
+      },
+      {
+        "term": "motion [´ məuʃn]",
+        "definition": "движение, ход",
+        "translation": "harakat, jarayon, yurish"
+      },
+      {
+        "term": "lost m. [lɔst]",
+        "definition": "холостой ход",
+        "translation": "salt yurish"
+      },
+      {
+        "term": "motor [´ məutə]",
+        "definition": "мотор, двигатель",
+        "translation": "motor, dvigatel"
+      },
+      {
+        "term": "d. с. Motor [də´rekt´kʌrənt]",
+        "definition": "электродвигатель постоянного тока",
+        "translation": "o’zgarmas tokning elektrodvigateli"
+      },
+      {
+        "term": "motor-car [´məutəkɑ:]",
+        "definition": "автомобиль",
+        "translation": "avtomobil"
+      },
+      {
+        "term": "motorway [´məutəwei]",
+        "definition": "автострада",
+        "translation": "avtostrada (avtomobillar qatnovi uchun maxsus qurilgan va uskunalangan katta yo’l)"
+      },
+      {
+        "term": "mould [məuld]",
+        "definition": "линейная форма; литье",
+        "translation": "chiziqli shakl, quyuv"
+      },
+      {
+        "term": "mount [maunt]",
+        "definition": "опора; монтировать, устанавливать",
+        "translation": "tirgak, montaj qilmoq, yig’moq, o’rnatmoq"
+      },
+      {
+        "term": "mounting [´ mauntiŋ]",
+        "definition": "установка, сборка, монтаж",
+        "translation": "o’rnatish, yig’ish, montaj"
+      },
+      {
+        "term": "mover. [´mu:və]",
+        "definition": "двигатель",
+        "translation": "dvigatel"
+      },
+      {
+        "term": "prime m [praim]",
+        "definition": "первичный двигатель, источник движущей силы, тягач",
+        "translation": "dastlabki dvigatel, harakatlanayotgan kuchning manbasi"
+      },
+      {
+        "term": "mudguard [´mʌdgɑ:d]",
+        "definition": "брызговик",
+        "translation": "sepgich"
+      },
+      {
+        "term": "multipurpose [ˏmʌlti´pə:pəs]",
+        "definition": "универсальный",
+        "translation": "universal"
+      },
+      {
+        "term": "multiply by [´ mʌltiplai ´ bai]",
+        "definition": "умножать на",
+        "translation": "…ga ko’paytirish"
+      }
+    ]
+  },
+  {
+    "title": "N",
+    "terms": [
+      {
+        "term": "nipple [nipl]",
+        "definition": "ниппель (соединительная трубка)",
+        "translation": "nippel (truba, shlang va shu kabilarni germetik ravishda ulaydigan, shuningdek kameralardan havoni chiqarmaydigan detal)"
+      },
+      {
+        "term": "Nm=Newton-metre [´njutn´mi:tə]",
+        "definition": "ньютонометр",
+        "translation": "nyotonometr"
+      },
+      {
+        "term": "noise [nɔiz]",
+        "definition": "шум",
+        "translation": "shovqin"
+      },
+      {
+        "term": "notch [nɔʧ]",
+        "definition": "паз; выемка; надрезать",
+        "translation": "ariqchasimon o’yiq, o’yiq, o’ymoq"
+      },
+      {
+        "term": "nozzle[´nɔzl]",
+        "definition": "сопло, выпускное отверстие, наконечник",
+        "translation": "soplo (naycha), chiqarish tirqishi, poynak"
+      },
+      {
+        "term": "fixed n. [fikst]",
+        "definition": "неподвижное сопло, насадка",
+        "translation": "harakatsiz soplo, uchlik"
+      },
+      {
+        "term": "spray n. [sprei]",
+        "definition": "форсунка",
+        "translation": "forsunka (suyuq yoki kukunsimon moddalarni purkab beruvchi asbob)"
+      }
+    ]
+  },
+  {
+    "title": "O",
+    "terms": [
+      {
+        "term": "offset [´ ɔ:fset]",
+        "definition": "выступ (стены), колесо, смещение (маш.)",
+        "translation": "bo’rtiq (devor), g’ildirak, siljish (mashina)"
+      },
+      {
+        "term": "о. h. v. = overhead valve [ˏəuvə´hed´vælv]",
+        "definition": "верхний клапан; подвесной клапан",
+        "translation": "ustki klapan, osma klapan"
+      },
+      {
+        "term": "oil [ɔil]",
+        "definition": "нефть, мазут, масло",
+        "translation": "neft, mazut (neft qoldig’i), yog’, moy"
+      },
+      {
+        "term": "order [´ ɔ:də]",
+        "definition": "порядок; заказ",
+        "translation": "tartib, buyurtma"
+      },
+      {
+        "term": "firing o. [´ faiəriŋ]",
+        "definition": "порядок зажигания",
+        "translation": "o’t oldirish tartibi"
+      },
+      {
+        "term": "ounce [auns]",
+        "definition": "унция (ок.=28,3 гр.)",
+        "translation": "unsiya (28.3 gr.)"
+      },
+      {
+        "term": "fluid o. [´fluid]",
+        "definition": "унция как мера жидких тел (=160 англ. галлона= ок.28,3 см 3 )",
+        "translation": "suyuq jismlarni o’lchash unsiyasi (=160 ingl. gallon= ок.28,3 sm 3 )"
+      },
+      {
+        "term": "output [´ autput]",
+        "definition": "отдаваемая энергия (работа или мощность)",
+        "translation": "sarflanadigan energiya (ish yoki quvvat)"
+      },
+      {
+        "term": "overload [´ əuvələud]",
+        "definition": "перегрузка",
+        "translation": "ortiqcha yuk"
+      },
+      {
+        "term": "overspeed [ˏəuvə´spi:d]",
+        "definition": "чрезмерная скорость; превышать скорость",
+        "translation": "haddan ziyod katta tezlik, tezlikni oshirmoq"
+      }
+    ]
+  },
+  {
+    "title": "P",
+    "terms": [
+      {
+        "term": "pad [pæd]",
+        "definition": "прокладка; подушка; заливать вкладыш",
+        "translation": "prokladka (qistirma – ikki narsa orasiga qiatirib qo’yilgan narsa); yostiq, asos, taglik"
+      },
+      {
+        "term": "panel [´ pænl]",
+        "definition": "панель; доска",
+        "translation": "panel (oyig’ma inshoot yoki binolarning alohida bir qismi); taxta"
+      },
+      {
+        "term": "parking [´ pɑ:kiŋ]",
+        "definition": "стоянка",
+        "translation": "to’xtash qarorgohi"
+      },
+      {
+        "term": "pass [pɑ:s]",
+        "definition": "проход, пропуск",
+        "translation": "yo’lak, o’tkazmoq"
+      },
+      {
+        "term": "passage [´ pæsiʤ]",
+        "definition": "проход, канал, отверстие",
+        "translation": "yo’lak, yo’l, kanal, tirqish"
+      },
+      {
+        "term": "path [pɑ:θ]",
+        "definition": "путь, пробег, проход",
+        "translation": "yo’l, yo’l bosish"
+      },
+      {
+        "term": "mean free p. [´mi:n´fri:]",
+        "definition": "средняя длина свободного пути (или пробега)",
+        "translation": "bo’sh turgan yo’l ning o’rtacha uzunligi"
+      },
+      {
+        "term": "pedal [´pedl]",
+        "definition": "педаль",
+        "translation": "pedal"
+      },
+      {
+        "term": "clutch foot p. [´ klʌt´ fut]",
+        "definition": "педаль сцепления",
+        "translation": "ulanish pedali"
+      },
+      {
+        "term": "brake p. [breik]",
+        "definition": "тормозная педаль",
+        "translation": "tormoz pedali"
+      },
+      {
+        "term": "performance [pə´fɔ:məns]",
+        "definition": "производительность; характеристика; эксплуатационные качества",
+        "translation": "mahsuldorlik, unumdorlik; ta’rif; ishlatish sifati"
+      },
+      {
+        "term": "petrol [´petrəl]",
+        "definition": "бензин",
+        "translation": "benzin"
+      },
+      {
+        "term": "pick-up [´pikʌp]",
+        "definition": "зажимать; разгоняться",
+        "translation": "qismoq, tezlikni nihoyatda oshirmoq"
+      },
+      {
+        "term": "pin [pin]",
+        "definition": "болт, чека, палец, штырь, штифт",
+        "translation": "bolt, cheka, shtir (mexanizmlarning ajraladigan qismlarini bir-biriga moslash to’g’irlash, markazlash uchun ishlatiladigan moslama); shtift (metal o’zakcha)"
+      },
+      {
+        "term": "crank p. [kræŋk]",
+        "definition": "палец",
+        "translation": "barmoq"
+      },
+      {
+        "term": "piston p. [´ pistən]",
+        "definition": "поршневой палец",
+        "translation": "porshenli barmoq"
+      },
+      {
+        "term": "wrist p. [rist]",
+        "definition": "поршневой палец, палец прицепного шатуна",
+        "translation": "porshenli barmoq, tirkamali shatunning barmogi"
+      },
+      {
+        "term": "pinion [´ pinjən]",
+        "definition": "шестерня, зубчатое колесо",
+        "translation": "tishli g’ildirak"
+      },
+      {
+        "term": "drive p. [draiv]",
+        "definition": "шестерня передачи (авт.)",
+        "translation": "shesternyali uzatma"
+      },
+      {
+        "term": "slewing p. [´slu:iŋ]",
+        "definition": "поворотная шестерня",
+        "translation": "burish shesternyasi"
+      },
+      {
+        "term": "pint [paint]",
+        "definition": "пинта (мера емкости=0,568 л.)",
+        "translation": "pinta (hajm o’lchovi =0.568 l)"
+      },
+      {
+        "term": "pipe [paip]",
+        "definition": "труба, трубка",
+        "translation": "truba, naycha"
+      },
+      {
+        "term": "fuel p. [fju:əl]",
+        "definition": "топливопровод",
+        "translation": "o’qilg’i o’tadigan trubali tizim"
+      },
+      {
+        "term": "suction p. [´ sʌkʃn]",
+        "definition": "всасывающая трубка",
+        "translation": "suruvchi naycha"
+      },
+      {
+        "term": "outlet p. [´autlet]",
+        "definition": "выпускная или выхлопная труба",
+        "translation": "(gazlar) chiqarish trubasi"
+      },
+      {
+        "term": "exhaust p. [ig´zɔ:st]",
+        "definition": "выхлопная труба",
+        "translation": "(gazlar) chiqarish trubasi"
+      },
+      {
+        "term": "piping [´ paipiŋ]",
+        "definition": "трубопровод, система труб",
+        "translation": "trubalar tizimi"
+      },
+      {
+        "term": "main p. [mein]",
+        "definition": "магистральная труба",
+        "translation": "magistral truba"
+      },
+      {
+        "term": "oil supply p. [´ ɔilsə´ plai]",
+        "definition": "напорный маслопровод (маш.)",
+        "translation": "bosimli moy o’tkasgich"
+      },
+      {
+        "term": "return p. [ri´tə:n]",
+        "definition": "обратный трубопровод",
+        "translation": "teskari trubuprovod"
+      },
+      {
+        "term": "piston [´ pistən]",
+        "definition": "поршень, клапан",
+        "translation": "porshen, klapan"
+      },
+      {
+        "term": "plant. [pla:nt]",
+        "definition": "завод, установка",
+        "translation": "zavod, o’rnatish, qurilma"
+      },
+      {
+        "term": "power p [pauə]",
+        "definition": "силовая установка, электрическая станция",
+        "translation": "elektr stansiyasi, kuchli tokli qurilma"
+      },
+      {
+        "term": "water-power p. [´wɔ:təˏpauə]",
+        "definition": "гидроэлектростанция",
+        "translation": "gidroelektrostansiya"
+      },
+      {
+        "term": "play[plei]",
+        "definition": "зазор, качка, холостой ход, предел отклонения",
+        "translation": "tor tirqish, chayqalish, salt yurish, og’ish hadi"
+      },
+      {
+        "term": "end p.[end]",
+        "definition": "осевой зазор (люфт)",
+        "translation": "lyuft (mashina qismlari o’rtasidagi juda tor oraliq)"
+      },
+      {
+        "term": "plug [plʌg]",
+        "definition": "пробка; свеча",
+        "translation": "tiqin; svecha (sham)"
+      },
+      {
+        "term": "spark p. [spɑ:k]",
+        "definition": "свеча зажигания",
+        "translation": "o’t oldirish svechasi"
+      },
+      {
+        "term": "plunger [´ plʌnʤə]",
+        "definition": "плунжер, поршень",
+        "translation": "plunjer, porshen"
+      },
+      {
+        "term": "pneumatic [nju´mætik]",
+        "definition": "пневматический",
+        "translation": "pnevmatik"
+      },
+      {
+        "term": "point [pɔint]",
+        "definition": "точка",
+        "translation": "nuqta"
+      },
+      {
+        "term": "boiling p. [´bɔiliŋ]",
+        "definition": "точка кипения",
+        "translation": "qaynash nuqtasi"
+      },
+      {
+        "term": "condensation p. [ˏ kɔnden´ seiʃn]",
+        "definition": "точка конденсации",
+        "translation": "kondensasiya nuqtasi"
+      },
+      {
+        "term": "fixed p. [fikst]",
+        "definition": "основная точка",
+        "translation": "asosiy nuqta"
+      },
+      {
+        "term": "melting p. [´ meltiŋ]",
+        "definition": "точка плавления",
+        "translation": "eritish nuqtasi"
+      },
+      {
+        "term": "transition p. [træn´ziʃn]",
+        "definition": "точка перехода (состояния, напр. у стали, урана)",
+        "translation": "o’tish nuqtasi (masalan uran, po’lat holatidan)"
+      },
+      {
+        "term": "yield p. [ji:ld]",
+        "definition": "предел текучести",
+        "translation": "oquvchanlik haddi"
+      },
+      {
+        "term": "points of sparking plug [´pɔintz əv´spɑ:kiŋ´plʌg]",
+        "definition": "электроды свечи зажигания",
+        "translation": "o’t oldirish svechasi elektrodi"
+      },
+      {
+        "term": "port [pɔ:t]",
+        "definition": "отверстие",
+        "translation": "tirqish"
+      },
+      {
+        "term": "exhaust p. [ig´zɔ:st]",
+        "definition": "выхлопное отверстие",
+        "translation": "(gaz) chiqarish tirqishi"
+      },
+      {
+        "term": "inlet p. [´ inlət]",
+        "definition": "впускное отверстие",
+        "translation": "kirgizish tirqishi"
+      },
+      {
+        "term": "pound [paund]",
+        "definition": "фунт (единица веса=453,6 гр.)",
+        "translation": "funt (vazn o’lchov birligi = 453.6 gr)"
+      },
+      {
+        "term": "power [pauə]",
+        "definition": "степень, мощность, энергия, сила",
+        "translation": "daraja, quvvat, kuch, energiya"
+      },
+      {
+        "term": "horse p. [hɔ:s]",
+        "definition": "лошадиная сила",
+        "translation": "ot kuchi"
+      },
+      {
+        "term": "setting p. [´ setiŋ]",
+        "definition": "способность схватывания (цемента, извести)",
+        "translation": "(sement, ohakning) qotish xususiyati"
+      },
+      {
+        "term": "powerhouse [´ pauʃhaus]",
+        "definition": "силовая станция, электрическая станция",
+        "translation": "elekrik stansiya"
+      },
+      {
+        "term": "pressure [´ preʃə]",
+        "definition": "давление (мех.), напряжение",
+        "translation": "bosim (mex.), kuchlanish"
+      },
+      {
+        "term": "specific bearing p. [spə´sifik´bɛəriŋ]",
+        "definition": "удельное давление в подшипнике",
+        "translation": "podshipnikdagi solishtirma bosim"
+      },
+      {
+        "term": "unit bearing p. [´ju:nit´bɛəriŋ]",
+        "definition": "опорное давление (на единицу поверхности)",
+        "translation": "tayanch bosim (yuzaning birligiga nisbatan)"
+      },
+      {
+        "term": "presswork [´preswə:k]",
+        "definition": "штампованные или прессованные изделия",
+        "translation": "shtamplangan yoki presslangan maxsulotlar"
+      },
+      {
+        "term": "prevent [pri´vent]",
+        "definition": "предотвращать",
+        "translation": "oldini olmoq"
+      },
+      {
+        "term": "primary [´praiməri]",
+        "definition": "первичный",
+        "translation": "dastlabki"
+      },
+      {
+        "term": "private [´praivət]",
+        "definition": "частный",
+        "translation": "xususiy"
+      },
+      {
+        "term": "process [´prouses]",
+        "definition": "процесс",
+        "translation": "jarayon"
+      },
+      {
+        "term": "channeling p. [´ tʃænəliŋ]",
+        "definition": "процесс образования масляного клина при жидкостном трении подшипника",
+        "translation": "podshipning suyuqlik vositasidagi ishqalanishidagi moyli klinning hosil bo’lishi jarayoni"
+      },
+      {
+        "term": "produce [prə´dju:s]",
+        "definition": "производить",
+        "translation": "ishlab chiqarish"
+      },
+      {
+        "term": "product [´ prɔdəkt]",
+        "definition": "произведение, продукция",
+        "translation": "ishlab chiqarish, maxsulot"
+      },
+      {
+        "term": "propel [prə´ pel]",
+        "definition": "приводить в движение",
+        "translation": "harakatga keltirish"
+      },
+      {
+        "term": "propulsion [prə´pʌlʃn]",
+        "definition": "движение вперед; привод",
+        "translation": "oldinga harakat, uzatma"
+      },
+      {
+        "term": "pull [pul]",
+        "definition": "натяжение, растяжение, сила, усилие",
+        "translation": "taranglik, kuch, zo’r berish"
+      },
+      {
+        "term": "drawbar p. [´drɔ:ba:]",
+        "definition": "сила тяги, тяговое усилие",
+        "translation": "tortish kuchi, tortishish kuchi"
+      },
+      {
+        "term": "pulley [´puli]",
+        "definition": "шкив, блок",
+        "translation": "shkiv (uzatma tasmasini harakatga keltiruvchi g’ildirak), blok"
+      },
+      {
+        "term": "pump [pʌmp]",
+        "definition": "насос",
+        "translation": "nasos"
+      },
+      {
+        "term": "compression p. [kəm´preʃn]",
+        "definition": "нагнетательный насос",
+        "translation": "dam beradigan (yoki haydaydigan) nasos"
+      },
+      {
+        "term": "double-acting p. [dʌbl´æktiŋ]",
+        "definition": "насос двойного действия",
+        "translation": "ikki harakatli nasos"
+      },
+      {
+        "term": "lift p. [lift]",
+        "definition": "всасывающий насос",
+        "translation": "so’rish nasosi"
+      },
+      {
+        "term": "force p. [fɔ:s]",
+        "definition": "нагнетательный насос",
+        "translation": "dam beradigan (yoki haydaydigan) nasos"
+      },
+      {
+        "term": "fuel p. [fju:əl]",
+        "definition": "топливный насос",
+        "translation": "yoqilg’I nasosi"
+      },
+      {
+        "term": "oil p. [ɔil]",
+        "definition": "топливный насос",
+        "translation": "yoqilg’I nasosi"
+      },
+      {
+        "term": "single acting p. [´ siŋgl´æktiŋ]",
+        "definition": "насос простого действия",
+        "translation": "oddiy harakatli nasos"
+      },
+      {
+        "term": "water p. [´wɔ:tə]",
+        "definition": "водяной насос",
+        "translation": "suv nasosi"
+      },
+      {
+        "term": "push [puʃ]",
+        "definition": "толкание, нажим; нажимать, надавливать",
+        "translation": "itarish, bosim, bosish"
+      },
+      {
+        "term": "push-rod [´puʃrɔd]",
+        "definition": "штанга толкателя",
+        "translation": "turtkich (biror narsani itarish, itaruvchi, bosim, bosuvchi shinaki, asos; ira orqali orqali berish)"
+      },
+      {
+        "term": "pushing p. [´ puʃiŋ]",
+        "definition": "процесс толкания, смазывания и т. д.",
+        "translation": "itarish jarayoni"
+      },
+      {
+        "term": "ratio [´ reiʃəu]",
+        "definition": "отношение",
+        "translation": "nisbat"
+      },
+      {
+        "term": "propeller [prə´ pelə]",
+        "definition": "винт, воздушный винт",
+        "translation": "vint (vozduhxidromexanika, samolyotlarning harakatini beruvchi g’ildirak), havo vinti"
+      },
+      {
+        "term": "pump [pʌmp]",
+        "definition": "насос",
+        "translation": "nasos"
+      },
+      {
+        "term": "combined p. [kəm´baind]",
+        "definition": "комбинированный насос",
+        "translation": "birlashgan nasos"
+      },
+      {
+        "term": "feed p. [fi:d]",
+        "definition": "насос питания",
+        "translation": "oziq-ovqat nasosi"
+      },
+      {
+        "term": "force p. [fɔ:s]",
+        "definition": "нагнетательный насос",
+        "translation": "bosim beruvchi nasos"
+      },
+      {
+        "term": "gear p. [giə]",
+        "definition": "шестерня",
+        "translation": "shesternya (harakatni otadigan moslama)"
+      },
+      {
+        "term": "automatic g. [´ ɔ:tə´mætik]",
+        "definition": "автоматическая коробка передач",
+        "translation": "avtomatik uzatma quti"
+      },
+      {
+        "term": "bevel g. [´ bevəl]",
+        "definition": "коническая шестерня",
+        "translation": "to’rtburchak shkiv"
+      },
+      {
+        "term": "cluster g. [´ klʌstə]",
+        "definition": "планетарная передача",
+        "translation": "birlashgan shesternyali uzatma"
+      },
+      {
+        "term": "differential g. [difə´renʃl]",
+        "definition": "дифференциальная передача",
+        "translation": "diferensial uzatma"
+      },
+      {
+        "term": "epicyclic g. [´ epə´siklik]",
+        "definition": "планетарная передача",
+        "translation": "birlashgan shesternyali uzatma"
+      },
+      {
+        "term": "gear [giə]",
+        "definition": "зубчатое колесо; передача",
+        "translation": "zubchali g’ildirak; uzatma"
+      },
+      {
+        "term": "timing g. [´ taimiŋ]",
+        "definition": "распределительное колесо",
+        "translation": "vaqt g’ildiragi"
+      },
+      {
+        "term": "idle g. [´ aidl]",
+        "definition": "холостой ход; холостой ход сцепления",
+        "translation": "boschik, yalang’och holat"
+      },
+      {
+        "term": "gear pump [giə´pʌmp]",
+        "definition": "зубчатый насос",
+        "translation": "zubchali nasos"
+      },
+      {
+        "term": "universal j. [ˏju:ni´və:səl]",
+        "definition": "шарнирный вал",
+        "translation": "sharnirli valak"
+      },
+      {
+        "term": "thrust j. [θrʌst]",
+        "definition": "шарнирный подшипник",
+        "translation": "burish podshipnigi"
+      }
+    ]
+  },
+  {
+    "title": "Q",
+    "terms": [
+      {
+        "term": "quadrant",
+        "definition": "кулиса рычага переключения передач; четверть круга",
+        "translation": "uzatmalarning o’zgartirish dastagi kulisasi; четверть круга"
+      },
+      {
+        "term": "quantity",
+        "definition": "количество",
+        "translation": "son"
+      },
+      {
+        "term": "quenching",
+        "definition": "закалка",
+        "translation": "suvda qaynatish"
+      },
+      {
+        "term": "quick",
+        "definition": "быстрый",
+        "translation": "tez"
+      },
+      {
+        "term": "quickly",
+        "definition": "быстро",
+        "translation": "tez"
+      },
+      {
+        "term": "quickness",
+        "definition": "быстрота",
+        "translation": "tezlik"
+      },
+      {
+        "term": "quiet",
+        "definition": "тихий",
+        "translation": "sukunatli"
+      },
+      {
+        "term": "quietly",
+        "definition": "тихо",
+        "translation": "sukunatli"
+      },
+      {
+        "term": "quietness",
+        "definition": "тишина",
+        "translation": "sukunat"
+      }
+    ]
+  },
+  {
+    "title": "R",
+    "terms": [
+      {
+        "term": "room",
+        "definition": "камера, помещение, пространство, место",
+        "translation": "kamera, xona, o’shliq, joy"
+      },
+      {
+        "term": "rope",
+        "definition": "канат",
+        "translation": "arqon"
+      },
+      {
+        "term": "guy r.",
+        "definition": "натяжной трос",
+        "translation": "tarang tros (elastic simlardan yoki kanopdan eshilgan pishiq arqon)"
+      },
+      {
+        "term": "rotate",
+        "definition": "вращаться",
+        "translation": "aylanmoq"
+      },
+      {
+        "term": "r.p.m. (revolutions per minute)",
+        "definition": "число оборотов в минуту",
+        "translation": "minutiga aylanishlar soni"
+      },
+      {
+        "term": "row",
+        "definition": "ряд",
+        "translation": "qator"
+      },
+      {
+        "term": "stationary blade r.",
+        "definition": "ряд неподвижных лопаток",
+        "translation": "harakatsiz kuraklar qatori"
+      },
+      {
+        "term": "rubber",
+        "definition": "резина, каучук",
+        "translation": "rezina, kauchuk"
+      },
+      {
+        "term": "runner",
+        "definition": "ротор (турбины), лопастное колесо, бегунок, горизонтальная балка",
+        "translation": "turbine roteri, parrakli g’ildirak, begunok (yigirish mashinasining ipni dukka to’g’rilab turadigan qismi), gorizontal to’sin"
+      },
+      {
+        "term": "runway",
+        "definition": "путь",
+        "translation": "yo’l"
+      },
+      {
+        "term": "crane r.",
+        "definition": "подкрановый путь",
+        "translation": "kran osti yo’li"
+      }
+    ]
+  },
+  {
+    "title": "S",
+    "terms": [
+      {
+        "term": "saloon",
+        "definition": "закрытый кузов",
+        "translation": "yopiq kuzov"
+      },
+      {
+        "term": "scale",
+        "definition": "шкала, масштаб",
+        "translation": "shkala, masshtab"
+      },
+      {
+        "term": "scavenging",
+        "definition": "продувка цилиндра (удаление отработанных газов из цилиндра)",
+        "translation": "ishlatilgan gazlarni silindrdan yo’qotish, silindrning produvkasi"
+      },
+      {
+        "term": "scooter",
+        "definition": "мотоцикл с пониженным сиденьем, скутер",
+        "translation": "past o’rindiqli motosikl, skuter"
+      },
+      {
+        "term": "scrap",
+        "definition": "брак; лом; браковать; уничтожать",
+        "translation": "brak, siniq, brakka chiqarish, yo’q qilish"
+      },
+      {
+        "term": "scraper",
+        "definition": "скребок, скрепер",
+        "translation": "kirgich"
+      },
+      {
+        "term": "screen",
+        "definition": "сито, грохот, экран, ширма",
+        "translation": "sim g’alvir, ekran, shirma, parda"
+      },
+      {
+        "term": "screw",
+        "definition": "винт, шуруп, болт",
+        "translation": "vint, shurup, bolt"
+      },
+      {
+        "term": "seal",
+        "definition": "сальник, положить пломбу",
+        "translation": "salnik (tirqishlarni berkitib turuvchi detal, qoplama), plomba qo’yish"
+      },
+      {
+        "term": "sedan",
+        "definition": "седан",
+        "translation": "sedan"
+      },
+      {
+        "term": "select",
+        "definition": "выбирать",
+        "translation": "tanlamoq"
+      },
+      {
+        "term": "self-propelled",
+        "definition": "самоходный",
+        "translation": "o’zi yurar"
+      },
+      {
+        "term": "service",
+        "definition": "обслуживание",
+        "translation": "xizmat ko’rsatish"
+      },
+      {
+        "term": "domestic service",
+        "definition": "бытовое оборудование, предметы бытового обслуживания",
+        "translation": "maishiy jihoz, maishiy xizmat buyumlari"
+      },
+      {
+        "term": "switching service",
+        "definition": "маневровая служба",
+        "translation": "manyovr xizmati"
+      },
+      {
+        "term": "set",
+        "definition": "установка, комплект канализационных труб (стр.д.), обжимка (дет.)",
+        "translation": "o’rnatish, kanalizasiya trubalari to’plami, siqib ishlov berish (det.)"
+      },
+      {
+        "term": "motor generator set",
+        "definition": "мотор, генераторный агрегат",
+        "translation": "motor, generator agregati"
+      },
+      {
+        "term": "permanent set",
+        "definition": "остаточная деформация",
+        "translation": "qoldiq deformasiya"
+      },
+      {
+        "term": "shaft",
+        "definition": "вал",
+        "translation": "g’ov, dolg’a"
+      },
+      {
+        "term": "axle shaft",
+        "definition": "ось; полуось",
+        "translation": "o’q, yarim o’q"
+      },
+      {
+        "term": "clutch shaft",
+        "definition": "вал сцепления",
+        "translation": "uzatma vali"
+      },
+      {
+        "term": "crank shaft",
+        "definition": "коленчатый вал",
+        "translation": "tirsakli val"
+      },
+      {
+        "term": "drive shaft",
+        "definition": "ведомый вал, приводной вал",
+        "translation": "yetaklanuvchi val, uzatmali val"
+      },
+      {
+        "term": "fillet shaft",
+        "definition": "вал с канавками",
+        "translation": "ariqchali val"
+      },
+      {
+        "term": "hollow shaft",
+        "definition": "полый вал",
+        "translation": "kovak val"
+      },
+      {
+        "term": "input shaft",
+        "definition": "ведущий вал",
+        "translation": "yetakchi val"
+      },
+      {
+        "term": "output shaft",
+        "definition": "вторичный вал; ведомый вал",
+        "translation": "ikkilamchi val, yetaklovchi val"
+      },
+      {
+        "term": "propeller shaft",
+        "definition": "карданный вал",
+        "translation": "kardan vali"
+      },
+      {
+        "term": "rock-shaft",
+        "definition": "качающийся вал",
+        "translation": "tabranma val"
+      },
+      {
+        "term": "shoe",
+        "definition": "башмак, ползун",
+        "translation": "bashmoq, polzun"
+      },
+      {
+        "term": "brake shoe",
+        "definition": "тормозной башмак, колодка",
+        "translation": "tormoz boshmog’i, kolodka"
+      },
+      {
+        "term": "shovel",
+        "definition": "лопата, совок",
+        "translation": "kurak"
+      },
+      {
+        "term": "power shovel",
+        "definition": "одноковшовый экскаватор, механическая лопата",
+        "translation": "birkovshli ekskavator, mexanik kurak"
+      },
+      {
+        "term": "scoop",
+        "definition": "землечерпалка",
+        "translation": "zemlecherpalka"
+      },
+      {
+        "term": "silencer",
+        "definition": "глушитель",
+        "translation": "glushitel"
+      },
+      {
+        "term": "sing",
+        "definition": "свист, шипение",
+        "translation": "hushtak, vishillash"
+      },
+      {
+        "term": "windage sing",
+        "definition": "свист (гудение) от сопротивления воздуха (при вращении вала в подшипниках)",
+        "translation": "podshipniklarda valni aylanishi oqibatida havoning qarshiligidan chiqadigan g’uvullash"
+      },
+      {
+        "term": "size",
+        "definition": "размер",
+        "translation": "o’lchov"
+      },
+      {
+        "term": "overall size",
+        "definition": "общий габарит, размер",
+        "translation": "umumiy gabarit, o’lchov"
+      },
+      {
+        "term": "skid",
+        "definition": "(площадка) приспособление для спуска или передвижки груза, крановый тормоз, скользить, буксовать",
+        "translation": "cho’mich, ko’tarish bunkeri, o’zi ag’dariladigan qovg’a, ag’dariladigan kuzovli vagonetka"
+      },
+      {
+        "term": "dead skid",
+        "definition": "постоянный (неподвижный) механизм для передвижки и спуска груза",
+        "translation": "yukni tushurish yoki joyidan ko’chirish uchun mo’ljallangan harakatsiz uskuna"
+      },
+      {
+        "term": "nonskid",
+        "definition": "нескользкий",
+        "translation": "sirpanmaydigan, sirg’anmaydigan"
+      },
+      {
+        "term": "semi live skid",
+        "definition": "полуподвижный механизм (площадка) для передвижки и спуска груза",
+        "translation": "yukni tushurish yoki joyidan ko’chirish uchun mo’ljallangan yarim harakatli uskuna"
+      },
+      {
+        "term": "skip",
+        "definition": "ковш, скип, подъемный бункер, самоопрокидывающаяся бадья, вагонетка с опрокидывающимся кузовом",
+        "translation": "cho’mich, ko’tarish bunkeri, o’zi ag’dariladigan qovg’a, ag’dariladigan kuzovli vagonetka"
+      },
+      {
+        "term": "skirt",
+        "definition": "юбка; огибать",
+        "translation": "yubka; egish"
+      },
+      {
+        "term": "piston skirt",
+        "definition": "юбка поршня",
+        "translation": "porshen yubkasi"
+      },
+      {
+        "term": "sledge",
+        "definition": "кувалда, поддержка",
+        "translation": "kuvalda, qollash"
+      },
+      {
+        "term": "sleeve",
+        "definition": "муфта, гильза, цилиндр",
+        "translation": "mufti, gilza, silindr"
+      },
+      {
+        "term": "sling",
+        "definition": "ремень",
+        "translation": "tasma"
+      },
+      {
+        "term": "jack sling",
+        "definition": "подъемное приспособление с лямочным обхватом, лямочный (петлевой) обхват",
+        "translation": "lyamkasimon (petlyasimon) qulochli ko’tarish uskunasi"
+      },
+      {
+        "term": "slip",
+        "definition": "скольжение",
+        "translation": "sirg’alish"
+      },
+      {
+        "term": "slipping",
+        "definition": "скольжение; буксование",
+        "translation": "sirg’anish, shataksiramoq, joyidan jilmay aylanmoq"
+      },
+      {
+        "term": "socket",
+        "definition": "штепсель; патрон",
+        "translation": "shtepsel (elektr asbobi), patron"
+      },
+      {
+        "term": "solid",
+        "definition": "твердое топливо; цельный, неразъемный",
+        "translation": "qattiq yonilg’i, yaxlit, ajralmas"
+      },
+      {
+        "term": "solution",
+        "definition": "раствор",
+        "translation": "eritma"
+      },
+      {
+        "term": "space",
+        "definition": "пространство",
+        "translation": "bo’shliq"
+      },
+      {
+        "term": "clearance space",
+        "definition": "вредное пространство в цилиндре, камера сжатия (цилиндра)",
+        "translation": "silindrdagi zararli bo’shliq, silinrning siqish kamerasi"
+      },
+      {
+        "term": "steam",
+        "definition": "пар",
+        "translation": "bug’"
+      },
+      {
+        "term": "bled",
+        "definition": "отработанный пар",
+        "translation": "ishlatilgan bug’"
+      },
+      {
+        "term": "dead steam",
+        "definition": "сухой пар",
+        "translation": "quruq bug’"
+      },
+      {
+        "term": "live steam",
+        "definition": "рабочий пар",
+        "translation": "ishchi bug’"
+      },
+      {
+        "term": "steam-tight",
+        "definition": "паронепроницаемый",
+        "translation": "bug’ o’tkazmaydigan"
+      },
+      {
+        "term": "steamer",
+        "definition": "автомобиль с паровым двигателем",
+        "translation": "bug’ dvigatelli avtomobil"
+      },
+      {
+        "term": "steelwork",
+        "definition": "стальная конструкция",
+        "translation": "po’lat konstruksiya"
+      },
+      {
+        "term": "steering",
+        "definition": "рулевое управление",
+        "translation": "rul boshqaruvi"
+      },
+      {
+        "term": "power-assisted steering",
+        "definition": "рулевое управление с усилителем",
+        "translation": "kuchaytirgichli rul boshqaruvi"
+      },
+      {
+        "term": "tiller",
+        "definition": "управление при помощи рукоятки",
+        "translation": "tutqich yordamida boshqarish"
+      },
+      {
+        "term": "stem",
+        "definition": "стержень",
+        "translation": "sterjen (tayoqcha)"
+      },
+      {
+        "term": "valve stem",
+        "definition": "стержень клапана",
+        "translation": "klapan sterjeni"
+      },
+      {
+        "term": "stopcock",
+        "definition": "запорный кран, стоп-кран",
+        "translation": "qulflash krani, stop-kran"
+      },
+      {
+        "term": "store (fuel )",
+        "definition": "хранить (топливо)",
+        "translation": "saqlash (yonilg’i)"
+      },
+      {
+        "term": "strength",
+        "definition": "напряженность, прочность, сопротивление",
+        "translation": "mustahkamlik, qarshilik"
+      },
+      {
+        "term": "ultimate strength",
+        "definition": "временное сопротивление, предел прочности",
+        "translation": "vaqtinchalik qarshilik, qarshilik haddi"
+      },
+      {
+        "term": "stress",
+        "definition": "напряжение, напряженное состояние, внутреннее усилие",
+        "translation": "kuchlanish, kuchlanish holati, ichki kuchlanish"
+      },
+      {
+        "term": "stroke",
+        "definition": "ход, рабочий ход, ход поршня",
+        "translation": "yurish, porshen yurishi"
+      },
+      {
+        "term": "compression stroke",
+        "definition": "ход, такт сжатия",
+        "translation": "yurish, siqish takti"
+      },
+      {
+        "term": "exhaust stroke",
+        "definition": "такт выхлопа",
+        "translation": "chiqarish (gaz) takti"
+      },
+      {
+        "term": "induction stroke",
+        "definition": "ход (такт) впуска",
+        "translation": "kiritish takti"
+      },
+      {
+        "term": "intake stroke",
+        "definition": "такт впуска",
+        "translation": "kiritish takti"
+      },
+      {
+        "term": "inward stroke",
+        "definition": "ход вверх, такт расширения",
+        "translation": "yuqoriga yurish, kengayyish takti"
+      },
+      {
+        "term": "out-ward stroke",
+        "definition": "ход вниз, такт сжатия",
+        "translation": "pastga yurish, siqilish takti"
+      },
+      {
+        "term": "piston stroke",
+        "definition": "ход поршня",
+        "translation": "porshen yurishi"
+      },
+      {
+        "term": "power stroke",
+        "definition": "рабочий ход поршня",
+        "translation": "porshenning ishchi yurishi"
+      },
+      {
+        "term": "suction stroke",
+        "definition": "ход всасывания",
+        "translation": "surib olish yurishi"
+      },
+      {
+        "term": "structure",
+        "definition": "структура, строение, сооружение, конструкция",
+        "translation": "tuzilish, inshoot, konstruksiya"
+      },
+      {
+        "term": "suction",
+        "definition": "подсос ветра, отсасывание",
+        "translation": "shamolni so’rib olish, tortib olish"
+      },
+      {
+        "term": "sulphur",
+        "definition": "сера",
+        "translation": "oltingugurt"
+      },
+      {
+        "term": "sump",
+        "definition": "поддон; отстойник",
+        "translation": "taglik, tindirgich"
+      },
+      {
+        "term": "oil sump",
+        "definition": "масляный поддон",
+        "translation": "moyli taglik"
+      },
+      {
+        "term": "supply",
+        "definition": "снабжение, подача (напр.воды), питание, подведение(тока)",
+        "translation": "ta’minlash, berish, uzatish (masalan suvni), tokni uzatish"
+      },
+      {
+        "term": "intermittent supply",
+        "definition": "периодическая подача, перерывчатое снабжение",
+        "translation": "davrondagi ta’minlash, vaqti-vaqti bilan ta’minlash"
+      },
+      {
+        "term": "surface",
+        "definition": "поверхность",
+        "translation": "dengiz"
+      },
+      {
+        "term": "rough surface",
+        "definition": "грубая поверхность",
+        "translation": "qat’iy dengiz"
+      },
+      {
+        "term": "sweeten",
+        "definition": "подслащивать, отбелить, подслащивать (подслащивать железо)",
+        "translation": "shirinlaydi, aqllanadi, qaynoqqa solaydi (oltin) "
+      },
+      {
+        "term": "system",
+        "definition": "система",
+        "translation": "tizim"
+      },
+      {
+        "term": "cooling system",
+        "definition": "охлаждающая система",
+        "translation": "sovuqchili tizim"
+      },
+      {
+        "term": "exhaust system",
+        "definition": "выхлопная система",
+        "translation": "chiqarish tizimi"
+      },
+      {
+        "term": "fuel system",
+        "definition": "топливная система",
+        "translation": "yonilg’i tizimi"
+      },
+      {
+        "term": "ignition system",
+        "definition": "система зажигания",
+        "translation": "yondirish tizimi"
+      },
+      {
+        "term": "lubrication system",
+        "definition": "система смазки",
+        "translation": "simsizlik tizimi"
+      },
+      {
+        "term": "suspension",
+        "definition": "подвеска, прекращение, отложение",
+        "translation": "o’rnatilish, to’xtash, ta’xirash"
+      },
+      {
+        "term": "swing suspension",
+        "definition": "подвеска (колес) на кулисах",
+        "translation": "sochiq tashlanish"
+      },
+      {
+        "term": "switch",
+        "definition": "выключатель",
+        "translation": "vykluchatel"
+      },
+      {
+        "term": "tappet",
+        "definition": "толкатель",
+        "translation": "tolkachi"
+      },
+      {
+        "term": "throw-out",
+        "definition": "сцепление",
+        "translation": "to’shish"
+      },
+      {
+        "term": "thermal",
+        "definition": "термический, тепловой",
+        "translation": "haroratli, issiqlikli"
+      },
+      {
+        "term": "thermal efficiency",
+        "definition": "коэффициент теплопроизводительности",
+        "translation": "issiqlik koeffitsienti"
+      },
+      {
+        "term": "thermal stress",
+        "definition": "термические напряжения",
+        "translation": "harorat kuchlanishi"
+      },
+      {
+        "term": "tread",
+        "definition": "шина; пятно следа",
+        "translation": "shina; tirnosh poyga"
+      },
+      {
+        "term": "tire tread",
+        "definition": "пятно следа шины",
+        "translation": "shina yuragining poygasi"
+      },
+      {
+        "term": "trip",
+        "definition": "поездка, экскурсия, путешествие, экипаж, колесница, легковой вагон",
+        "translation": "sayr, sayohat, yo’lovchi, taqsi, burdlik, yo’lovchi vagon"
+      },
+      {
+        "term": "single trip",
+        "definition": "односменное путешествие, поездка",
+        "translation": "bir tomosha sayohat, sayr"
+      },
+      {
+        "term": "trough",
+        "definition": "корыто, желоб, борозда",
+        "translation": "takun, shlyuz, chalg’i"
+      },
+      {
+        "term": "trunk",
+        "definition": "ствол, ствол дерева, сундук",
+        "translation": "yorug’lik, tayog’or; koritma"
+      },
+      {
+        "term": "tube",
+        "definition": "труба, канал, желоб",
+        "translation": "truba, kanal, shlyuz"
+      },
+      {
+        "term": "tumble",
+        "definition": "западина, течение вдоль ската",
+        "translation": "hovli, yonqinlik orqali aylanish"
+      },
+      {
+        "term": "turbine",
+        "definition": "турбина",
+        "translation": "turbin"
+      },
+      {
+        "term": "ultrasonic",
+        "definition": "ультразвуковой",
+        "translation": "ultrazona"
+      },
+      {
+        "term": "unburned",
+        "definition": "несгораемый, несгоревший, несожженный",
+        "translation": "yakilmagan, o’tmagan"
+      },
+      {
+        "term": "unburned gas",
+        "definition": "несгоревшие газы",
+        "translation": "yakilmagan g’az"
+      },
+      {
+        "term": "undercarriage",
+        "definition": "ходовая часть, шасси",
+        "translation": "yonuvchi qismi, shassi"
+      },
+      {
+        "term": "undercarriage jacks",
+        "definition": "катки шасси",
+        "translation": "shassi tashqiloti"
+      },
+      {
+        "term": "unify",
+        "definition": "объединять, унифицировать",
+        "translation": "birlashtirmoq, unifikatsiyalash"
+      },
+      {
+        "term": "uniform",
+        "definition": "равномерный, постоянный, стандартный",
+        "translation": "har xil, odatiy, standart"
+      },
+      {
+        "term": "unity",
+        "definition": "единство, согласованность, одинаковость",
+        "translation": "birlashganlik, mos holda"
+      },
+      {
+        "term": "unleaded",
+        "definition": "безсвинцовый",
+        "translation": "svinchsiz"
+      },
+      {
+        "term": "unleaded petrol",
+        "definition": "безсвинцовый бензин",
+        "translation": "svinchsiz benzin"
+      },
+      {
+        "term": "unleaded fuel",
+        "definition": "безсвинцовое топливо",
+        "translation": "svinchsiz yonilg’i"
+      },
+      {
+        "term": "unloaded",
+        "definition": "разгруженный, опорожненный",
+        "translation": "yukini tushirilgan, bo’shaltirilgan"
+      },
+      {
+        "term": "unloading",
+        "definition": "разгрузка",
+        "translation": "yukini tushirish"
+      },
+      {
+        "term": "valve",
+        "definition": "клапан",
+        "translation": "klapan"
+      },
+      {
+        "term": "control valve",
+        "definition": "регулирующий клапан",
+        "translation": "boshqarish klapani"
+      },
+      {
+        "term": "drain valve",
+        "definition": "дроссельный клапан, сточный клапан",
+        "translation": "boshqaruv klapani, suv bosimi klapani"
+      },
+      {
+        "term": "exhaust valve",
+        "definition": "выхлопной клапан",
+        "translation": "chiqaruvchi klapan"
+      },
+      {
+        "term": "gas (petrol) valve",
+        "definition": "дроссельный клапан",
+        "translation": "gaz (benzin) klapani"
+      },
+      {
+        "term": "intake valve",
+        "definition": "впускной клапан",
+        "translation": "kirish klapani"
+      },
+      {
+        "term": "pressure (feed) valve",
+        "definition": "подача (питания) клапан",
+        "translation": "bosish (ta’minlash) klapan"
+      },
+      {
+        "term": "safety valve",
+        "definition": "обратный клапан, предохранительный клапан",
+        "translation": "qaytish klapani, himoya klapani"
+      },
+      {
+        "term": "seal valve",
+        "definition": "запорный клапан",
+        "translation": "qulflash klapani"
+      },
+      {
+        "term": "throttle valve",
+        "definition": "дроссельный клапан, регулятор подачи топлива",
+        "translation": "boshqaruv klapani, yonilg’i ta’minoti boshqaruvchisi"
+      },
+      {
+        "term": "valve seat",
+        "definition": "клапанный седло",
+        "translation": "klapan otlash yeri"
+      },
+      {
+        "term": "water valve",
+        "definition": "водный клапан",
+        "translation": "su klapani"
+      },
+      {
+        "term": "valve timing",
+        "definition": "ход клапанов",
+        "translation": "klapan yurishlarining yaratisi"
+      },
+      {
+        "term": "valve area",
+        "definition": "площадь сечения клапанов",
+        "translation": "klapanlar kesimi maydoni"
+      },
+      {
+        "term": "valve cage",
+        "definition": "клапанный гнезд",
+        "translation": "klapan gizgi"
+      },
+      {
+        "term": "valve control",
+        "definition": "клапанное управление",
+        "translation": "klapan boshqaruvchi"
+      },
+      {
+        "term": "valve overlap",
+        "definition": "перекрытие клапанов",
+        "translation": "klapanlarning qopiq bo’lishi"
+      },
+      {
+        "term": "valve spring",
+        "definition": "клапанный пружина",
+        "translation": "klapanli bur"
+      },
+      {
+        "term": "valve stem",
+        "definition": "стержень клапана",
+        "translation": "klapanni sterjeni"
+      },
+      {
+        "term": "valve tappet",
+        "definition": "клапанный толкатель",
+        "translation": "klapan to’lshtirgichsi"
+      },
+      {
+        "term": "valve timing",
+        "definition": "ход клапанов",
+        "translation": "klapan yurishlarining yaratisi"
+      },
+      {
+        "term": "valve train",
+        "definition": "механизм управления клапанами",
+        "translation": "klapanlarni boshqarish mexanizmi"
+      },
+      {
+        "term": "variable",
+        "definition": "переменный, изменяемый",
+        "translation": "o’zgaruvchan, o’zgaruvchanligi"
+      },
+      {
+        "term": "variable capacity",
+        "definition": "переменная вместимость",
+        "translation": "o’zgaruvchan yoki moslik qobiliyati"
+      },
+      {
+        "term": "velocity",
+        "definition": "скорость",
+        "translation": "tezlik"
+      },
+      {
+        "term": "inlet velocity",
+        "definition": "начальная скорость",
+        "translation": "kirish tezligi"
+      },
+      {
+        "term": "vertical",
+        "definition": "вертикальный",
+        "translation": "vertikal"
+      },
+      {
+        "term": "vertical position",
+        "definition": "вертикальное положение",
+        "translation": "vertikal holat"
+      },
+      {
+        "term": "vertical positioner",
+        "definition": "вертикальное положение",
+        "translation": "vertikal holatni belgilash"
+      },
+      {
+        "term": "view",
+        "definition": "вид, просмотр, взгляд, мнение",
+        "translation": "korish, ko’rib chiqish, fikr, nazariya"
+      },
+      {
+        "term": "panoramic view",
+        "definition": "панорамный вид",
+        "translation": "panoramali ko’rinish"
+      },
+      {
+        "term": "vibration",
+        "definition": "вибрация, колебание",
+        "translation": "vibratsiya, tizish"
+      },
+      {
+        "term": "reduce vibration",
+        "definition": "уменьшить вибрацию",
+        "translation": "vibratsiyani kamaytirish"
+      },
+      {
+        "term": "vibration dampening",
+        "definition": "виброизоляция, подавление колебаний",
+        "translation": "vibratsiyani kamaytirish"
+      },
+      {
+        "term": "viscosity",
+        "definition": "вязкость",
+        "translation": "vaziyat"
+      },
+      {
+        "term": "voids",
+        "definition": "поры",
+        "translation": "bo’shliqlar"
+      },
+      {
+        "term": "volume",
+        "definition": "объем, громкость",
+        "translation": "hajmi, tovush"
+      },
+      {
+        "term": "crankcase volume",
+        "definition": "объем картера",
+        "translation": "karter hajmi"
+      },
+      {
+        "term": "web",
+        "definition": "перемычка",
+        "translation": "ko’rgazma"
+      },
+      {
+        "term": "weight",
+        "definition": "вес, нагрузка",
+        "translation": "og’irlik, yuk"
+      },
+      {
+        "term": "wheel",
+        "definition": "колесо",
+        "translation": "quyruq"
+      },
+      {
+        "term": "wheel alignment",
+        "definition": "балансировка колеса",
+        "translation": "quyruq birlashtirilishi"
+      },
+      {
+        "term": "wheelbase",
+        "definition": "колесная база",
+        "translation": "quyruq o’rtasida masofa"
+      },
+      {
+        "term": "wire",
+        "definition": "провод, канат",
+        "translation": "sovun, ip"
+      },
+      {
+        "term": "wired (to)",
+        "definition": "продвинуться по проводу",
+        "translation": "qurilgan (so’ngi)masalaga yetmoq"
+      },
+      {
+        "term": "work",
+        "definition": "работа",
+        "translation": "ish"
+      },
+      {
+        "term": "fuel supply to the engine",
+        "definition": "подача топлива к двигателю",
+        "translation": "motorlar uchun yonilg’i ta’minoti"
+      },
+      {
+        "term": "valve timing",
+        "definition": "ход клапанов",
+        "translation": "klapan yurishlarining yaratisi"
+      },
+      {
+        "term": "valve clearance",
+        "definition": "дроссельный зазор",
+        "translation": "klapan pastki izchiligi"
+      },
+      {
+        "term": "water in the oil",
+        "definition": "вода в масле",
+        "translation": "moyda suv"
+      },
+      {
+        "term": "water-jacket",
+        "definition": "водяной колпак",
+        "translation": "suvqonish"
+      },
+      {
+        "term": "wavy washer",
+        "definition": "волновое кольцо",
+        "translation": "buriluvchi yuvish"
+      },
+      {
+        "term": "wedge",
+        "definition": "клин, клиновидная шпонка",
+        "translation": "kanatchi, kanatchilik to’qi"
+      },
+      {
+        "term": "welding",
+        "definition": "сварка",
+        "translation": "jo’xori"
+      },
+      {
+        "term": "weld",
+        "definition": "сварка",
+        "translation": "jo’xori"
+      },
+      {
+        "term": "well",
+        "definition": "колодец",
+        "translation": "quyilma"
+      },
+      {
+        "term": "well",
+        "definition": "колодец",
+        "translation": "quyilma"
+      },
+      {
+        "term": "wheeled loader",
+        "definition": "колесный погрузчик",
+        "translation": "quyruq yuklab olish masinasi"
+      },
+      {
+        "term": "wheeled tractor",
+        "definition": "колесный трактор",
+        "translation": "quyruq traktor"
+      },
+      {
+        "term": "whirl",
+        "definition": "вихрь",
+        "translation": "suv boreyi"
+      },
+      {
+        "term": "width",
+        "definition": "ширина",
+        "translation": "en"
+      },
+      {
+        "term": "width of tread",
+        "definition": "ширина следа шины",
+        "translation": "shina yuragini eni"
+      },
+      {
+        "term": "wind",
+        "definition": "ветер",
+        "translation": "shamol"
+      },
+      {
+        "term": "windage",
+        "definition": "сопротивление воздуха",
+        "translation": "havo qarshiligi"
+      },
+      {
+        "term": "winding",
+        "definition": "намотка",
+        "translation": "burish"
+      },
+      {
+        "term": "windshield",
+        "definition": "ветровое стекло",
+        "translation": "shaffof asbob"
+      },
+      {
+        "term": "window",
+        "definition": "окно, оконное отверстие, зрачок",
+        "translation": "ishorat, og’irlik"
+      },
+      {
+        "term": "window glass",
+        "definition": "оконное стекло",
+        "translation": "ishorat shisha"
+      },
+      {
+        "term": "window opening",
+        "definition": "оконное отверстие",
+        "translation": "ishorat ochiq joy"
+      },
+      {
+        "term": "wire",
+        "definition": "провод",
+        "translation": "sovun"
+      },
+      {
+        "term": "wire brush",
+        "definition": "металлическая щетка",
+        "translation": "sovun chetkasining metali"
+      },
+      {
+        "term": "withdraw",
+        "definition": "извлекать, отводить, отнимать, снимать",
+        "translation": "chiqarish, olishtirish, ajratish, to’xtatish"
+      },
+      {
+        "term": "withdrawable",
+        "definition": "съемный",
+        "translation": "o’chirib olish, ajratiladi"
+      },
+      {
+        "term": "withdrawal",
+        "definition": "отрыв, отвод, вывод, снятие, извлечение, отказ",
+        "translation": "ajratish, chiqarish, ko’rish"
+      },
+      {
+        "term": "zone",
+        "definition": "зона",
+        "translation": "hudud, zona"
+      },
+      {
+        "term": "zone controller",
+        "definition": "регулятор зоны",
+        "translation": "hudud boshqaruvchisi"
+      },
+      {
+        "term": "zone analysis",
+        "definition": "анализ зоны",
+        "translation": "hudud analizi"
+      },
+      {
+        "term": "zone control",
+        "definition": "управление зоной",
+        "translation": "hudud boshqaruvchisi"
+      },
+      {
+        "term": "zone of control",
+        "definition": "зона управления",
+        "translation": "boshqaruv hududi"
+      },
+      {
+        "term": "zone of influence",
+        "definition": "зона влияния",
+        "translation": "ta’sir hududi"
+      },
+      {
+        "term": "zoom",
+        "definition": "приближение, увеличение",
+        "translation": "yaqinlash, kattalash"
+      }
+    ]
+  },
+  {
+    "title": "T",
+    "terms": [
+      {
+        "term": "table",
+        "definition": "стол, таблица",
+        "translation": "stol"
+      },
+      {
+        "term": "tack",
+        "definition": "кнопка, гвоздь, поворот",
+        "translation": "tugmacha, mix, usul"
+      },
+      {
+        "term": "take-up(s)",
+        "definition": "натяжное приспособление",
+        "translation": "kengaytirib kiydirilgan shinalar"
+      },
+      {
+        "term": "tank",
+        "definition": "бак, судопромысловое судно",
+        "translation": "suyuqlik solinadigan idish"
+      },
+      {
+        "term": "settling tank",
+        "definition": "отстойник",
+        "translation": "tindirgich"
+      },
+      {
+        "term": "fuel tank",
+        "definition": "топливный бак",
+        "translation": "yoqilg’i quyiladigan bak"
+      },
+      {
+        "term": "tap",
+        "definition": "пробка, выпуск жидкости из сосуда, отводить",
+        "translation": "po’kak"
+      },
+      {
+        "term": "drain tap",
+        "definition": "спускной кран",
+        "translation": "tushiradigan to’kadigan kran"
+      },
+      {
+        "term": "fuel tap",
+        "definition": "кран для регулирования поступления горючего",
+        "translation": "boshqariladigan kran"
+      },
+      {
+        "term": "tappet",
+        "definition": "толкатель",
+        "translation": "turtkich"
+      },
+      {
+        "term": "t.d.c. (top dead centre)",
+        "definition": "верхняя мертвая точка",
+        "translation": "yuqori harakatsiz markaz"
+      },
+      {
+        "term": "test",
+        "definition": "испытание",
+        "translation": "sinov"
+      },
+      {
+        "term": "run down test",
+        "definition": "испытание методом выбега",
+        "translation": "yugurish metodi sinovi"
+      },
+      {
+        "term": "thermostat",
+        "definition": "термостат",
+        "translation": "termostat"
+      },
+      {
+        "term": "thread",
+        "definition": "нарезка, резьба винта",
+        "translation": "rezba"
+      },
+      {
+        "term": "three-wheeler",
+        "definition": "трехколесный автомобиль",
+        "translation": "uch g’ildirakli avtomobil"
+      },
+      {
+        "term": "throttle",
+        "definition": "дроссель",
+        "translation": "dvigatellarda yonilg’ini tartibga soluvchi klapan"
+      },
+      {
+        "term": "throttling",
+        "definition": "дросселирование",
+        "translation": "prikritye zaslonkoy"
+      },
+      {
+        "term": "thrust",
+        "definition": "давление, толчок",
+        "translation": "bosim"
+      },
+      {
+        "term": "propeller thrust",
+        "definition": "тяга, развиваемая винтом (пропеллером)",
+        "translation": "tortish"
+      },
+      {
+        "term": "tighten",
+        "definition": "затягивать (о болтах, гайках)",
+        "translation": "qotirmoq, mahkamlamoq"
+      },
+      {
+        "term": "tiller",
+        "definition": "рукоятка; Т-образный руль",
+        "translation": "dastag, tutgich"
+      },
+      {
+        "term": "time",
+        "definition": "время",
+        "translation": "vaqt"
+      },
+      {
+        "term": "timer",
+        "definition": "регулятор момента зажигания",
+        "translation": "vaqt hisoblagich"
+      },
+      {
+        "term": "tip",
+        "definition": "контакт, опрокидывать(ся), наклонять(ся)",
+        "translation": "to’nqarmoq"
+      },
+      {
+        "term": "tolerance",
+        "definition": "допуск",
+        "translation": "ko’yim"
+      },
+      {
+        "term": "ton",
+        "definition": "тонна",
+        "translation": "tonna"
+      },
+      {
+        "term": "tongue",
+        "definition": "шпунт, шип",
+        "translation": "asbob"
+      },
+      {
+        "term": "loose tongue",
+        "definition": "шпонка, вставной шип",
+        "translation": "bir-biriga mustahkamlaydigan detal"
+      },
+      {
+        "term": "tool",
+        "definition": "инструмент",
+        "translation": "asbob"
+      },
+      {
+        "term": "torque",
+        "definition": "крутящий момент",
+        "translation": "aylanuvchan moment"
+      },
+      {
+        "term": "tower",
+        "definition": "башня, опора",
+        "translation": "minora"
+      },
+      {
+        "term": "wheeled tower",
+        "definition": "колесный башенный подъемник",
+        "translation": "aylanuvchi minora"
+      },
+      {
+        "term": "track",
+        "definition": "направляющее устройство",
+        "translation": "iz, belgi"
+      },
+      {
+        "term": "tractor",
+        "definition": "трактор; тягач",
+        "translation": "traktor"
+      },
+      {
+        "term": "trailer",
+        "definition": "прицеп (автомашина)",
+        "translation": "tirkamali mashina"
+      },
+      {
+        "term": "train of gearing",
+        "definition": "зубчатая передача",
+        "translation": "moslama"
+      },
+      {
+        "term": "power train",
+        "definition": "трансмиссия (передаточная система)",
+        "translation": "mahsus qurilma"
+      },
+      {
+        "term": "two-speed reduction train",
+        "definition": "двухскоростная редукционная передача",
+        "translation": "ikki tezlikli chegirish"
+      },
+      {
+        "term": "transfer",
+        "definition": "передача; переносить",
+        "translation": "uzatib bermoq"
+      },
+      {
+        "term": "transformer",
+        "definition": "трансформатор",
+        "translation": "uzatgich"
+      },
+      {
+        "term": "transit",
+        "definition": "переносный, сборный",
+        "translation": "uzatish"
+      },
+      {
+        "term": "translate",
+        "definition": "перемещаться, смещаться",
+        "translation": "o’girmoq"
+      },
+      {
+        "term": "translation",
+        "definition": "перемещение, поступательное движение",
+        "translation": "ko’chirish, o’zgartirish"
+      },
+      {
+        "term": "transmission",
+        "definition": "передача",
+        "translation": "uzatma"
+      },
+      {
+        "term": "transmit",
+        "definition": "передавать",
+        "translation": "uzatish"
+      },
+      {
+        "term": "transverse",
+        "definition": "поперечина",
+        "translation": "to’sin"
+      },
+      {
+        "term": "travel",
+        "definition": "движение, перемещение",
+        "translation": "harakat"
+      },
+      {
+        "term": "tread",
+        "definition": "звено (гусеница)",
+        "translation": "bosib o’tish"
+      },
+      {
+        "term": "tricycle",
+        "definition": "трехколесный автомобиль",
+        "translation": "uch g’ildirakli avtomobil"
+      },
+      {
+        "term": "trip",
+        "definition": "выключение",
+        "translation": "sayohat"
+      },
+      {
+        "term": "breaker trip",
+        "definition": "реле расцепления",
+        "translation": "uchirish"
+      },
+      {
+        "term": "circuit breaker trip",
+        "definition": "выключатель",
+        "translation": "o’chirish tugmasi"
+      },
+      {
+        "term": "round trip",
+        "definition": "полный завершенный цикл движения",
+        "translation": "harakat aylanasini to’htatish"
+      },
+      {
+        "term": "trolley",
+        "definition": "тележка мостового крана",
+        "translation": "arava"
+      },
+      {
+        "term": "tube",
+        "definition": "труба, трубка, лампа",
+        "translation": "truba"
+      },
+      {
+        "term": "gilled tube",
+        "definition": "пластичная (ребристая) трубка (у радиатора)",
+        "translation": "plastic truba"
+      },
+      {
+        "term": "tubing",
+        "definition": "трубопровод",
+        "translation": "gaz quvuri"
+      },
+      {
+        "term": "steam tube",
+        "definition": "паропроводная труба",
+        "translation": "bug’"
+      },
+      {
+        "term": "tune-up",
+        "definition": "регулировать; настраивать",
+        "translation": "boshqarmoq"
+      },
+      {
+        "term": "turn",
+        "definition": "поворот; вращение",
+        "translation": "aylana"
+      },
+      {
+        "term": "turning",
+        "definition": "поворачивающийся наконечник руля",
+        "translation": "aylanadan o’tish"
+      },
+      {
+        "term": "twin",
+        "definition": "парный; двойной",
+        "translation": "egiz"
+      },
+      {
+        "term": "tyre",
+        "definition": "шина",
+        "translation": "shina"
+      },
+      {
+        "term": "pneumatic tyre",
+        "definition": "пневматическая шина",
+        "translation": "siqilgan havo yordamida ishlaydigan shina"
+      }
+    ]
+  },
+  {
+    "title": "U",
+    "terms": [
+      {
+        "term": "uniform",
+        "definition": "равномерный",
+        "translation": "bab-baravar"
+      },
+      {
+        "term": "uniform bar",
+        "definition": "однородный стержень",
+        "translation": "turdosh sterjin"
+      },
+      {
+        "term": "uniform temperature",
+        "definition": "одинаковая температура",
+        "translation": "bir hil temperatura"
+      },
+      {
+        "term": "union",
+        "definition": "соединение, стык",
+        "translation": "birlashma"
+      },
+      {
+        "term": "unit",
+        "definition": "единица, установка, агрегат",
+        "translation": "birlashgan"
+      },
+      {
+        "term": "engine unit",
+        "definition": "узел двигателя",
+        "translation": "birlashgan dvigatel"
+      },
+      {
+        "term": "power unit",
+        "definition": "силовой агрегат",
+        "translation": "kuchli tok uzatadigan agregat"
+      },
+      {
+        "term": "unloader",
+        "definition": "разгрузочная машина",
+        "translation": "yuk mashinasi"
+      },
+      {
+        "term": "grab bucket unloader",
+        "definition": "разгрузочная машина с грейферным ковшом",
+        "translation": "yuk mashinasi g‘refirlik qabi bilan"
+      }
+    ]
+  },
+  {
+    "title": "V",
+    "terms": [
+      {
+        "term": "vacuum",
+        "definition": "безвоздушное пространство; вакуум, пустота",
+        "translation": "bo’shliq"
+      },
+      {
+        "term": "value",
+        "definition": "величина, значение",
+        "translation": "qadr"
+      },
+      {
+        "term": "Valve",
+        "definition": "лампа, золотник, клапан",
+        "translation": "lampichka"
+      },
+      {
+        "term": "balanced piston governor valve",
+        "definition": "регулирующий клапан уравновешенного поршня",
+        "translation": "tendosh sterjinni boshqaruvchi klapan"
+      },
+      {
+        "term": "blade control valve",
+        "definition": "клапан регулирования положения лопастей",
+        "translation": "tig’ni boshqaradigan klapan"
+      },
+      {
+        "term": "blowdown valve",
+        "definition": "продувной, спускной клапан",
+        "translation": "yonuvchi klapan"
+      },
+      {
+        "term": "check valve",
+        "definition": "запорный вентиль, стопорный клапан",
+        "translation": "qulflanadigan klapan"
+      },
+      {
+        "term": "exhaust valve",
+        "definition": "выпускной или выхлопной клапан",
+        "translation": "chiqariladigan klapan"
+      },
+      {
+        "term": "governor valve",
+        "definition": "клапан регулятора",
+        "translation": "boshqaruv klapani"
+      },
+      {
+        "term": "inlet valve",
+        "definition": "впускной клапан",
+        "translation": "chiqarish klapani"
+      },
+      {
+        "term": "overhead valve",
+        "definition": "верхний клапан; подвесной клапан",
+        "translation": "tepadagi klapan"
+      },
+      {
+        "term": "poppet valve",
+        "definition": "тарельчатый клапан",
+        "translation": "tarelkasimon klapan"
+      },
+      {
+        "term": "slide valve",
+        "definition": "коробчатый золотник, золотниковая коробка",
+        "translation": "karobkasimon klapan"
+      },
+      {
+        "term": "throttle valve",
+        "definition": "дроссельный клапан",
+        "translation": "drosel klapan"
+      },
+      {
+        "term": "van",
+        "definition": "фургон; вагон",
+        "translation": "vagon"
+      },
+      {
+        "term": "vane",
+        "definition": "лопатка турбины",
+        "translation": "furgon"
+      },
+      {
+        "term": "vary",
+        "definition": "менять(ся), изменяться",
+        "translation": "o’zgarmoq"
+      },
+      {
+        "term": "v-belt",
+        "definition": "клиновой ремень",
+        "translation": "remen"
+      },
+      {
+        "term": "vehicle",
+        "definition": "средство передвижения – автомобиль",
+        "translation": "uloq"
+      },
+      {
+        "term": "motor vehicle",
+        "definition": "автомобиль",
+        "translation": "mashina"
+      },
+      {
+        "term": "private vehicle",
+        "definition": "автомобиль индивидуального пользования",
+        "translation": "shahsiy mashina"
+      },
+      {
+        "term": "public vehicle",
+        "definition": "автомобиль коммунального пользования",
+        "translation": "jamoa mashinasi"
+      },
+      {
+        "term": "velocity",
+        "definition": "скорость",
+        "translation": "tezlik"
+      },
+      {
+        "term": "unit of velocity",
+        "definition": "единица скорости",
+        "translation": "tezlik qismi"
+      },
+      {
+        "term": "v-engine",
+        "definition": "v-образный двигатель",
+        "translation": "v shakldagi dvigatel"
+      },
+      {
+        "term": "ventilation",
+        "definition": "вентиляция",
+        "translation": "parrak"
+      },
+      {
+        "term": "ventilator",
+        "definition": "вентилятор",
+        "translation": "ventilyator"
+      },
+      {
+        "term": "hit and miss ventilator",
+        "definition": "обдувающий (туширующий) вентилятор",
+        "translation": "shifokor ventilyator"
+      },
+      {
+        "term": "venturi",
+        "definition": "диффузор",
+        "translation": "tadbir"
+      },
+      {
+        "term": "voltage",
+        "definition": "напряжение",
+        "translation": "volt"
+      },
+      {
+        "term": "ceiling voltage",
+        "definition": "пик напряжения",
+        "translation": "bosim balandligi"
+      },
+      {
+        "term": "no-load voltage",
+        "definition": "напряжение холостого хода",
+        "translation": "bo’sh ish boshligi voltaji"
+      },
+      {
+        "term": "terminal voltage",
+        "definition": "напряжение на зажимках",
+        "translation": "terminal"
+      },
+      {
+        "term": "volume",
+        "definition": "объем",
+        "translation": "hajm"
+      },
+      {
+        "term": "swept volume",
+        "definition": "рабочий объем",
+        "translation": "ish hajmi"
+      }
+    ]
+  },
+  {
+    "title": "W",
+    "terms": [
+      {
+        "term": "wall",
+        "definition": "стенка; экран",
+        "translation": "devor, ekran"
+      },
+      {
+        "term": "cylinder wall",
+        "definition": "стенка цилиндра",
+        "translation": "tsilindr devori"
+      },
+      {
+        "term": "wagon",
+        "definition": "фургон; вагон; вагонетка",
+        "translation": "vagon"
+      },
+      {
+        "term": "washer",
+        "definition": "прокладка, шайба",
+        "translation": "shayba"
+      },
+      {
+        "term": "flat spring washer",
+        "definition": "пружинная шайба",
+        "translation": "prujinali shayba"
+      },
+      {
+        "term": "water",
+        "definition": "вода",
+        "translation": "suv"
+      },
+      {
+        "term": "feed water",
+        "definition": "питательная вода",
+        "translation": "ichimlik suvi"
+      },
+      {
+        "term": "sump water",
+        "definition": "сточная вода",
+        "translation": "oqindi suvlar"
+      },
+      {
+        "term": "water-cooled",
+        "definition": "с водяным охлаждением",
+        "translation": "sovutilgan suv"
+      },
+      {
+        "term": "wave",
+        "definition": "волна",
+        "translation": "ummon"
+      },
+      {
+        "term": "wear",
+        "definition": "износ, изнашивание",
+        "translation": "yeyilish"
+      },
+      {
+        "term": "hydraulic wear",
+        "definition": "гидравлический износ",
+        "translation": "gidravlik yeyilish"
+      },
+      {
+        "term": "weight",
+        "definition": "вес, гиря",
+        "translation": "vazn, tarozu toshi"
+      },
+      {
+        "term": "welding",
+        "definition": "сварка",
+        "translation": "payvandlash"
+      },
+      {
+        "term": "wheel",
+        "definition": "колесо",
+        "translation": "g’ildirak"
+      },
+      {
+        "term": "bevel wheel",
+        "definition": "коническое, зубчатое колесо",
+        "translation": "konus shaklidagi, tishli g’ildirak"
+      },
+      {
+        "term": "bucket wheel",
+        "definition": "ковшовое колесо",
+        "translation": "kovushli g’ildirak"
+      },
+      {
+        "term": "drive wheel",
+        "definition": "ведущее колесо",
+        "translation": "yetakchi g’ildirak"
+      },
+      {
+        "term": "hand wheel",
+        "definition": "ручной маховик",
+        "translation": "qo'l g’ildiragi"
+      },
+      {
+        "term": "impulse wheel",
+        "definition": "активное ковшовое колесо",
+        "translation": "faol kovushli g’ildirak"
+      },
+      {
+        "term": "paddle wheel",
+        "definition": "лопастное колесо",
+        "translation": "parrakli g’ildirak"
+      },
+      {
+        "term": "spoke wheel",
+        "definition": "колесо со спицами",
+        "translation": "spitsali g’ildirak"
+      },
+      {
+        "term": "steering wheel",
+        "definition": "рулевое колесо",
+        "translation": "ro’lli g’ildirak"
+      },
+      {
+        "term": "worm wheel",
+        "definition": "червячное колесо",
+        "translation": "cherviyakli g’ildirak"
+      },
+      {
+        "term": "winch",
+        "definition": "лебедка, ворот, домкрат",
+        "translation": "chig’ir, domkrat"
+      },
+      {
+        "term": "winding",
+        "definition": "обмотка",
+        "translation": "o’raladigon narsa"
+      },
+      {
+        "term": "bar winding",
+        "definition": "обмотка стержневого типа",
+        "translation": "o’zak tipidagi o'rash"
+      },
+      {
+        "term": "damper winding",
+        "definition": "демпферная или успокоительная обмотка",
+        "translation": "dempfer yoki tinchlantiruvchi o’rash"
+      },
+      {
+        "term": "windlass",
+        "definition": "лебедка",
+        "translation": "g'ildirak"
+      },
+      {
+        "term": "windscreen",
+        "definition": "ветровое стекло",
+        "translation": "shamol to’sadigan oynak"
+      },
+      {
+        "term": "wing",
+        "definition": "крыло (кузов)",
+        "translation": "qanot (kapot)"
+      },
+      {
+        "term": "wire",
+        "definition": "проволока, провод",
+        "translation": "sim"
+      },
+      {
+        "term": "wristpin",
+        "definition": "цапфа, палец ползуна, поршневой палец",
+        "translation": "tsapfa, o’q yoki valning podshipnikda aylanuvchi qismi"
+      },
+      {
+        "term": "worm",
+        "definition": "червяк",
+        "translation": "chervyak, ko’chkarok, shesternya"
+      }
+    ]
+  },
+  {
+    "title": "Y",
+    "terms": [
+      {
+        "term": "yard",
+        "definition": "двор, площадка",
+        "translation": "hojatxona"
+      },
+      {
+        "term": "yard crane",
+        "definition": "кран на площадке",
+        "translation": "hojatxona kran"
+      },
+      {
+        "term": "yarder",
+        "definition": "лесозаготовительная машина",
+        "translation": "hojatxona mashinasi"
+      },
+      {
+        "term": "yoke",
+        "definition": "ярмо, рычаг",
+        "translation": "yormoq"
+      }
+    ]
+  },
+  {
+    "title": "Z",
+    "terms": [
+      {
+        "term": "zone",
+        "definition": "зона",
+        "translation": "hudud"
+      },
+      {
+        "term": "zone controller",
+        "definition": "регулятор зоны",
+        "translation": "hudud boshqaruvchisi"
+      },
+      {
+        "term": "zone analysis",
+        "definition": "анализ зоны",
+        "translation": "hudud analizi"
+      },
+      {
+        "term": "zone control",
+        "definition": "управление зоной",
+        "translation": "hudud boshqaruvchisi"
+      },
+      {
+        "term": "zone of control",
+        "definition": "зона управления",
+        "translation": "boshqaruv hududi"
+      },
+      {
+        "term": "zone of influence",
+        "definition": "зона влияния",
+        "translation": "ta’sir hududi"
+      },
+      {
+        "term": "zoom",
+        "definition": "приближение, увеличение",
+        "translation": "yaqinlash, kattalash"
+      }
+    ]
+  }
+]

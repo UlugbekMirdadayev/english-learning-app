@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "dad1ea81-0c38-438d-8d8e-b0aa539c23e6"
+      }
+    },
+    "owner": "ulugbek_mirdadayev"
   }
 }
