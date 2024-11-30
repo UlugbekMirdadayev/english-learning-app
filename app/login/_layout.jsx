@@ -14,7 +14,7 @@ import { useDispatch } from "react-redux";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import LottieView from "lottie-react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { postLogin } from "@/service/api";
+import { postLogin, getUserMe } from "@/service/api";
 import Toast from "react-native-toast-message";
 import Input from "@/components/input";
 import { setUser } from "@/redux/userSlice";
@@ -67,58 +67,69 @@ const LoginScreen = () => {
   };
 
   const onSubmit = () => {
-    navigation.reset({
-      index: 0,
-      routes: [{ name: "(tabs)" }],
-    });
-    // if (!formValues.email || !formValues.password) {
-    //   setFormErrors({
-    //     email: !formValues.email,
-    //     password: !formValues.password,
-    //   });
-    //   return setFormValues((prev) => ({
-    //     ...prev,
-    //     clicked: true,
-    //   }));
-    // }
-    // const data = formValues;
-    // delete data.clicked; // key clicked remove
-    // setLoading(true);
-    // postLogin(data)
-    //   .then(({ data }) => {
-    //     setLoading(false);
-    //     if (data?.user?.teacher) {
-    //       Toast.show({
-    //         position: "top",
-    //         type: "info",
-    //         text1: "You are a teacher !",
-    //         text2: "You are not allowed to log in.",
-    //       });
-    //       return Linking.openURL("https://sooyaa.uz/");
-    //     }
-    //     Toast.show({
-    //       position: "top",
-    //       type: "success",
-    //       text1: "Success",
-    //       text2: "You have successfully logged in",
-    //     });
-    //     console.log(data?.token);
-    //     dispatch(setUser({ ...data?.user, token: data?.token }));
-    //     AsyncStorage.setItem("token", data?.token);
-    //     navigation.reset({
-    //       index: 0,
-    //       routes: [{ name: "(tabs)" }],
-    //     });
-    //   })
-    //   .catch((error) => {
-    //     setLoading(false);
-    //     Toast.show({
-    //       position: "top",
-    //       type: "error",
-    //       text1: "Error",
-    //       text2: JSON.stringify(error?.response?.data),
-    //     });
-    //   });
+    if (!formValues.email || !formValues.password) {
+      setFormErrors({
+        email: !formValues.email,
+        password: !formValues.password,
+      });
+      return setFormValues((prev) => ({
+        ...prev,
+        clicked: true,
+      }));
+    }
+    const data = formValues;
+    delete data.clicked; // key clicked remove
+    setLoading(true);
+    postLogin(data)
+      .then(({ data }) => {
+        getUserMe(data?.result?.token)
+          .then(({ data: userResonse }) => {
+            AsyncStorage.setItem("token", data?.result?.token);
+            setLoading(false);
+            if (userResonse?.result?.role?.id === 1) {
+              Toast.show({
+                position: "top",
+                type: "info",
+                text1: "You are a teacher !",
+                text2: "You are not allowed to log in.",
+              });
+              return Linking.openURL("https://sooyaa.uz/");
+            }
+            Toast.show({
+              position: "top",
+              type: "success",
+              text1: "Success",
+              text2: "You have successfully logged in",
+            });
+            dispatch(
+              setUser({ ...userResonse?.result, token: data?.result?.token })
+            );
+            navigation.reset({
+              index: 0,
+              routes: [{ name: "(tabs)" }],
+            });
+          })
+          .catch((error) => {
+            console.log("errortoken", error);
+            setLoading(false);
+            Toast.show({
+              position: "top",
+              type: "error",
+              text1: "Error",
+              text2: JSON.stringify(error?.response?.data),
+            });
+          });
+      })
+      .catch((error) => {
+        console.log("error1", error);
+        setLoading(false);
+        Toast.show({
+          position: "top",
+          type: "error",
+          text1: "Error",
+          text2: JSON.stringify(error?.response?.data),
+        });
+      });
   };
 
   return (

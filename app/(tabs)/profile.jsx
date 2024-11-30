@@ -32,6 +32,9 @@ const ProfileScreen = () => {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({});
 
+  console.log(user);
+  
+
   const handleEdit = () => {
     const editedInfo = Object.keys(form)
       .map((key) => {
@@ -136,7 +139,7 @@ const ProfileScreen = () => {
               <Typography style={styles.description}>FullName</Typography>
               <Typography
                 style={styles.description}
-              >{`${user?.name} ${user?.surname}`}</Typography>
+              >{`${user?.first_name} ${user?.surname}`}</Typography>
             </View>
             <View style={styles.hr} />
             <View style={styles.row}>

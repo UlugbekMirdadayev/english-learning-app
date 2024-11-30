@@ -24,13 +24,13 @@ import { useNavigation } from "@react-navigation/native";
 const inputs = [
   {
     label: "First name",
-    name: "name",
+    name: "first_name",
     placeholder: "John",
     password: false,
   },
   {
     label: "Last name",
-    name: "surname",
+    name: "last_name",
     placeholder: "Doe",
     password: false,
   },
@@ -57,8 +57,8 @@ const RegisterScreen = () => {
   const [formValues, setFormValues] = useState({
     password: "",
     email: "",
-    name: "",
-    surname: "",
+    first_name: "",
+    last_name: "",
     clicked: false,
   });
   const [loading, setLoading] = useState(false);
@@ -66,8 +66,8 @@ const RegisterScreen = () => {
   const [formErrors, setFormErrors] = useState({
     password: false,
     email: false,
-    name: false,
-    surname: false,
+    first_name: false,
+    last_name: false,
   });
 
   const onChangeText = (value, name) => {
@@ -82,63 +82,57 @@ const RegisterScreen = () => {
   };
 
   const onSubmit = () => {
-    navigation.reset({
-      index: 0,
-      routes: [{ name: "(tabs)" }],
-    });
-    // if (Object.values(formValues).includes("")) {
-    //   setFormErrors({
-    //     email: !formValues.email,
-    //     name: !formValues.name,
-    //     surname: !formValues.surname,
-    //     password: !formValues.password,
-    //   });
-    //   return setFormValues((prev) => ({
-    //     ...prev,
-    //     clicked: true,
-    //   }));
-    // }
-    // const data = formValues;
-    // delete data.clicked;
-    // setLoading(true);
-    // postRegister({ user: data })
-    //   .then(({ data }) => {
-    //     setLoading(false);
-    //     Toast.show({
-    //       position: "top",
-    //       type: "success",
-    //       text1: "Success",
-    //       text2: "You have successfully registered",
-    //     });
-    //     dispatch(setUser({ ...data?.user, token: data?.token }));
-    //     AsyncStorage.setItem("token", data?.token);
-    //     navigation.reset({
-    //       index: 0,
-    //       routes: [{ name: "(tabs)" }],
-    //     });
-    //   })
-    //   .catch((error) => {
-    //     setLoading(false);
-    //     const errors = { ...error?.response?.data, ...error?.response?.data };
-    //     Object.keys(errors).forEach((key) => {
-    //       setFormErrors((prev) => ({
-    //         ...prev,
-    //         [key]: errors[key][0],
-    //       }));
-    //     });
-    //     Toast.show({
-    //       position: "top",
-    //       type: "error",
-    //       text1:
-    //         Object.keys(errors)
-    //           .map((key) => key)
-    //           .join("\n") || JSON.stringify(error?.message),
-    //       text2:
-    //         Object.keys(errors)
-    //           .map((key) => errors[key][0])
-    //           .join("\n") || JSON.stringify(error?.message),
-    //     });
-    //   });
+    if (Object.values(formValues).includes("")) {
+      setFormErrors({
+        email: !formValues.email,
+        first_name: !formValues.first_name,
+        last_name: !formValues.last_name,
+        password: !formValues.password,
+      });
+      return setFormValues((prev) => ({
+        ...prev,
+        clicked: true,
+      }));
+    }
+    const data = formValues;
+    delete data.clicked;
+    setLoading(true);
+    postRegister(data)
+      .then(({ data }) => {
+        setLoading(false);
+        Toast.show({
+          position: "top",
+          type: "success",
+          text1: data?.status || "Success",
+          text2: data?.result || "You have successfully registered",
+        });
+        navigation.reset({
+          index: 0,
+          routes: [{ name: "login" }],
+        });
+      })
+      .catch((error) => {
+        setLoading(false);
+        const errors = { ...error?.response?.data, ...error?.response?.data };
+        Object.keys(errors).forEach((key) => {
+          setFormErrors((prev) => ({
+            ...prev,
+            [key]: errors[key][0],
+          }));
+        });
+        Toast.show({
+          position: "top",
+          type: "error",
+          text1:
+            Object.keys(errors)
+              .map((key) => key)
+              .join("\n") || JSON.stringify(error?.message),
+          text2:
+            Object.keys(errors)
+              .map((key) => errors[key][0])
+              .join("\n") || JSON.stringify(error?.message),
+        });
+      });
   };
 
   return (
@@ -182,8 +176,8 @@ const RegisterScreen = () => {
               (formValues.clicked && Object.values(formValues).includes("")) ||
               !!formErrors.email ||
               !!formErrors.password ||
-              !!formErrors.name ||
-              !!formErrors.surname
+              !!formErrors.first_name ||
+              !!formErrors.last_name
             }
             title="Continue"
             style={styles.button}

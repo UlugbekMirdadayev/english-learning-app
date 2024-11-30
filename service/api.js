@@ -1,9 +1,15 @@
 import axios from "axios";
 
-const BASE_URL = "https://langapp-production.up.railway.app/api/v1";
+const BASE_URL = "https://api.training.center.dadabayev.uz";
 
-export const postRegister = (data) => axios.post(`${BASE_URL}/users`, data);
-export const postLogin = (data) => axios.post(`${BASE_URL}/login`, data);
+export const postRegister = (data) =>
+  axios.post(`${BASE_URL}/api/auth/register`, data);
+export const getUserMe = (token) =>
+  axios.get(`${BASE_URL}/api/user/me`, {
+    headers: { Authorization: "Bearer " + token },
+  });
+export const postLogin = (data) =>
+  axios.post(`${BASE_URL}/api/auth/login`, data);
 export const getThemes = (token, id) =>
   axios.get(`${BASE_URL}/lessons${id ? `/${id}` : ""}`, {
     headers: { Authorization: "Bearer " + token },

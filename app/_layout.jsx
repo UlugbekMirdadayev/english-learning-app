@@ -8,7 +8,7 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "react-native-reanimated";
 import { Text, TextInput } from "react-native";
 import Toast from "react-native-toast-message";
@@ -18,6 +18,9 @@ import { useColorScheme } from "@/hooks/useColorScheme";
 import { Provider } from "react-redux";
 import store from "@/redux/store";
 import { useSelectorState } from "@/redux/selectors";
+import { getUserMe } from "@/service/api";
+import { setUser } from "@/redux/userSlice";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 Text.defaultProps = Text.defaultProps || {};
 Text.defaultProps.allowFontScaling = false;
@@ -60,6 +63,7 @@ export default function RootLayout() {
 function App() {
   const user = useSelectorState("user");
   const navigate = useNavigation();
+  const [loading, setLoading] = useState(true);
   const screenConfigs = [
     { name: "(splash)" },
     { name: "start" },
@@ -70,11 +74,47 @@ function App() {
   ];
 
   useEffect(() => {
-    navigate.reset({
-      index: 0,
-      routes: [{ name: user?.id ? "(tabs)" : "(splash)" }],
-    });
-  }, [user?.id]);
+    AsyncStorage.getItem("user")
+      .then((data) => {
+        setLoading(false);
+        if (data) {
+          store.dispatch(setUser(JSON.parse(data)));
+        }
+      })
+      .catch(() => {
+        setLoading(false);
+        store.dispatch(setUser(null));
+      });
+  }, []);
+
+  useEffect(() => {
+    if (loading) return;
+    if (!user?.token) {
+      navigate.reset({
+        index: 0,
+        routes: [{ name: "(splash)" }],
+      });
+      return;
+    }
+    getUserMe(user?.token)
+      .then(({ data }) => {
+        setLoading(false);
+        store.dispatch(setUser({ ...data?.result, token: user?.token }));
+        navigate.reset({
+          index: 0,
+          routes: [{ name: "(tabs)" }],
+        });
+      })
+      .catch((err) => {
+        AsyncStorage.removeItem("user");
+        setLoading(false);
+        store.dispatch(setUser(null));
+        navigate.reset({
+          index: 0,
+          routes: [{ name: "(splash)" }],
+        });
+      });
+  }, [user?.token, loading]);
 
   return (
     <Stack>

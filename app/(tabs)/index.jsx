@@ -154,12 +154,12 @@ const ThemesScreen = () => {
   const router = useRouter();
   const user = useSelectorState("user");
   const [themes, setThemes] = useState([
-    {
-      id: 1,
-      title: "Theme 1",
-      index: 1,
-      completed: false,
-    },
+    // {
+    //   id: 1,
+    //   title: "Theme 1",
+    //   index: 1,
+    //   completed: false,
+    // },
   ]);
   const [loading, setLoading] = useState(false);
 
@@ -172,7 +172,7 @@ const ThemesScreen = () => {
       })
       .catch((err) => {
         if (err?.response?.status === 401) {
-          navigation.reset({ index: 0, routes: [{ name: "Login" }] });
+          navigation.reset({ index: 0, routes: [{ name: "(splash)" }] });
           AsyncStorage.clear();
         }
         Toast.show({

@@ -1,12 +1,8 @@
 import { Tabs } from "expo-router";
 import React from "react";
-import { IconSymbol } from "@/components/ui/IconSymbol";
-import { useColorScheme } from "@/hooks/useColorScheme";
 import { HomeIcon, DictionaryIcon, ProfileIcon } from "@/assets/icons";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
   const screenOptions = ({ route }) => ({
     header: () => null,
     tabBarActiveTintColor: "#007aff",
