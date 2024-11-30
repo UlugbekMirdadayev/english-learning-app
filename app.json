@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ulugbek_mirdadayev.englishlearning"
     },
     "web": {
       "bundler": "metro",
