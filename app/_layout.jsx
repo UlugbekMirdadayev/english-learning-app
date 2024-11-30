@@ -71,6 +71,8 @@ function App() {
     { name: "login" },
     { name: "register" },
     { name: "theme" },
+    { name: "(tabs)" },
+    { name: "+not-found" },
   ];
 
   useEffect(() => {
@@ -88,36 +90,36 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (loading) return;
-    if (!user?.token) {
-      navigate.reset({
+    if (loading)
+      return navigate.reset({
         index: 0,
         routes: [{ name: "(splash)" }],
       });
+    if (!user?.token) {
       return;
     }
     getUserMe(user?.token)
       .then(({ data }) => {
         setLoading(false);
         store.dispatch(setUser({ ...data?.result, token: user?.token }));
-        navigate.reset({
-          index: 0,
-          routes: [{ name: "(tabs)" }],
-        });
+        // navigate.reset({
+        //   index: 0,
+        //   routes: [{ name: "(tabs)" }],
+        // });
       })
       .catch((err) => {
         AsyncStorage.removeItem("user");
         setLoading(false);
         store.dispatch(setUser(null));
-        navigate.reset({
-          index: 0,
-          routes: [{ name: "(splash)" }],
-        });
+        // navigate.reset({
+        //   index: 0,
+        //   routes: [{ name: "(splash)" }],
+        // });
       });
   }, [user?.token, loading]);
 
   return (
-    <Stack>
+    <Stack initialRouteName="(splash)">
       {screenConfigs.map((config) => (
         <Stack.Screen
           key={config.name}
@@ -125,8 +127,6 @@ function App() {
           options={{ headerShown: false }}
         />
       ))}
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      <Stack.Screen name="+not-found" />
     </Stack>
   );
 }

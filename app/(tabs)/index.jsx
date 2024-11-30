@@ -177,8 +177,8 @@ const ThemesScreen = () => {
         }
         Toast.show({
           type: "error",
-          text1: "Error",
-          text2: "Something went wrong",
+          text1: "Error occurred while fetching themes",
+          text2: JSON.stringify(err?.response?.data),
         });
         setLoading(false);
       });
@@ -202,16 +202,18 @@ const ThemesScreen = () => {
           >
             <View style={[styles.avatar, { borderColor: "#e6f2ff" }]}>
               <Typography style={{ textTransform: "uppercase" }}>
-                {user?.name?.[0]}
+                {user?.first_name?.[0]} {user?.last_name?.[0]}
               </Typography>
             </View>
             <Typography style={styles.username}>
-              {user?.name}
+              {user?.first_name} {user?.last_name}
               <Typography style={styles.span}>{"\nLessons"}</Typography>
             </Typography>
           </Pressable>
           <View style={styles.row}>
-            <Typography style={styles.statistics}>0/20</Typography>
+            <Typography style={styles.statistics}>
+              0/{themes?.length}
+            </Typography>
           </View>
         </View>
       </View>

@@ -5,9 +5,7 @@ import {
   ScrollView,
   Pressable,
   Linking,
-  Modal,
   Alert,
-  ToastAndroid,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Typography from "@/components/typography";
@@ -31,9 +29,6 @@ const ProfileScreen = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({});
-
-  console.log(user);
-  
 
   const handleEdit = () => {
     const editedInfo = Object.keys(form)
@@ -71,11 +66,15 @@ const ProfileScreen = () => {
           text1: "Success",
           text2: "Your information has been updated.",
         });
-        dispatch(setUser({ ...user, ...data }));
+        dispatch(setUser({ ...user, ...data?.result }));
         setModalVisible(false);
       })
       .catch((err) => {
-        ToastAndroid.show(JSON.stringify(err?.response), ToastAndroid.LONG);
+        Toast.show({
+          type: "error",
+          text1: "Error",
+          text2: "An error occurred while updating your information.",
+        });
         if (err.response.status === 401) {
           dispatch(setUser({}));
           navigation.reset({
@@ -139,14 +138,16 @@ const ProfileScreen = () => {
               <Typography style={styles.description}>FullName</Typography>
               <Typography
                 style={styles.description}
-              >{`${user?.first_name} ${user?.surname}`}</Typography>
+              >{`${user?.first_name} ${user?.last_name}`}</Typography>
             </View>
             <View style={styles.hr} />
             <View style={styles.row}>
-              <Typography style={styles.description}>Username</Typography>
-              <Typography style={styles.description}>{user?.email}</Typography>
+              <Typography style={styles.description}>Email</Typography>
+              <Typography style={styles.description}>
+                {user?.email?.slice(0, user?.email?.indexOf("@"))}
+              </Typography>
             </View>
-            <View style={styles.hr} />
+            {/* <View style={styles.hr} />
             <View style={styles.row}>
               <Typography style={styles.description}>
                 Your age in the app.
@@ -154,7 +155,7 @@ const ProfileScreen = () => {
               <Typography style={styles.description}>
                 {<DateDifferenceComponent date={user?.created_at} />}
               </Typography>
-            </View>
+            </View> */}
             <View style={styles.hr} />
             <Pressable
               onPress={() =>
