@@ -31,12 +31,18 @@ import * as Speech from "expo-speech";
 import { Arrow, CheckIcon, BlockedIcon } from "@/assets/icons";
 import { useNavigation } from "@react-navigation/native";
 import { useLocalSearchParams } from "expo-router";
+// import { useSearchParams } from "expo-router/build/hooks";
 
 const ThemeScreen = () => {
   const navigation = useNavigation();
-  const { themeId } = useLocalSearchParams();
+  // const { themeId } = useLocalSearchParams();
+  const { theme: parsedTheme } = useLocalSearchParams();
+  console.log({ parsedTheme });
+  const theme = parsedTheme
+    ? JSON.parse(decodeURIComponent(parsedTheme))
+    : null;
   const user = useSelectorState("user");
-  const [theme, setTheme] = useState({});
+  // const [theme, setTheme] = useState({});
   const [loading, setLoading] = useState(true);
   const [loadingTest, setloadingTest] = useState(false);
   const [loadingAnswer, setloadingAnswer] = useState(false);
@@ -52,31 +58,31 @@ const ThemeScreen = () => {
   const [imageWidth] = useState(Dimensions.get("screen").width - 32); // Initial width
   const [imageHeight] = useState(200); // Initial height
 
-  const getThemesData = useCallback(() => {
-    setLoading(true);
-    getThemes(user?.token, themeId)
-      .then(({ data }) => {
-        setLoading(false);
-        setTheme(data);
-      })
-      .catch((err) => {
-        console.log(err);
-        if (err?.response?.status === 401) {
-          navigation.reset({ index: 0, routes: [{ name: "(splash)" }] });
-          AsyncStorage.clear();
-        }
-        Toast.show({
-          type: "error",
-          text1: "Error",
-          text2: "Something went wrong",
-        });
-        setLoading(false);
-      });
-  }, [user?.token]);
+  // const getThemesData = useCallback(() => {
+  //   setLoading(true);
+  //   getThemes(user?.token, themeId)
+  //     .then(({ data }) => {
+  //       setLoading(false);
+  //       setTheme(data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //       if (err?.response?.status === 401) {
+  //         navigation.reset({ index: 0, routes: [{ name: "(splash)" }] });
+  //         AsyncStorage.clear();
+  //       }
+  //       Toast.show({
+  //         type: "error",
+  //         text1: "Error",
+  //         text2: "Something went wrong",
+  //       });
+  //       setLoading(false);
+  //     });
+  // }, [user?.token]);
 
-  useEffect(() => {
-    getThemesData();
-  }, [getThemesData]);
+  // useEffect(() => {
+  //   getThemesData();
+  // }, [getThemesData]);
 
   useEffect(() => {
     Speech.getAvailableVoicesAsync()
@@ -142,7 +148,7 @@ const ThemeScreen = () => {
     // if (testResult?.correct_percentage) {
     //   return Linking.openURL('https://t.me/mukarama_24_80');
     // }
-    const formData = theme?.media_items?.multiple_questions?.map((item) => {
+    const formData = theme?.multiple_questions?.map((item) => {
       const answer = selectedOption?.find(
         (option) => option?.question_id === item?.id
       );
@@ -152,8 +158,8 @@ const ThemeScreen = () => {
       };
     });
 
-    const totalCount = formData.length;
-    const trueCount = formData.filter((item) => item.answer).length;
+    const totalCount = formData?.length;
+    const trueCount = formData?.filter((item) => item.answer)?.length;
     const falseCount = totalCount - trueCount;
 
     const truePercentage = (trueCount / totalCount) * 100;
@@ -165,7 +171,7 @@ const ThemeScreen = () => {
         `<b>📊 Results</b>\n` +
         `✔️ Correct percentage: <i>${truePercentage}%</i>\n` + // To'g'ri foizlar
         `❌ Wrong percentage: <i>${falsePercentage}%</i>\n\n` + // Xato foizlar
-        `👤 <b>Student Name:</b> <u>${`${user?.name} ${user?.surname}`}</u>` // O'quvchi ismi va familiyasi
+        `👤 <b>Student Name:</b> <u>${`${user?.first_name} ${user?.last_name}`}</u>` // O'quvchi ismi va familiyasi
     )
       .then(() => {
         setloadingTest(false);
@@ -218,7 +224,7 @@ const ThemeScreen = () => {
         `<b>📚 Lesson:</b> ${theme?.title}\n\n` + // Dars mavzusi
         `<b>❓ Question:</b> ${answer?.question?.trim()}\n\n` + // Savol
         `<b>✍️ Answer:</b> ${answer?.answer}\n\n` + // Talabaning javobi
-        `👤 <b>Student Name:</b> <u>${user?.name} ${user?.surname}</u>` // Talabaning ismi va familiyasi
+        `👤 <b>Student Name:</b> <u>${user?.first_name} ${user?.last_name}</u>` // Talabaning ismi va familiyasi
     )
       .then(() => {
         setloadingAnswer(false);
@@ -268,9 +274,13 @@ const ThemeScreen = () => {
     //   });
   };
 
-  const testResult = theme?.test_results?.length
-    ? theme?.test_results[theme?.test_results?.length - 1]
-    : {};
+  // console.log("====================================");
+  // console.log(theme);
+  // console.log("====================================");
+
+  // const testResult = theme?.test_results?.length
+  //   ? theme?.test_results[theme?.test_results?.length - 1]
+  //   : {};
 
   return (
     <SafeAreaView style={styles.container}>
@@ -339,9 +349,9 @@ const ThemeScreen = () => {
       <ScrollView
         nestedScrollEnabled
         showsVerticalScrollIndicator={false}
-        refreshControl={
-          <RefreshControl refreshing={loading} onRefresh={getThemesData} />
-        }
+        // refreshControl={
+        //   <RefreshControl refreshing={loading} onRefresh={getThemesData} />
+        // }
       >
         {theme?.id ? (
           <View style={[styles.container, { paddingVertical: 16 }]}>
@@ -351,7 +361,7 @@ const ThemeScreen = () => {
                   The aim of the lesson
                 </Typography>
                 <Typography style={styles.roadmapInner}>
-                  {theme?.description}
+                  {theme?.objectives?.map((item) => item?.name)?.join("\n")}
                 </Typography>
               </View>
 
@@ -371,7 +381,7 @@ const ThemeScreen = () => {
                       overflow: "hidden",
                     }}
                   >
-                    {theme?.media_items?.media_type === "image" ? (
+                    {/* {theme?.media === "image" ? (
                       <Image
                         source={{
                           uri: `https://langapp-production.up.railway.app${theme?.media_items?.media_link}`,
@@ -391,42 +401,20 @@ const ThemeScreen = () => {
                           ])
                         }
                       />
-                    ) : theme?.media_items?.media_type === "link" ? (
-                      <>
-                        <Modal visible={modalView} animationType="slide">
-                          <SafeAreaView style={styles.container}>
-                            <Button
-                              title="Exit"
-                              onPress={() => setModalView(false)}
-                              style={{ borderRadius: 0 }}
-                            />
-                            <WebView
-                              allowsFullscreenVideo
-                              scrollEnabled
-                              allowsLinkPreview
-                              source={{ uri: theme?.media_items?.media_link }}
-                              style={{
-                                height: "100%",
-                                width: "100%",
-                                position: "absolute",
-                                top: 0,
-                                left: 0,
-                              }}
-                              onError={() =>
-                                setErrorImages([
-                                  ...errorImages,
-                                  theme?.media_items?.id,
-                                ])
-                              }
-                            />
-                          </SafeAreaView>
-                        </Modal>
-
+                    ) : theme?.media === "link" ? (
+                      <> */}
+                    <Modal visible={modalView} animationType="slide">
+                      <SafeAreaView style={styles.container}>
+                        <Button
+                          title="Exit"
+                          onPress={() => setModalView(false)}
+                          style={{ borderRadius: 0 }}
+                        />
                         <WebView
                           allowsFullscreenVideo
                           scrollEnabled
                           allowsLinkPreview
-                          source={{ uri: theme?.media_items?.media_link }}
+                          source={{ uri: theme?.media }}
                           style={{
                             height: "100%",
                             width: "100%",
@@ -435,17 +423,33 @@ const ThemeScreen = () => {
                             left: 0,
                           }}
                           onError={() =>
-                            setErrorImages([
-                              ...errorImages,
-                              theme?.media_items?.id,
-                            ])
+                            setErrorImages([...errorImages, theme?.media])
                           }
                         />
-                      </>
-                    ) : null}
+                      </SafeAreaView>
+                    </Modal>
+
+                    <WebView
+                      allowsFullscreenVideo
+                      scrollEnabled
+                      allowsLinkPreview
+                      source={{ uri: theme?.media }}
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                      }}
+                      onError={() =>
+                        setErrorImages([...errorImages, theme?.media])
+                      }
+                    />
+                    {/* </>
+                    ) : null} */}
                   </View>
                 </ScrollView>
-                {theme?.media_items?.media_type === "link" ? (
+                {theme?.media ? (
                   <Button
                     style={{ marginTop: 10 }}
                     title="View full screen video"
@@ -453,7 +457,7 @@ const ThemeScreen = () => {
                   />
                 ) : null}
                 {/* )} */}
-                {theme?.media_items?.translations && (
+                {theme?.translations && (
                   <Typography style={{ marginTop: 16, fontSize: 16 }}>
                     New Words
                   </Typography>
@@ -484,24 +488,16 @@ const ThemeScreen = () => {
                     </Modal>
                   </>
                 ) : null}
-                {theme?.media_items?.translations?.map(
-                  (translations, index_) => (
-                    <React.Fragment key={index_}>
-                      {translations.array_of_objects?.map((translations) =>
-                        Object.keys(translations).map((item) => (
-                          <Card
-                            key={item}
-                            title={{
-                              en: translations[item],
-                              uz: item,
-                            }}
-                          />
-                        ))
-                      )}
-                    </React.Fragment>
-                  )
-                )}
-                {theme?.media_items?.multiple_questions?.length ? (
+                {theme?.translations?.map((translations) => (
+                  <Card
+                    key={translations?.id}
+                    title={{
+                      en: translations?.en,
+                      uz: translations?.uz,
+                    }}
+                  />
+                ))}
+                {theme?.multiple_questions?.length ? (
                   <>
                     <Typography style={{ marginTop: 16, fontSize: 16 }}>
                       Quiz
@@ -524,7 +520,7 @@ const ThemeScreen = () => {
                           </Typography>
                         </View>
                       ) : null} */}
-                      {theme?.media_items?.multiple_questions?.map(
+                      {theme?.multiple_questions?.map(
                         (multiple_questions, index) => (
                           <TestCard
                             key={index}
@@ -554,102 +550,100 @@ const ThemeScreen = () => {
                 ) : null}
               </View>
 
-              {theme?.text_question_sets ? (
+              {theme?.reading ? (
                 <>
                   <Typography style={{ marginVertical: 8, fontSize: 22 }}>
                     Text essay
                   </Typography>
-                  <Typography>{theme?.text_question_sets?.text}</Typography>
+                  <Typography>{theme?.reading}</Typography>
                   <Typography style={{ marginVertical: 8, fontSize: 22 }}>
                     Questions
                   </Typography>
-                  {theme?.text_question_sets?.questions?.map(
-                    (question, index) => (
-                      <View key={question?.id}>
-                        <Typography>
-                          {index + 1}) {question?.text}
-                        </Typography>
-                        <View style={styles.row}>
-                          <TextInput
-                            readOnly={
-                              !!theme?.user_answers_scores?.find(
-                                (answ) => answ?.question_id === question?.id
-                              )?.score
-                            }
-                            style={{
-                              borderWidth: 1,
-                              borderRadius: 6,
-                              borderTopRightRadius: 0,
-                              borderBottomRightRadius: 0,
-                              padding: 10,
-                              height: 49,
-                              marginVertical: 10,
-                              fontSize: 16,
-                              fontWeight: "400",
-                              fontFamily: "Roboto-Regular",
-                              flex: 1,
-                              borderRightWidth: 0,
-                            }}
-                            defaultValue={
-                              theme?.user_answers_scores?.find(
-                                (answ) => answ?.question_id === question?.id
-                              )?.score
-                                ? String(
-                                    "Your scrore: " +
-                                      theme?.user_answers_scores?.find(
-                                        (answ) =>
-                                          answ?.question_id === question?.id
-                                      )?.score
-                                  )
-                                : ""
-                            }
-                            onChangeText={(text) =>
-                              setAnswers([
-                                ...answers.filter(
-                                  (item) => item?.question_id !== question?.id
-                                ),
-                                {
-                                  question_id: question?.id,
-                                  answer: text,
-                                },
-                              ])
-                            }
-                            placeholder="Type your answer"
-                            placeholderTextColor={"#d1d1d1"}
-                          />
+                  {theme?.questions?.map((question, index) => (
+                    <View key={question?.id}>
+                      <Typography>
+                        {index + 1}) {question?.question}
+                      </Typography>
+                      <View style={styles.row}>
+                        <TextInput
+                          readOnly={
+                            !!theme?.user_answers_scores?.find(
+                              (answ) => answ?.question_id === question?.id
+                            )?.score
+                          }
+                          style={{
+                            borderWidth: 1,
+                            borderRadius: 6,
+                            borderTopRightRadius: 0,
+                            borderBottomRightRadius: 0,
+                            padding: 10,
+                            height: 49,
+                            marginVertical: 10,
+                            fontSize: 16,
+                            fontWeight: "400",
+                            fontFamily: "Roboto-Regular",
+                            flex: 1,
+                            borderRightWidth: 0,
+                          }}
+                          // defaultValue={
+                          //   theme?.user_answers_scores?.find(
+                          //     (answ) => answ?.question_id === question?.id
+                          //   )?.score
+                          //     ? String(
+                          //         "Your scrore: " +
+                          //           theme?.user_answers_scores?.find(
+                          //             (answ) =>
+                          //               answ?.question_id === question?.id
+                          //           )?.score
+                          //       )
+                          //     : ""
+                          // }
+                          onChangeText={(text) =>
+                            setAnswers([
+                              ...answers.filter(
+                                (item) => item?.question_id !== question?.id
+                              ),
+                              {
+                                question_id: question?.id,
+                                answer: text,
+                              },
+                            ])
+                          }
+                          placeholder="Type your answer"
+                          placeholderTextColor={"#d1d1d1"}
+                        />
 
-                          <Button
-                            title={<CheckIcon fill="#fff" />}
-                            style={styles.button}
-                            disabled={
-                              !answers?.find(
+                        <Button
+                          title={<CheckIcon fill="#fff" />}
+                          style={styles.button}
+                          disabled={
+                            !answers?.find(
+                              (item) => item?.question_id === question?.id
+                            )?.answer ||
+                            !!theme?.user_answers_scores?.find(
+                              (answ) => answ?.question_id === question?.id
+                            )?.score
+                          }
+                          onPress={() =>
+                            checkQuestion({
+                              ...answers?.find(
                                 (item) => item?.question_id === question?.id
-                              )?.answer ||
-                              !!theme?.user_answers_scores?.find(
-                                (answ) => answ?.question_id === question?.id
-                              )?.score
-                            }
-                            onPress={() =>
-                              checkQuestion({
-                                ...answers?.find(
-                                  (item) => item?.question_id === question?.id
-                                ),
-                                question: question?.text,
-                              })
-                            }
-                            loading={loadingAnswer === question?.id}
-                          />
-                        </View>
+                              ),
+                              question: question?.question,
+                            })
+                          }
+                          loading={loadingAnswer === question?.id}
+                        />
                       </View>
-                    )
-                  )}
+                    </View>
+                  ))}
                 </>
               ) : null}
             </View>
           </View>
         ) : null}
       </ScrollView>
-      {theme?.id ? (
+      {theme?.multiple_questions?.length ? (
         <Button
           title={
             // testResult?.correct_percentage
@@ -665,8 +659,7 @@ const ThemeScreen = () => {
             // testResult?.correct_percentage
             //   ? false
             //   :
-            selectedOption?.length !==
-            theme?.media_items?.multiple_questions?.length
+            selectedOption?.length !== (theme?.multiple_questions?.length || 0)
           }
           onPress={onSubmit}
         />
@@ -712,6 +705,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     lineHeight: 30,
+    textTransform: "capitalize",
   },
   roadmap: {
     paddingHorizontal: 12,

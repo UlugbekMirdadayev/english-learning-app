@@ -11,7 +11,7 @@ export const getUserMe = (token) =>
 export const postLogin = (data) =>
   axios.post(`${BASE_URL}/api/auth/login`, data);
 export const getThemes = (token, id) =>
-  axios.get(`${BASE_URL}/lessons${id ? `/${id}` : ""}`, {
+  axios.get(`${BASE_URL}/api/lesson/${id ? `${id}` : "all"}`, {
     headers: { Authorization: "Bearer " + token },
   });
 export const updateProfile = (token, data, id) =>

@@ -37,7 +37,12 @@ const renderItem = ({ item, index, router, themes }) => (
               },
               {
                 text: "Yes please",
-                onPress: () => router.push(`/theme/${item?.id}`),
+                onPress: () =>
+                  router.push(
+                    `/theme/${item?.id}?theme=${encodeURIComponent(
+                      JSON.stringify(item)
+                    )}`
+                  ),
               },
             ],
             { cancelable: true }
@@ -53,7 +58,11 @@ const renderItem = ({ item, index, router, themes }) => (
         () =>
           // !item?.completed
           //   ?
-          router.push(`/theme/${item?.id}`)
+          router.push(
+            `/theme/${item?.id}?theme=${encodeURIComponent(
+              JSON.stringify(item)
+            )}`
+          )
         // : Toast.show({
         //     type: 'info',
         //     text1: 'Info',
@@ -112,7 +121,11 @@ const renderItem = ({ item, index, router, themes }) => (
       <Pressable
         onPress={() =>
           // item?.completed &&
-          router.push(`/theme/${item?.id}`)
+          router.push(
+            `/theme/${item?.id}?theme=${encodeURIComponent(
+              JSON.stringify(item)
+            )}`
+          )
         }
         style={({ pressed }) => [
           styles.saveBtn,
@@ -168,7 +181,7 @@ const ThemesScreen = () => {
     getThemes(user?.token)
       .then(({ data }) => {
         setLoading(false);
-        setThemes(data);
+        setThemes(data?.result);
       })
       .catch((err) => {
         if (err?.response?.status === 401) {
@@ -202,7 +215,7 @@ const ThemesScreen = () => {
           >
             <View style={[styles.avatar, { borderColor: "#e6f2ff" }]}>
               <Typography style={{ textTransform: "uppercase" }}>
-                {user?.first_name?.[0]} {user?.last_name?.[0]}
+                {user?.first_name?.[0]}{user?.last_name?.[0]}
               </Typography>
             </View>
             <Typography style={styles.username}>
@@ -210,11 +223,11 @@ const ThemesScreen = () => {
               <Typography style={styles.span}>{"\nLessons"}</Typography>
             </Typography>
           </Pressable>
-          <View style={styles.row}>
+          {/* <View style={styles.row}>
             <Typography style={styles.statistics}>
               0/{themes?.length}
             </Typography>
-          </View>
+          </View> */}
         </View>
       </View>
 
@@ -272,7 +285,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   avatarInnerText: {
-    fontSize: 16,
+    fontSize: 13,
     color: "#007aff",
     fontFamily: "SFProTextHeavy",
     textAlign: "center",
@@ -288,6 +301,7 @@ const styles = StyleSheet.create({
     letterSpacing: -0.5,
     fontFamily: "SFProTextRegular",
     fontWeight: "600",
+    textTransform: "capitalize",
   },
   saveBtn: {
     borderWidth: 2,
