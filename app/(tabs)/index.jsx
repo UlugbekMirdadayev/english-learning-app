@@ -181,7 +181,14 @@ const ThemesScreen = () => {
     getThemes(user?.token)
       .then(({ data }) => {
         setLoading(false);
-        setThemes(data?.result);
+        setThemes(
+          data?.result
+            ?.filter((theme) => theme?.index !== 5)
+            .map((theme) => ({
+              ...theme,
+              index: theme?.index === 55 ? 5 : theme?.index,
+            }))
+        );
       })
       .catch((err) => {
         if (err?.response?.status === 401) {
@@ -215,7 +222,8 @@ const ThemesScreen = () => {
           >
             <View style={[styles.avatar, { borderColor: "#e6f2ff" }]}>
               <Typography style={{ textTransform: "uppercase" }}>
-                {user?.first_name?.[0]}{user?.last_name?.[0]}
+                {user?.first_name?.[0]}
+                {user?.last_name?.[0]}
               </Typography>
             </View>
             <Typography style={styles.username}>

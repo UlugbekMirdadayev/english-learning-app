@@ -37,7 +37,6 @@ const ThemeScreen = () => {
   const navigation = useNavigation();
   // const { themeId } = useLocalSearchParams();
   const { theme: parsedTheme } = useLocalSearchParams();
-  console.log({ parsedTheme });
   const theme = parsedTheme
     ? JSON.parse(decodeURIComponent(parsedTheme))
     : null;
@@ -224,7 +223,8 @@ const ThemeScreen = () => {
         `<b>📚 Lesson:</b> ${theme?.title}\n\n` + // Dars mavzusi
         `<b>❓ Question:</b> ${answer?.question?.trim()}\n\n` + // Savol
         `<b>✍️ Answer:</b> ${answer?.answer}\n\n` + // Talabaning javobi
-        `👤 <b>Student Name:</b> <u>${user?.first_name} ${user?.last_name}</u>` // Talabaning ismi va familiyasi
+        `👤 <b>Student Name:</b> <u>${user?.first_name} ${user?.last_name}</u>\n\n` + // Talabaning ismi va familiyasi
+        `📧 <b>Student Email:</b> <u>${user?.email}</u>` // Talabaning ismi va familiyasi
     )
       .then(() => {
         setloadingAnswer(false);
