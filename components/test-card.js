@@ -29,7 +29,7 @@ const TestCard = ({title, options, onChange, index}) => {
             onPress={() => handlePress(option)}>
             <Typography
               style={{color: option?.id === selectedOption ? '#fff' : '#000'}}>
-              {words[key]}) {option?.content}
+              {words[key]}) {option?.option}
             </Typography>
           </Pressable>
         ))}

@@ -4,17 +4,17 @@ import * as Speech from "expo-speech";
 import Typography from "./typography";
 import { ArrowChangeIcon, VoiceIcon } from "@/assets/icons";
 
-const Card = ({ title, onLanguageChange }) => {
+const Card = ({ title, onLanguageChange, lang }) => {
   const [isEn, setIsEn] = useState(true); // Initial language state
   const scaleX = useRef(new Animated.Value(1)).current; // Animated value for scale transform
 
   const speakText = async (textToSpeak, speed) => {
     Speech.stop(); // Stop speaking if there is any text being spoken
     Speech.speak(textToSpeak, {
-      language: isEn ? "en" : "uz",
+      language: lang,
       rate: speed,
       volume: 1,
-      voice: isEn ? "en-US" : "ru-RU",
+      voice: lang,
     }); // Set default rate for speech
   };
 
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: "bold",
-    maxWidth: "80%",
+    maxWidth: "100%",
     textAlign: "center",
   },
 });

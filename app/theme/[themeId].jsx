@@ -37,8 +37,10 @@ const ThemeScreen = () => {
   const navigation = useNavigation();
   // const { themeId } = useLocalSearchParams();
   const { theme: parsedTheme } = useLocalSearchParams();
+  console.log({ parsedTheme });
+
   const theme = parsedTheme
-    ? JSON.parse(decodeURIComponent(parsedTheme))
+    ? JSON?.parse(parsedTheme || "" || parsedTheme)
     : null;
   const user = useSelectorState("user");
   // const [theme, setTheme] = useState({});
@@ -147,7 +149,7 @@ const ThemeScreen = () => {
     // if (testResult?.correct_percentage) {
     //   return Linking.openURL('https://t.me/mukarama_24_80');
     // }
-    const formData = theme?.multiple_questions?.map((item) => {
+    const formData = theme?.tests?.map((item) => {
       const answer = selectedOption?.find(
         (option) => option?.question_id === item?.id
       );
@@ -404,7 +406,11 @@ const ThemeScreen = () => {
                     ) : theme?.media === "link" ? (
                       <> */}
                     <Modal visible={modalView} animationType="slide">
-                      <SafeAreaView style={styles.container}>
+                      <SafeAreaView
+                        style={styles.container}
+                        mode="padding"
+                        edges={["top"]}
+                      >
                         <Button
                           title="Exit"
                           onPress={() => setModalView(false)}
@@ -495,9 +501,10 @@ const ThemeScreen = () => {
                       en: translations?.en,
                       uz: translations?.uz,
                     }}
+                    lang={selectedVoice}
                   />
                 ))}
-                {theme?.multiple_questions?.length ? (
+                {theme?.tests?.length ? (
                   <>
                     <Typography style={{ marginTop: 16, fontSize: 16 }}>
                       Quiz
@@ -520,31 +527,27 @@ const ThemeScreen = () => {
                           </Typography>
                         </View>
                       ) : null} */}
-                      {theme?.multiple_questions?.map(
-                        (multiple_questions, index) => (
-                          <TestCard
-                            key={index}
-                            index={index + 1}
-                            title={multiple_questions?.content}
-                            options={multiple_questions?.answers?.sort(
-                              (a, b) => a?.id - b?.id
-                            )}
-                            onChange={(option) =>
-                              setSelectedOption([
-                                ...(selectedOption || []).filter(
-                                  (item) =>
-                                    item?.question_id !== multiple_questions?.id
-                                ),
-                                {
-                                  id: option?.id,
-                                  answer: option?.correct,
-                                  question_id: multiple_questions?.id,
-                                },
-                              ])
-                            }
-                          />
-                        )
-                      )}
+                      {theme?.tests?.map((test, index) => (
+                        <TestCard
+                          key={test?.id}
+                          index={index + 1}
+                          title={test?.question}
+                          options={test?.tests?.sort((a, b) => a?.id - b?.id)}
+                          onChange={(option) =>
+                            setSelectedOption([
+                              ...(selectedOption || []).filter(
+                                (item) =>
+                                  item?.question_id !== test?.id
+                              ),
+                              {
+                                id: option?.id,
+                                answer: option?.is_correct,
+                                question_id: test?.id,
+                              },
+                            ])
+                          }
+                        />
+                      ))}
                     </View>
                   </>
                 ) : null}
@@ -643,7 +646,7 @@ const ThemeScreen = () => {
           </View>
         ) : null}
       </ScrollView>
-      {theme?.multiple_questions?.length ? (
+      {theme?.tests?.length ? (
         <Button
           title={
             // testResult?.correct_percentage
@@ -659,7 +662,7 @@ const ThemeScreen = () => {
             // testResult?.correct_percentage
             //   ? false
             //   :
-            selectedOption?.length !== (theme?.multiple_questions?.length || 0)
+            selectedOption?.length !== (theme?.tests?.length || 0)
           }
           onPress={onSubmit}
         />
