@@ -37,11 +37,11 @@ const ThemeScreen = () => {
   const navigation = useNavigation();
   // const { themeId } = useLocalSearchParams();
   const { theme: parsedTheme } = useLocalSearchParams();
-  console.log({ parsedTheme });
 
   const theme = parsedTheme
     ? JSON?.parse(parsedTheme || "" || parsedTheme)
     : null;
+
   const user = useSelectorState("user");
   // const [theme, setTheme] = useState({});
   const [loading, setLoading] = useState(true);
@@ -163,8 +163,12 @@ const ThemeScreen = () => {
     const trueCount = formData?.filter((item) => item.answer)?.length;
     const falseCount = totalCount - trueCount;
 
-    const truePercentage = (trueCount / totalCount) * 100;
-    const falsePercentage = (falseCount / totalCount) * 100;
+    const truePercentage = ((trueCount / totalCount) * 100)
+      .toFixed(2)
+      ?.replace(".00", "");
+    const falsePercentage = ((falseCount / totalCount) * 100)
+      .toFixed(2)
+      ?.replace(".00", "");
     setloadingTest(true);
     postTelegramMessage(
       `<b>🎓 Multiple Choice Results</b>\n\n` + // Bosh sarlavha
@@ -177,12 +181,12 @@ const ThemeScreen = () => {
       .then(() => {
         setloadingTest(false);
         setModalResponse({
-          text: `Correct percentage: ${truePercentage}\nWrong percentage: ${falsePercentage}\n`,
-          status: String(truePercentage),
+          text: `Correct percentage: ${truePercentage}%\nWrong percentage: ${falsePercentage}%\n`,
+          status: `${truePercentage}%`,
         });
         Toast.show({
           type: "info",
-          text1: String(truePercentage),
+          text1: `${truePercentage}%`,
           text2: "Your score",
         });
       })
@@ -287,11 +291,18 @@ const ThemeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Modal visible={!!modalResponse?.status} transparent animationType="fade">
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView
+          style={[
+            styles.container,
+            {
+              backgroundColor: "rgba(0,0,0,0.5)",
+            },
+          ]}
+        >
           <View
             style={{
               flex: 1,
-              backgroundColor: "rgba(0,0,0,0.5)",
+              backgroundColor: "rgba(0,0,0,0.1)",
               alignItems: "center",
               justifyContent: "center",
             }}
@@ -536,8 +547,7 @@ const ThemeScreen = () => {
                           onChange={(option) =>
                             setSelectedOption([
                               ...(selectedOption || []).filter(
-                                (item) =>
-                                  item?.question_id !== test?.id
+                                (item) => item?.question_id !== test?.id
                               ),
                               {
                                 id: option?.id,
