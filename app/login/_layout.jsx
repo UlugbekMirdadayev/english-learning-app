@@ -24,6 +24,18 @@ import { useNavigation } from "@react-navigation/native";
 
 const inputs = [
   {
+    label: "First name",
+    name: "first_name",
+    placeholder: "John",
+    password: false,
+  },
+  {
+    label: "Last name",
+    name: "last_name",
+    placeholder: "Doe",
+    password: false,
+  },
+  {
     label: "Email",
     name: "email",
     placeholder: "john_doe@mail.com",
@@ -46,14 +58,18 @@ const LoginScreen = () => {
   const [formValues, setFormValues] = useState({
     password: "",
     email: "",
+    first_name: "",
+    last_name: "",
     clicked: false,
   });
+  const [loading, setLoading] = useState(false);
 
   const [formErrors, setFormErrors] = useState({
     password: false,
     email: false,
+    first_name: false,
+    last_name: false,
   });
-  const [loading, setLoading] = useState(false);
 
   const onChangeText = (value, name) => {
     setFormErrors((prev) => ({
@@ -67,9 +83,11 @@ const LoginScreen = () => {
   };
 
   const onSubmit = () => {
-    if (!formValues.email || !formValues.password) {
+    if (Object.values(formValues).includes("")) {
       setFormErrors({
         email: !formValues.email,
+        first_name: !formValues.first_name,
+        last_name: !formValues.last_name,
         password: !formValues.password,
       });
       return setFormValues((prev) => ({
@@ -79,57 +97,63 @@ const LoginScreen = () => {
     }
     const data = formValues;
     delete data.clicked; // key clicked remove
-    setLoading(true);
-    postLogin(data)
-      .then(({ data }) => {
-        getUserMe(data?.result?.token)
-          .then(({ data: userResonse }) => {
-            AsyncStorage.setItem("token", data?.result?.token);
-            setLoading(false);
-            if (userResonse?.result?.role?.id === 1) {
-              Toast.show({
-                position: "top",
-                type: "info",
-                text1: "You are a teacher !",
-                text2: "You are not allowed to log in.",
-              });
-              return Linking.openURL("https://sooyaa.uz/");
-            }
-            Toast.show({
-              position: "top",
-              type: "success",
-              text1: "Success",
-              text2: "You have successfully logged in",
-            });
-            dispatch(
-              setUser({ ...userResonse?.result, token: data?.result?.token })
-            );
-            navigation.reset({
-              index: 0,
-              routes: [{ name: "(tabs)" }],
-            });
-          })
-          .catch((error) => {
-            console.log("errortoken", error);
-            setLoading(false);
-            Toast.show({
-              position: "top",
-              type: "error",
-              text1: "Error",
-              text2: JSON.stringify(error?.response?.data),
-            });
-          });
-      })
-      .catch((error) => {
-        console.log("error1", error);
-        setLoading(false);
-        Toast.show({
-          position: "top",
-          type: "error",
-          text1: "Error",
-          text2: JSON.stringify(error?.response?.data),
-        });
-      });
+
+    dispatch(setUser(data));
+    navigation.reset({
+      index: 0,
+      routes: [{ name: "(tabs)" }],
+    });
+    // setLoading(true);
+    // postLogin(data)
+    //   .then(({ data }) => {
+    //     getUserMe(data?.result?.token)
+    //       .then(({ data: userResonse }) => {
+    //         AsyncStorage.setItem("token", data?.result?.token);
+    //         setLoading(false);
+    //         if (userResonse?.result?.role?.id === 1) {
+    //           Toast.show({
+    //             position: "top",
+    //             type: "info",
+    //             text1: "You are a teacher !",
+    //             text2: "You are not allowed to log in.",
+    //           });
+    //           return Linking.openURL("https://sooyaa.uz/");
+    //         }
+    //         Toast.show({
+    //           position: "top",
+    //           type: "success",
+    //           text1: "Success",
+    //           text2: "You have successfully logged in",
+    //         });
+    //         dispatch(
+    //           setUser({ ...userResonse?.result, token: data?.result?.token })
+    //         );
+    //         navigation.reset({
+    //           index: 0,
+    //           routes: [{ name: "(tabs)" }],
+    //         });
+    //       })
+    //       .catch((error) => {
+    //         console.log("errortoken", error);
+    //         setLoading(false);
+    //         Toast.show({
+    //           position: "top",
+    //           type: "error",
+    //           text1: "Error",
+    //           text2: JSON.stringify(error?.response?.data),
+    //         });
+    //       });
+    //   })
+    //   .catch((error) => {
+    //     console.log("error1", error);
+    //     setLoading(false);
+    //     Toast.show({
+    //       position: "top",
+    //       type: "error",
+    //       text1: "Error",
+    //       text2: JSON.stringify(error?.response?.data),
+    //     });
+    //   });
   };
 
   return (

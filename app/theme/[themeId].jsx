@@ -151,11 +151,11 @@ const ThemeScreen = () => {
     // }
     const formData = theme?.tests?.map((item) => {
       const answer = selectedOption?.find(
-        (option) => option?.question_id === item?.id
+        (option) => option?.question_id === item?.option
       );
       return {
         answer: !!answer?.answer,
-        id: answer?.question_id ? answer?.question_id : item?.id,
+        id: answer?.question_id ? answer?.question_id : item?.question,
       };
     });
 
@@ -333,7 +333,7 @@ const ThemeScreen = () => {
           </View>
         </SafeAreaView>
       </Modal>
-      {theme?.id ? (
+      {theme?.index ? (
         <View style={[styles.containerInner, { paddingTop: 16 }]}>
           <Pressable style={styles.header} onPress={() => navigation.goBack()}>
             <Arrow />
@@ -366,7 +366,7 @@ const ThemeScreen = () => {
         //   <RefreshControl refreshing={loading} onRefresh={getThemesData} />
         // }
       >
-        {theme?.id ? (
+        {theme?.index ? (
           <View style={[styles.container, { paddingVertical: 16 }]}>
             <View style={styles.containerInner}>
               <View style={styles.roadmap}>
@@ -505,9 +505,9 @@ const ThemeScreen = () => {
                     </Modal>
                   </>
                 ) : null}
-                {theme?.translations?.map((translations) => (
+                {theme?.translations?.map((translations, index) => (
                   <Card
-                    key={translations?.id}
+                    key={index}
                     title={{
                       en: translations?.en,
                       uz: translations?.uz,
@@ -540,19 +540,19 @@ const ThemeScreen = () => {
                       ) : null} */}
                       {theme?.tests?.map((test, index) => (
                         <TestCard
-                          key={test?.id}
+                          key={index}
                           index={index + 1}
                           title={test?.question}
-                          options={test?.tests?.sort((a, b) => a?.id - b?.id)}
+                          options={test?.tests}
                           onChange={(option) =>
                             setSelectedOption([
                               ...(selectedOption || []).filter(
-                                (item) => item?.question_id !== test?.id
+                                (item) => item?.question_id !== test?.question
                               ),
                               {
-                                id: option?.id,
+                                id: option?.option,
                                 answer: option?.is_correct,
-                                question_id: test?.id,
+                                question_id: test?.question,
                               },
                             ])
                           }
@@ -573,7 +573,7 @@ const ThemeScreen = () => {
                     Questions
                   </Typography>
                   {theme?.questions?.map((question, index) => (
-                    <View key={question?.id}>
+                    <View key={index}>
                       <Typography>
                         {index + 1}) {question?.question}
                       </Typography>
@@ -581,7 +581,7 @@ const ThemeScreen = () => {
                         <TextInput
                           readOnly={
                             !!theme?.user_answers_scores?.find(
-                              (answ) => answ?.question_id === question?.id
+                              (answ) => answ?.question_id === question?.question
                             )?.score
                           }
                           style={{
@@ -614,10 +614,10 @@ const ThemeScreen = () => {
                           onChangeText={(text) =>
                             setAnswers([
                               ...answers.filter(
-                                (item) => item?.question_id !== question?.id
+                                (item) => item?.question_id !== question?.question
                               ),
                               {
-                                question_id: question?.id,
+                                question_id: question?.question,
                                 answer: text,
                               },
                             ])
@@ -631,21 +631,22 @@ const ThemeScreen = () => {
                           style={styles.button}
                           disabled={
                             !answers?.find(
-                              (item) => item?.question_id === question?.id
+                              (item) => item?.question_id === question?.question
                             )?.answer ||
                             !!theme?.user_answers_scores?.find(
-                              (answ) => answ?.question_id === question?.id
+                              (answ) => answ?.question_id === question?.question
                             )?.score
                           }
                           onPress={() =>
                             checkQuestion({
                               ...answers?.find(
-                                (item) => item?.question_id === question?.id
+                                (item) =>
+                                  item?.question_id === question?.question
                               ),
                               question: question?.question,
                             })
                           }
-                          loading={loadingAnswer === question?.id}
+                          loading={loadingAnswer === question?.question}
                         />
                       </View>
                     </View>

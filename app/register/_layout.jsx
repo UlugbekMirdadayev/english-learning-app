@@ -96,43 +96,49 @@ const RegisterScreen = () => {
     }
     const data = formValues;
     delete data.clicked;
-    setLoading(true);
-    postRegister(data)
-      .then(({ data }) => {
-        setLoading(false);
-        Toast.show({
-          position: "top",
-          type: "success",
-          text1: data?.status || "Success",
-          text2: data?.result || "You have successfully registered",
-        });
-        navigation.reset({
-          index: 0,
-          routes: [{ name: "login" }],
-        });
-      })
-      .catch((error) => {
-        setLoading(false);
-        const errors = { ...error?.response?.data, ...error?.response?.data };
-        Object.keys(errors).forEach((key) => {
-          setFormErrors((prev) => ({
-            ...prev,
-            [key]: errors[key][0],
-          }));
-        });
-        Toast.show({
-          position: "top",
-          type: "error",
-          text1:
-            Object.keys(errors)
-              .map((key) => key)
-              .join("\n") || JSON.stringify(error?.message),
-          text2:
-            Object.keys(errors)
-              .map((key) => errors[key][0])
-              .join("\n") || JSON.stringify(error?.message),
-        });
-      });
+
+    dispatch(setUser(data));
+    navigation.reset({
+      index: 0,
+      routes: [{ name: "(tabs)" }],
+    });
+    // setLoading(true);
+    // postRegister(data)
+    //   .then(({ data }) => {
+    //     setLoading(false);
+    //     Toast.show({
+    //       position: "top",
+    //       type: "success",
+    //       text1: data?.status || "Success",
+    //       text2: data?.result || "You have successfully registered",
+    //     });
+    //     navigation.reset({
+    //       index: 0,
+    //       routes: [{ name: "login" }],
+    //     });
+    //   })
+    //   .catch((error) => {
+    //     setLoading(false);
+    //     const errors = { ...error?.response?.data, ...error?.response?.data };
+    //     Object.keys(errors).forEach((key) => {
+    //       setFormErrors((prev) => ({
+    //         ...prev,
+    //         [key]: errors[key][0],
+    //       }));
+    //     });
+    //     Toast.show({
+    //       position: "top",
+    //       type: "error",
+    //       text1:
+    //         Object.keys(errors)
+    //           .map((key) => key)
+    //           .join("\n") || JSON.stringify(error?.message),
+    //       text2:
+    //         Object.keys(errors)
+    //           .map((key) => errors[key][0])
+    //           .join("\n") || JSON.stringify(error?.message),
+    //     });
+    //   });
   };
 
   return (

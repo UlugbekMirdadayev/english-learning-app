@@ -89,34 +89,34 @@ function App() {
       });
   }, []);
 
-  useEffect(() => {
-    if (loading)
-      return navigate.reset({
-        index: 0,
-        routes: [{ name: "(splash)" }],
-      });
-    if (!user?.token) {
-      return;
-    }
-    getUserMe(user?.token)
-      .then(({ data }) => {
-        setLoading(false);
-        store.dispatch(setUser({ ...data?.result, token: user?.token }));
-        // navigate.reset({
-        //   index: 0,
-        //   routes: [{ name: "(tabs)" }],
-        // });
-      })
-      .catch((err) => {
-        AsyncStorage.removeItem("user");
-        setLoading(false);
-        store.dispatch(setUser(null));
-        // navigate.reset({
-        //   index: 0,
-        //   routes: [{ name: "(splash)" }],
-        // });
-      });
-  }, [user?.token, loading]);
+  // useEffect(() => {
+  //   if (loading)
+  //     return navigate.reset({
+  //       index: 0,
+  //       routes: [{ name: "(splash)" }],
+  //     });
+  //   if (!user?.token) {
+  //     return;
+  //   }
+  //   getUserMe(user?.token)
+  //     .then(({ data }) => {
+  //       setLoading(false);
+  //       store.dispatch(setUser({ ...data?.result, token: user?.token }));
+  //       // navigate.reset({
+  //       //   index: 0,
+  //       //   routes: [{ name: "(tabs)" }],
+  //       // });
+  //     })
+  //     .catch((err) => {
+  //       AsyncStorage.removeItem("user");
+  //       setLoading(false);
+  //       store.dispatch(setUser(null));
+  //       // navigate.reset({
+  //       //   index: 0,
+  //       //   routes: [{ name: "(splash)" }],
+  //       // });
+  //     });
+  // }, [user?.token, loading]);
 
   return (
     <Stack initialRouteName="(splash)">

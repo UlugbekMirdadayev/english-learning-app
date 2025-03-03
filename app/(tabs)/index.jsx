@@ -17,6 +17,7 @@ import { useSelectorState } from "@/redux/selectors";
 import { getThemes } from "@/service/api";
 import { useRouter } from "expo-router";
 import { useNavigation } from "@react-navigation/native";
+import lessons from "../../utils/lessons";
 
 const { width } = Dimensions.get("window");
 
@@ -166,48 +167,41 @@ const ThemesScreen = () => {
   const navigation = useNavigation();
   const router = useRouter();
   const user = useSelectorState("user");
-  const [themes, setThemes] = useState([
-    // {
-    //   id: 1,
-    //   title: "Theme 1",
-    //   index: 1,
-    //   completed: false,
-    // },
-  ]);
+  const [themes, setThemes] = useState(lessons);
   const [loading, setLoading] = useState(false);
 
-  const getThemesData = useCallback(() => {
-    setLoading(true);
-    getThemes(user?.token)
-      .then(({ data }) => {
-        setLoading(false);
-        setThemes(
-          data?.result
-            ?.filter((theme) => theme?.index !== 5)
-            .map((theme) => ({
-              ...theme,
-              index: theme?.index === 55 ? 5 : theme?.index,
-            }))
-        );
-      })
-      .catch((err) => {
-        if (err?.response?.status === 401) {
-          navigation.reset({ index: 0, routes: [{ name: "(splash)" }] });
-          AsyncStorage.clear();
-        }
-        Toast.show({
-          type: "error",
-          text1: "Error occurred while fetching themes",
-          text2: JSON.stringify(err?.response?.data),
-        });
-        setLoading(false);
-      });
-  }, [user?.token]);
+  // const getThemesData = useCallback(() => {
+  //   setLoading(true);
+  //   getThemes(user?.token)
+  //     .then(({ data }) => {
+  //       setLoading(false);
+  //       setThemes(
+  //         data?.result
+  //           ?.filter((theme) => theme?.index !== 5)
+  //           .map((theme) => ({
+  //             ...theme,
+  //             index: theme?.index === 55 ? 5 : theme?.index,
+  //           }))
+  //       );
+  //     })
+  //     .catch((err) => {
+  //       if (err?.response?.status === 401) {
+  //         navigation.reset({ index: 0, routes: [{ name: "(splash)" }] });
+  //         AsyncStorage.clear();
+  //       }
+  //       Toast.show({
+  //         type: "error",
+  //         text1: "Error occurred while fetching themes",
+  //         text2: JSON.stringify(err?.response?.data),
+  //       });
+  //       setLoading(false);
+  //     });
+  // }, [user?.token]);
 
-  useEffect(() => {
-    if (!user?.token) return;
-    getThemesData();
-  }, [getThemesData]);
+  // useEffect(() => {
+  //   if (!user?.token) return;
+  //   getThemesData();
+  // }, [getThemesData]);
 
   return (
     <SafeAreaView mode="padding" style={styles.container}>
@@ -242,11 +236,13 @@ const ThemesScreen = () => {
       <FlatList
         data={themes?.sort((a, b) => a?.index - b?.index)}
         renderItem={(props) => renderItem({ ...props, router, themes })}
-        keyExtractor={(item) => item?.id?.toString()}
+        keyExtractor={(item) => item?.index?.toString()}
         showsVerticalScrollIndicator={false}
         style={[styles.container, styles.flatList]}
         refreshControl={
-          <RefreshControl refreshing={loading} onRefresh={getThemesData} />
+          <RefreshControl
+          // refreshing={loading} onRefresh={getThemesData}
+          />
         }
       />
     </SafeAreaView>
